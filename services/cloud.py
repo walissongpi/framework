@@ -90,7 +90,7 @@ class CloudEnviroment:
 
             print("Output:", output)
             print("Error:", error)
-            
+
             #sending configuration files to the instance
             self.logger.info("Sending configuration files to the instance...")
             ec2_executor.send_file_to_instance(os.getcwd()+"/"+"config/cloud.json",destination_folder)
@@ -100,7 +100,7 @@ class CloudEnviroment:
 
             #Run the second main (mainCLoud)
 
-            command = "python3 framework/services/main_cloud.py"
+            command = "python3 "+destination_folder+"/"+"framework/services/main_cloud.py"
 
             # Executando o comando na instância EC2
             output, error = ec2_executor.run_command_on_instance(command)
