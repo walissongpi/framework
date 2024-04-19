@@ -1,0 +1,7 @@
+{
+  "model": "Nvidia MX-150",
+  "cores": "384",
+  "memory_bandwith": "48",
+  "base_clock": "1469",
+  "boost_clock":"1532"
+}

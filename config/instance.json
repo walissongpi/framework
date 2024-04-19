@@ -1,0 +1,12 @@
+{
+  "image_id": "ami-01afb69abc2756b9e",
+  "instance_type": "g4dn.xlarge",
+  "name": "Adaptative Framework",
+  "user": "ubuntu",
+  "min_count": 1,
+  "max_count": 1,
+  "key_name": "walisson-key",
+  "key_path": "/home/walisson",
+  "security_group": "walisson-group",
+  "spot_price": "0.53"
+}
