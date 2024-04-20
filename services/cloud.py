@@ -91,6 +91,7 @@ class CloudEnviroment:
             print("Output:", output)
             print("Error:", error)
 
+            destination_folder = "/home/ubuntu/framework/config"
             #sending configuration files to the instance
             self.logger.info("Sending configuration files to the instance...")
             ec2_executor.send_file_to_instance(os.getcwd()+"/"+"config/cloud.json",destination_folder)
