@@ -100,14 +100,14 @@ class CloudEnviroment:
 
             #Run the second main (mainCLoud)
 
-            command = "python3 "+destination_folder+"/"+"framework/services/main_cloud.py"
+            command = "python3 "+destination_folder+"framework/services/main_cloud.py"
 
             # Executando o comando na instância EC2
             output, error = ec2_executor.run_command_on_instance(command)
             # Exibindo a saída e erros (se houver)
             print("Output:", output)
             print("Error:", error)
-
+            input("")
 
 #logger.info("Creating AWS instance...")
 #instance = ec2Manager.create_instance("ami-01afb69abc2756b9e", "g4dn.xlarge",1, "walisson-key", ["walisson-group"])
