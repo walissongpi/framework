@@ -8,14 +8,15 @@ echo " ----------------------------
   Updating PATH env variables to see cudalign
  ----------------------------"
 export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028
-if [ -e flag ]; then
-    echo "The script file has alredy been run. Leaving..."
-    exit 0
-fi
 echo " ----------------------------
    Installing python
  ----------------------------"
-sudo apt install python -y
+sudo apt update
+sudo apt -y upgrade
+echo " ----------------------------
+   Installing pip
+ ----------------------------"
+sudo apt install -y python3-pip
 echo " ----------------------------
    Installing scikit-fuzzy
  ----------------------------"
@@ -36,7 +37,7 @@ sudo apt install unzip -y
 echo " ----------------------------
    unzip sequences
  ----------------------------"
-cd sequences
+cd sequences/
 unzip 2k.zip
 unzip 10k.zip
 unzip 18k.zip
@@ -56,4 +57,3 @@ echo " ----------------------------
    downloading framework
  ----------------------------"
 git clone https://github.com/walissongpi/framework.git
-touch flag

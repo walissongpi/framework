@@ -79,7 +79,7 @@ class CloudEnviroment:
 
             #set file permission
             self.logger.info("Setting file permission...")
-            command = "chmod 777 setup.sh"
+            command = "chmod +x setup.sh"
             output, error = ec2_executor.run_command_on_instance(command)
 
             print("Output:", output)
