@@ -8,7 +8,7 @@ echo " ----------------------------
   Updating PATH env variables to see cudalign
  ----------------------------"
 export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028
-if [ -f "flag" ]; then
+if [ -e flag ]; then
     echo "The script file has alredy been run. Leaving..."
     exit 0
 fi
