@@ -3,13 +3,14 @@ from services.executor import Executor
 
 class LocalEnviroment:
 
-    def __init__(self, logger, data):
+    def __init__(self, logger, data, gpu_data):
         self.logger = logger
         self.data = data
+        self.gpu_data = gpu_data
 
     def execute(self):
         self.logger.info("Executing MASA-CUDALign...")
-        executor = Executor(self.logger, self.data)
+        executor = Executor(self.logger, self.data, self.gpu_data)
         executor.execute_path()
         command = executor.create_masa_command()
         #response = executor.execute(command,1)

@@ -11,7 +11,7 @@ export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028
 echo " ----------------------------
    Installing python
  ----------------------------"
-sudo apt update
+sudo apt -y update
 sudo apt -y upgrade
 echo " ----------------------------
    Installing pip

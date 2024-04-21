@@ -3,12 +3,14 @@ import sys
 import math
 import os
 from pathlib import Path
+from services.decision_maker import DecisionMaker
 
 class Executor:
 
-    def __init__(self, logger, data):
+    def __init__(self, logger, data, gpu_data):
         self.logger = logger
         self.data = data
+        self.gpu_data = data
 
     def execute_path(self):
         #process = subprocess.run(path)
@@ -44,6 +46,11 @@ class Executor:
 
         return strategy
 
+    def calculate_similarity(score):
+        seq0_length = int(self.data["seq0_length"])
+        seq1_length = int(self.data["seq1_length"])
+        sim = (score / max(seq0_length,seq1_length))*100
+        return sim
     #return the score stored at statistics_01 file after termination of stage 1
     def look_for_score(self):
         framework_dir = os.getcwd() + "/" + self.data["work_dir"]
@@ -88,8 +95,11 @@ class Executor:
         print("Stage 1 execution complete: ",response)
 
         score = self.look_for_score()
+        sequence_similarity = calculate_similarity(score)
 
-        strategy = self.define_strategy(score)
+        strategy = DecisionMaker(self.logger, self.data,self.gpu_data, sequence_similarity)
+        print("Stratrgy for stage 4: ",strategy)
+        #strategy = self.define_strategy(score)
 
         command = self.data["command"] + " --disk-size=" + SRA+"G" +" --stage-4-strategy=" + strategy + " --work-dir=" + self.data["work_dir"] + " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
         response = self.execute(command)

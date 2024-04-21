@@ -3415,3 +3415,120 @@
 2024-04-20 10:38:16,074 - INFO - Spot instance ID:i-01842e59ee5b3aab2
 2024-04-20 10:38:16,074 - INFO - Starting spot instance monitor...
 2024-04-20 10:38:16,380 - INFO - Instance running!
+2024-04-20 10:52:51,425 - INFO - Instance id: i-01842e59ee5b3aab2
+2024-04-20 10:52:51,425 - INFO - Starting Executor Handler...
+2024-04-20 10:52:51,425 - INFO - Sending setup script to the instance...
+2024-04-20 10:52:55,781 - INFO - File /home/walisson/framework/setup.sh sent to 3.94.90.164:/home/ubuntu/ successfully!
+2024-04-20 10:52:55,782 - INFO - Setting file permission...
+2024-04-20 10:52:58,257 - INFO - Running setup script...
+2024-04-20 10:53:02,028 - INFO - Sending configuration files to the instance...
+2024-04-21 00:34:47,429 - DEBUG - Starting the framework...
+2024-04-21 00:34:49,685 - INFO - Starting local module...
+2024-04-21 00:34:49,687 - INFO - Getting enviroment information...
+2024-04-21 00:34:50,433 - INFO - Enviroment information: 
+2024-04-21 00:34:50,434 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 00:34:50,435 - INFO - Processor: x86_64
+2024-04-21 00:34:50,435 - INFO - Architecture: 64bit
+2024-04-21 00:34:50,435 - INFO - Clock: 799.93775
+2024-04-21 00:34:50,435 - INFO - Fisical Cores: 4
+2024-04-21 00:34:50,435 - INFO - Logical Cores: 8
+2024-04-21 00:34:50,436 - INFO - Total Memory: 16677801984
+2024-04-21 00:34:50,436 - INFO - Available Memory: 10563629056
+2024-04-21 00:34:50,436 - INFO - Total Storage: 51282223104
+2024-04-21 00:34:50,436 - INFO - Available Storage: 2850615296
+2024-04-21 00:34:50,436 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 00:34:50,436 - INFO - System information collected.
+2024-04-21 00:34:50,437 - INFO - Executing MASA-CUDALign...
+2024-04-21 00:34:50,437 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/fickett/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-21 00:34:50,437 - INFO - Current directory: /home/walisson/framework
+2024-04-21 00:34:50,437 - INFO - Home directory: /home/walisson
+2024-04-21 00:34:50,438 - INFO - SRA size calculated: 3G
+2024-04-21 00:34:50,438 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=framework_dir /home/walissonsequences/1-3M/BA000035.2.fasta /home/walissonsequences/1-3M/BX927147.1.fasta
+2024-04-21 00:36:57,326 - DEBUG - Starting the framework...
+2024-04-21 00:36:59,328 - INFO - Starting local module...
+2024-04-21 00:36:59,330 - INFO - Getting enviroment information...
+2024-04-21 00:36:59,565 - INFO - Enviroment information: 
+2024-04-21 00:36:59,565 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 00:36:59,566 - INFO - Processor: x86_64
+2024-04-21 00:36:59,566 - INFO - Architecture: 64bit
+2024-04-21 00:36:59,566 - INFO - Clock: 918.785625
+2024-04-21 00:36:59,566 - INFO - Fisical Cores: 4
+2024-04-21 00:36:59,566 - INFO - Logical Cores: 8
+2024-04-21 00:36:59,566 - INFO - Total Memory: 16677801984
+2024-04-21 00:36:59,566 - INFO - Available Memory: 10569334784
+2024-04-21 00:36:59,566 - INFO - Total Storage: 51282223104
+2024-04-21 00:36:59,566 - INFO - Available Storage: 2861023232
+2024-04-21 00:36:59,567 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 00:36:59,567 - INFO - System information collected.
+2024-04-21 00:36:59,567 - INFO - Executing MASA-CUDALign...
+2024-04-21 00:36:59,567 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/fickett/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-21 00:36:59,567 - INFO - Current directory: /home/walisson/framework
+2024-04-21 00:36:59,568 - INFO - Home directory: /home/walisson
+2024-04-21 00:36:59,568 - INFO - SRA size calculated: 3G
+2024-04-21 00:36:59,568 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=framework_dir /home/walissonfickett/sequences/1-3M/BA000035.2.fasta /home/walissonfickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 00:37:41,027 - DEBUG - Starting the framework...
+2024-04-21 00:37:41,595 - INFO - Starting local module...
+2024-04-21 00:37:41,597 - INFO - Getting enviroment information...
+2024-04-21 00:37:41,862 - INFO - Enviroment information: 
+2024-04-21 00:37:41,863 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 00:37:41,863 - INFO - Processor: x86_64
+2024-04-21 00:37:41,863 - INFO - Architecture: 64bit
+2024-04-21 00:37:41,864 - INFO - Clock: 800.0770000000001
+2024-04-21 00:37:41,864 - INFO - Fisical Cores: 4
+2024-04-21 00:37:41,864 - INFO - Logical Cores: 8
+2024-04-21 00:37:41,864 - INFO - Total Memory: 16677801984
+2024-04-21 00:37:41,864 - INFO - Available Memory: 10526597120
+2024-04-21 00:37:41,865 - INFO - Total Storage: 51282223104
+2024-04-21 00:37:41,865 - INFO - Available Storage: 2860953600
+2024-04-21 00:37:41,865 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 00:37:41,865 - INFO - System information collected.
+2024-04-21 00:37:41,865 - INFO - Executing MASA-CUDALign...
+2024-04-21 00:37:41,866 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/fickett/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-21 00:37:41,866 - INFO - Current directory: /home/walisson/framework
+2024-04-21 00:37:41,867 - INFO - Home directory: /home/walisson
+2024-04-21 00:37:41,867 - INFO - SRA size calculated: 3G
+2024-04-21 00:37:41,867 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=framework_dir /home/walissonfickett/sequences/1-3M/BA000035.2.fasta /home/walissonfickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 00:39:13,767 - DEBUG - Starting the framework...
+2024-04-21 00:39:14,808 - INFO - Starting local module...
+2024-04-21 00:39:14,808 - INFO - Getting enviroment information...
+2024-04-21 00:39:15,004 - INFO - Enviroment information: 
+2024-04-21 00:39:15,004 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 00:39:15,005 - INFO - Processor: x86_64
+2024-04-21 00:39:15,005 - INFO - Architecture: 64bit
+2024-04-21 00:39:15,005 - INFO - Clock: 3632.5977500000004
+2024-04-21 00:39:15,005 - INFO - Fisical Cores: 4
+2024-04-21 00:39:15,005 - INFO - Logical Cores: 8
+2024-04-21 00:39:15,005 - INFO - Total Memory: 16677801984
+2024-04-21 00:39:15,005 - INFO - Available Memory: 10514305024
+2024-04-21 00:39:15,005 - INFO - Total Storage: 51282223104
+2024-04-21 00:39:15,005 - INFO - Available Storage: 2860630016
+2024-04-21 00:39:15,005 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 00:39:15,005 - INFO - System information collected.
+2024-04-21 00:39:15,005 - INFO - Executing MASA-CUDALign...
+2024-04-21 00:39:15,005 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/fickett/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-21 00:39:15,006 - INFO - Current directory: /home/walisson/framework
+2024-04-21 00:39:15,006 - INFO - Home directory: /home/walisson
+2024-04-21 00:39:15,006 - INFO - SRA size calculated: 3G
+2024-04-21 00:39:15,006 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 00:50:59,683 - DEBUG - Starting the framework...
+2024-04-21 00:51:00,939 - INFO - Starting local module...
+2024-04-21 00:51:00,941 - INFO - Getting enviroment information...
+2024-04-21 00:51:01,174 - INFO - Enviroment information: 
+2024-04-21 00:51:01,175 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 00:51:01,175 - INFO - Processor: x86_64
+2024-04-21 00:51:01,175 - INFO - Architecture: 64bit
+2024-04-21 00:51:01,175 - INFO - Clock: 953.687625
+2024-04-21 00:51:01,175 - INFO - Fisical Cores: 4
+2024-04-21 00:51:01,175 - INFO - Logical Cores: 8
+2024-04-21 00:51:01,175 - INFO - Total Memory: 16677801984
+2024-04-21 00:51:01,176 - INFO - Available Memory: 10420379648
+2024-04-21 00:51:01,176 - INFO - Total Storage: 51282223104
+2024-04-21 00:51:01,176 - INFO - Available Storage: 239525888
+2024-04-21 00:51:01,176 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 00:51:01,176 - INFO - System information collected.
+2024-04-21 00:51:01,176 - INFO - Executing MASA-CUDALign...
+2024-04-21 00:51:01,176 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/fickett/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-21 00:51:01,176 - INFO - Current directory: /home/walisson/framework
+2024-04-21 00:51:01,177 - INFO - Home directory: /home/walisson
+2024-04-21 00:51:01,177 - INFO - SRA size calculated: 3G
+2024-04-21 00:51:01,177 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta

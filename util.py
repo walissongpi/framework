@@ -10,3 +10,9 @@ def openJason(path):
             dados = json.load(arquivo)
 
     return dados;
+
+def recordJson(filename, data):
+    with open(filename, 'w') as file:
+        json.dump(data, file)
+
+    json.dump(data, file, indent=4)

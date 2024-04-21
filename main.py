@@ -34,7 +34,8 @@ def execute_action(choice, logger):
         if choice == "1":
             logger.info("Starting local module...")
             data = util.openJason("config/input_data.json")
-            local_enviroment = LocalEnviroment(logger, data)
+            gpu_data = util.openJason("config/gpu.json")
+            local_enviroment = LocalEnviroment(logger, data, gpu_data)
             local_enviroment.start()
 
         elif choice == "2":
