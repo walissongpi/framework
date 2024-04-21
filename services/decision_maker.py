@@ -9,10 +9,10 @@ class DecisionMaker:
         analyser = SystemInfo()
         self.cpu_data = analyser.get_system_info()
         self.data = data
-        self.gpu_data = data
+        self.gpu_data = gpu_data
         self.sequence_similarity = sequence_similarity
 
-    def calculate_gpu_grade():
+    def calculate_gpu_grade(self):
         # Input variables
         memory_bandwidth = ctrl.Antecedent(np.arange(0, 400, 1), 'memory_bandwidth')  # GB/s
         computional_power = ctrl.Antecedent(np.arange(0, 800, 1), 'computional_power')
@@ -34,9 +34,8 @@ class DecisionMaker:
         classification['medium'] = fuzz.trapmf(classification.universe, [3, 4, 5, 6])
         classification['high'] = fuzz.trapmf(classification.universe, [5, 7, 10, 10])
 
-        memory_bandwidth.view()
-        computional_power.view()
-
+        #memory_bandwidth.view()
+        #computional_power.view()
         # Rules
         rule1 = ctrl.Rule((memory_bandwidth['low'] | memory_bandwidth['medium']) &
                           (computional_power['low']), classification['low'])
@@ -52,9 +51,9 @@ class DecisionMaker:
         classification_ctrl = ctrl.ControlSystem([rule1, rule2, rule3, rule4])
         classification_simulator = ctrl.ControlSystemSimulation(classification_ctrl)
 
-        power = (int(self.gpu_data["cores"]) * int (gpu_data["boost_clock"]))/10000
-        classification_simulator.input['memory_bandwidth'] = self.gpu_data["memory_bandwidth"]
-        classification_simulator.input['computional_power'] = power
+        power = (int(self.gpu_data["cores"]) * int(self.gpu_data["boost_clock"]))/10000
+        classification_simulator.input['memory_bandwidth'] = int(self.gpu_data["memory_bandwidth"])
+        classification_simulator.input['computional_power'] = int(power)
 
         # Compute the result
         classification_simulator.compute()
@@ -62,92 +61,90 @@ class DecisionMaker:
         # Print the result
         grade = classification_simulator.output['classification']
         print("MX-150: ", grade)
-        classification.view(sim=classification_simulator)
+        #classification.view(sim=classification_simulator)
 
         return grade
 
-        def decide_strategy_stage4():
+    def decide_strategy_stage4(self):
             # Defining input variables
-            sequence_size = ctrl.Antecedent(np.arange(1, 101, 0.001), 'Sequence_Size')
+        sequence_size = ctrl.Antecedent(np.arange(1, 101, 0.001), 'Sequence_Size')
             #sequence_similarity
-            similarity = ctrl.Antecedent(np.arange(1, 101, 0.1), 'Sequence_Similarity')
+        similarity = ctrl.Antecedent(np.arange(1, 101, 0.1), 'Sequence_Similarity')
+        cpu_cores = ctrl.Antecedent(np.arange(1, 17, 1), 'CPU_Cores')
+        cpu_freq = ctrl.Antecedent(np.arange(1, 5, 0.1), 'CPU_Frequency')
+        gpu = ctrl.Antecedent(np.arange(1, 11, 0.1), 'GPU')
+        ram_memory = ctrl.Antecedent(np.arange(1, 65, 1), 'RAM_Memory')
 
-            cpu_cores = ctrl.Antecedent(np.arange(1, 17, 1), 'CPU_Cores')
-            cpu_freq = ctrl.Antecedent(np.arange(1, 5, 0.1), 'CPU_Frequency')
-            gpu = ctrl.Antecedent(np.arange(1, 11, 0.1), 'GPU')
-            ram_memory = ctrl.Antecedent(np.arange(1, 65, 1), 'RAM_Memory')
+            #output variable
+        execution_device = ctrl.Consequent(np.arange(0, 11, 1), 'Execution_Device')
 
-            # Defining output variable
-            execution_device = ctrl.Consequent(np.arange(0, 11, 1), 'Execution_Device')
+            #membership functions for each variable (Million)
+        sequence_size['small'] = fuzz.trapmf(sequence_size.universe, [0.001,1, 3, 10])
+        sequence_size['medium'] = fuzz.trapmf(sequence_size.universe, [3, 8,12, 23])
+        sequence_size['large'] = fuzz.trapmf(sequence_size.universe, [10,23, 50, 60])
+        sequence_size['huge'] = fuzz.trapmf(sequence_size.universe, [50,60, 100, 100])
 
-            # Defining membership functions for each variable (Million)
-            sequence_size['small'] = fuzz.trapmf(sequence_size.universe, [0.001,1, 3, 10])
-            sequence_size['medium'] = fuzz.trapmf(sequence_size.universe, [3, 8,12, 23])
-            sequence_size['large'] = fuzz.trapmf(sequence_size.universe, [10,23, 50, 60])
-            sequence_size['huge'] = fuzz.trapmf(sequence_size.universe, [50,60, 100, 100])
+        similarity['low'] = fuzz.trapmf(similarity.universe, [0,0, 20,30])
+        similarity['medium'] = fuzz.trapmf(similarity.universe, [25, 40, 50, 70])
+        similarity['high'] = fuzz.trapmf(similarity.universe, [60, 70, 100, 100])
 
-            similarity['low'] = fuzz.trapmf(similarity.universe, [0,0, 20,30])
-            similarity['medium'] = fuzz.trapmf(similarity.universe, [25, 40, 50, 70])
-            similarity['high'] = fuzz.trapmf(similarity.universe, [60, 70, 100, 100])
+        cpu_cores['few'] = fuzz.trapmf(cpu_cores.universe, [1, 1, 2, 4])
+        cpu_cores['some'] = fuzz.trapmf(cpu_cores.universe, [2,4 ,8, 12])
+        cpu_cores['many'] = fuzz.trapmf(cpu_cores.universe, [8, 12,16, 16])
 
-            cpu_cores['few'] = fuzz.trapmf(cpu_cores.universe, [1, 1, 2, 4])
-            cpu_cores['some'] = fuzz.trapmf(cpu_cores.universe, [2,4 ,8, 12])
-            cpu_cores['many'] = fuzz.trapmf(cpu_cores.universe, [8, 12,16, 16])
+        cpu_freq['low'] = fuzz.trimf(cpu_freq.universe, [1, 1, 2])
+        cpu_freq['medium'] = fuzz.trimf(cpu_freq.universe, [1.5, 2, 3])
+        cpu_freq['high'] = fuzz.trimf(cpu_freq.universe, [2.5, 4, 4])
 
-            cpu_freq['low'] = fuzz.trimf(cpu_freq.universe, [1, 1, 2])
-            cpu_freq['medium'] = fuzz.trimf(cpu_freq.universe, [1.5, 2, 3])
-            cpu_freq['high'] = fuzz.trimf(cpu_freq.universe, [2.5, 4, 4])
+        ram_memory['low'] = fuzz.trapmf(ram_memory.universe, [1, 1,4, 8])
+        ram_memory['medium'] = fuzz.trapmf(ram_memory.universe, [4,8, 16, 24])
+        ram_memory['high'] = fuzz.trapmf(ram_memory.universe, [16,32, 64, 64])
 
-            ram_memory['low'] = fuzz.trapmf(ram_memory.universe, [1, 1,4, 8])
-            ram_memory['medium'] = fuzz.trapmf(ram_memory.universe, [4,8, 16, 24])
-            ram_memory['high'] = fuzz.trapmf(ram_memory.universe, [16,32, 64, 64])
-
-            gpu['low'] = fuzz.trapmf(gpu.universe, [0, 0, 2.5, 3])
-            gpu['medium'] = fuzz.trapmf(gpu.universe, [2.5, 3, 5, 6])
-            gpu['high'] = fuzz.trapmf(gpu.universe, [5.5, 6, 10,10])
+        gpu['low'] = fuzz.trapmf(gpu.universe, [0, 0, 2.5, 3])
+        gpu['medium'] = fuzz.trapmf(gpu.universe, [2.5, 3, 5, 6])
+        gpu['high'] = fuzz.trapmf(gpu.universe, [5.5, 6, 10,10])
 
             # membership function visualization
-            sequence_size.view()
-            cpu_cores.view()
-            cpu_freq.view()
-            ram_memory.view()
-            gpu.view()
-            similarity.view()
+        #sequence_size.view()
+        #cpu_cores.view()
+        #cpu_freq.view()
+        #ram_memory.view()
+        #gpu.view()
+        #similarity.view()
 
-            execution_device['CPU'] = fuzz.trimf(execution_device.universe, [0, 0, 5])
-            execution_device['GPU'] = fuzz.trimf(execution_device.universe, [4, 10, 10])
-            #execution_device.view()
+        execution_device['CPU'] = fuzz.trimf(execution_device.universe, [0, 0, 5])
+        execution_device['GPU'] = fuzz.trimf(execution_device.universe, [4, 10, 10])
 
             # Defining fuzzy rules
-            rule1 = ctrl.Rule(sequence_size['small'] & cpu_cores['few'] & cpu_freq['low'] & ram_memory['low'] & (gpu['low'] | gpu['medium'] | gpu['high']) & similarity['high'], execution_device['GPU'])
-            rule2 = ctrl.Rule(sequence_size['small'] & cpu_cores['few'] & cpu_freq['low'] & ram_memory['low'] & (gpu['low'] | gpu['medium'] | gpu['high']) & (similarity['low'] | similarity['medium']), execution_device['CPU'])
-            rule3 = ctrl.Rule(sequence_size['medium'] & cpu_cores['some'] & cpu_freq['medium'] & ram_memory['medium'] & gpu['medium'] & (similarity['medium'] | similarity['high']), execution_device['GPU'])
-            rule4 = ctrl.Rule(sequence_size['medium'] & cpu_cores['some'] & cpu_freq['medium'] & ram_memory['medium'] & gpu['medium'], execution_device['GPU'])
-            rule5 = ctrl.Rule((sequence_size['large'] | sequence_size['huge']) & (gpu['high'] | gpu['medium']) & (similarity['medium'] | similarity['high']) , execution_device['GPU'])
-            rule6 = ctrl.Rule((sequence_size['large'] | sequence_size['huge']) & (gpu['low'] | gpu['medium']) & (similarity['low'] | similarity['medium']) , execution_device['CPU'])
-
+        rule1 = ctrl.Rule(sequence_size['small'] & cpu_cores['few'] & cpu_freq['low'] & ram_memory['low'] & (gpu['low'] | gpu['medium'] | gpu['high']) & similarity['high'], execution_device['GPU'])
+        rule2 = ctrl.Rule(sequence_size['small'] & cpu_cores['few'] & cpu_freq['low'] & ram_memory['low'] & (gpu['low'] | gpu['medium'] | gpu['high']) & (similarity['low'] | similarity['medium']), execution_device['CPU'])
+        rule3 = ctrl.Rule(sequence_size['medium'] & cpu_cores['some'] & cpu_freq['medium'] & ram_memory['medium'] & gpu['medium'] & (similarity['medium'] | similarity['high']), execution_device['GPU'])
+        rule4 = ctrl.Rule(sequence_size['medium'] & cpu_cores['some'] & cpu_freq['medium'] & ram_memory['medium'] & gpu['medium'], execution_device['GPU'])
+        rule5 = ctrl.Rule((sequence_size['large'] | sequence_size['huge']) & (gpu['high'] | gpu['medium']) & (similarity['medium'] | similarity['high']) , execution_device['GPU'])
+        rule6 = ctrl.Rule((sequence_size['large'] | sequence_size['huge']) & (gpu['low'] | gpu['medium']) & (similarity['low'] | similarity['medium']) , execution_device['CPU'])
+        rule7 = ctrl.Rule(sequence_size['small'] & similarity['low'] , execution_device['CPU'])
             # Creating the control system
-            device_ctrl = ctrl.ControlSystem([rule1, rule2, rule3, rule4, rule5, rule6])
-            execution_sys = ctrl.ControlSystemSimulation(device_ctrl)
+        device_ctrl = ctrl.ControlSystem([rule1, rule2, rule3, rule4, rule5, rule6, rule7])
+        execution_sys = ctrl.ControlSystemSimulation(device_ctrl)
 
             # Setting input values
-            execution_sys.input['Sequence_Size'] = float(self.data["seq1_length"])/(1024*1024*1024)
-            execution_sys.input['CPU_Cores'] = int(self.cpu_data["Fisical Cores"])
-            execution_sys.input['CPU_Frequency'] = float(self.cpu_data["Clock"])
-            execution_sys.input['RAM_Memory'] = int(self.cpu_data["Total Memory"])
-            execution_sys.input['GPU'] = self.calculate_gpu_grade()
-            execution_sys.input['Sequence_Similarity'] = self.sequence_similarity
+        execution_sys.input['Sequence_Size'] = float(self.data["seq1_length"])/(1024*1024*1024)
+        execution_sys.input['CPU_Cores'] = int(self.cpu_data["Fisical Cores"])
+        execution_sys.input['CPU_Frequency'] = float(self.cpu_data["Clock"])
+        execution_sys.input['RAM_Memory'] = int(self.cpu_data["Total Memory"])
+        execution_sys.input['GPU'] = round(self.calculate_gpu_grade(),1)
+        execution_sys.input['Sequence_Similarity'] = self.sequence_similarity
 
             # Computing the result
-            execution_sys.compute()
+        execution_sys.compute()
 
             # Getting the result
-            result =  execution_sys.output['Execution_Device']
-            print("Execution Device:", result)
-            execution_device.view(sim=execution_sys)
+        result =  execution_sys.output['Execution_Device']
+        print("Execution Device:", result)
+        #execution_device.view(sim=execution_sys)
 
-            strategy = "ORIGINAL_MM"
-            if result >= 5:
-                strategy = "MM_GPU"
+        strategy = "ORIGINAL_MM"
+        if result >= 5:
+            strategy = "MM_GPU"
 
-            return strategy
+        return strategy

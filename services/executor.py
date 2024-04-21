@@ -10,7 +10,7 @@ class Executor:
     def __init__(self, logger, data, gpu_data):
         self.logger = logger
         self.data = data
-        self.gpu_data = data
+        self.gpu_data = gpu_data
 
     def execute_path(self):
         #process = subprocess.run(path)
@@ -46,7 +46,7 @@ class Executor:
 
         return strategy
 
-    def calculate_similarity(score):
+    def calculate_similarity(self, score):
         seq0_length = int(self.data["seq0_length"])
         seq1_length = int(self.data["seq1_length"])
         sim = (score / max(seq0_length,seq1_length))*100
@@ -95,9 +95,12 @@ class Executor:
         print("Stage 1 execution complete: ",response)
 
         score = self.look_for_score()
-        sequence_similarity = calculate_similarity(score)
 
-        strategy = DecisionMaker(self.logger, self.data,self.gpu_data, sequence_similarity)
+        sequence_similarity = round(self.calculate_similarity(score))
+        print("Sequence similarity: ", sequence_similarity)
+
+        decision_maker = DecisionMaker(self.logger, self.data, self.gpu_data, sequence_similarity)
+        strategy = decision_maker.decide_strategy_stage4()
         print("Stratrgy for stage 4: ",strategy)
         #strategy = self.define_strategy(score)
 
