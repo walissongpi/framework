@@ -1,18 +1,47 @@
 #!/bin/bash
 echo " ----------------------------
+   Updating package repositories
+ ----------------------------"
+sudo apt update
+echo " ----------------------------
+   Upgrading package repositories
+ ----------------------------"
+sudo apt upgrade -y
+echo " ----------------------------
+   Installing build-essential package
+ ----------------------------"
+sudo apt install build-essential -y
+echo " ----------------------------
+   Installing python package
+ ----------------------------"
+sudo apt install python -y
+echo " ----------------------------
+   Installing unzip (AWS Cli)
+ ----------------------------"
+sudo apt install unzip -y
+echo " ----------------------------
+  Donloading cuda driver...
+ ----------------------------"
+wget https://developer.download.nvidia.com/compute/cuda/11.7.0/local_installers/cuda_11.7.0_515.43.04_linux.run
+echo " ----------------------------
+  Instaling cuda driver...
+ ----------------------------"
+sudo sh cuda_11.7.0_515.43.04_linux.run --silent
+echo " ----------------------------
   Updating LD_LIBRARY_PATH and PATH env variables to see CUDA libraries
  ----------------------------"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.7/lib64
 export PATH=$PATH:/usr/local/cuda-11.7/bin
 echo " ----------------------------
+  Downloading MASA-CUDAlign...
+ ----------------------------"
+git clone https://github.com/walissongpi/MASA-CUDAlign.git
+cd MASA-CUDAlign
+unzip masa-cudalign-4.0.2.1028.zip
+echo " ----------------------------
   Updating PATH env variables to see cudalign
  ----------------------------"
 export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028
-echo " ----------------------------
-   Installing python
- ----------------------------"
-sudo apt -y update
-sudo apt -y upgrade
 echo " ----------------------------
    Installing pip
  ----------------------------"
@@ -37,7 +66,7 @@ sudo apt install unzip -y
 echo " ----------------------------
    unzip sequences
  ----------------------------"
-cd sequences/
+cd sequences
 unzip 2k.zip
 unzip 10k.zip
 unzip 18k.zip
@@ -57,6 +86,3 @@ echo " ----------------------------
    downloading framework
  ----------------------------"
 git clone https://github.com/walissongpi/framework.git
-git clone https://github.com/walissongpi/MASA-CUDAlign.git
-cd MASA-CUDAlign/
-unzip masa-cudalign-4.0.2.1028.zip
