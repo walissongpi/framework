@@ -46,6 +46,7 @@ def execute_action(choice, logger):
             gpu_data = util.openJason("config/gpu.json")
             cloud_enviroment = CloudEnviroment(logger, data, instance_data, cloud_data, gpu_data)
             cloud_enviroment.start()
+            print("Press ENTER to cotinue...")
         elif choice == "3":
             exit()
         else:

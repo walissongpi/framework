@@ -54,12 +54,12 @@ class CloudEnviroment:
             self.logger.info("The expected time for sequence alignment ("+minutes+" minutes) is less than the pre-established threshold ("+self.cloud_data["market_threshold"]+" minutes). The execution will be carried out on a Spot instance...")
             self.logger.info("Creating " + self.instance_data["instance_type"] + " Spot instance...")
             instance_id, ec2 = ec2Manager.create_spot_instance()
-            input("")
+            input("Press ENTER to continue execution...")
         else:
             self.logger.info("The expected time for sequence alignment ("+minutes+" minutes) is greater than the pre-established threshold ("+self.cloud_data["market_threshold"]+" minutes). The execution will be carried out on an On-demand instance...")
             self.logger.info("Creating "+ self.instance_data["instance_type"]+" On-demand instance...")
             instance_id, ec2 = ec2Manager.create_instance()
-            input("")
+            input("Press ENTER to continue execution...")
 
         if instance_id is None:
             self.logger.error("Unable to initialize instance. Please, start over using local module...");
@@ -74,16 +74,16 @@ class CloudEnviroment:
 
             #sending setup script to the instance
             self.logger.info("Sending setup script to the instance...")
-            ec2_executor.send_file_to_instance(os.getcwd()+"/"+"setup.sh",destination_folder)
+            ec2_executor.send_file_to_instance(os.getcwd()+"/"+"prepare.sh",destination_folder)
 
             #set file permission
             self.logger.info("Setting file permission...")
-            command = "chmod +x setup.sh"
+            command = "chmod +x prepare.sh"
             output, error = ec2_executor.run_command_on_instance(command)
 
             print("Output:", output)
             print("Error:", error)
-            command = "sh setup.sh"
+            command = "sudo sh prepare.sh "+self.gpu_data["arch"]
             self.logger.info("Running setup script...")
             output, error = ec2_executor.run_command_on_instance(command)
 
@@ -107,7 +107,7 @@ class CloudEnviroment:
             # Exibindo a saída e erros (se houver)
             print("Output:", output)
             print("Error:", error)
-            input("")
+            #input("")
 
 #logger.info("Creating AWS instance...")
 #instance = ec2Manager.create_instance("ami-01afb69abc2756b9e", "g4dn.xlarge",1, "walisson-key", ["walisson-group"])

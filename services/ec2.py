@@ -61,15 +61,24 @@ class EC2Manager:
 
     def monitor_instance(self, instance_id):
         while True:
-            response = self.ec2.describe_instances(
+
+            response = self.ec2.describe_instance_status(
+                InstanceIds=[instance_id]
+            )
+            if len(response['InstanceStatuses']) > 0:
+                self.logger.info("Instance running!")
+                #self.logger.info("Instance state: "+response['Reservations'][0]['Instances'][0]['State']['Name'])
+                self.logger.info("Instance status: "+response['InstanceStatuses'][0]['InstanceStatus']['Status'])
+                if response['InstanceStatuses'][0]['InstanceStatus']['Status'] == "ok":
+                    self.logger.info("Instance is ready to use!")
+                    break;
+
+            '''response = self.ec2.describe_instances(
                 InstanceIds=[instance_id]
             )
             if len(response['Reservations']) > 0:
                 if response['Reservations'][0]['Instances'][0]['State']['Name'] == 'running':
-                    self.logger.info("Instance running!")
-                    break
-            #print(response)
-            self.logger.info("Instance state: "+response['Reservations'][0]['Instances'][0]['State']['Name'])
+                    self.logger.info("Instance running!")'''
 
             time.sleep(5)
 

@@ -2,31 +2,28 @@
 echo " ----------------------------
    Updating package repositories
  ----------------------------"
-sudo apt update
-echo " ----------------------------
-   Upgrading package repositories
- ----------------------------"
-sudo apt upgrade -y
+sudo apt-get update
+sudo apt-get -y upgrade
 echo " ----------------------------
    Installing build-essential package
  ----------------------------"
-sudo apt install build-essential -y
+sudo apt-get -y install build-essential
 echo " ----------------------------
-   Installing python package
+   Installing unzip
  ----------------------------"
-sudo apt install python -y
+sudo apt-get -y install unzip
 echo " ----------------------------
-   Installing unzip (AWS Cli)
+   Installing python
  ----------------------------"
-sudo apt install unzip -y
+apt-get -y install python
 echo " ----------------------------
   Donloading cuda driver...
  ----------------------------"
-wget https://developer.download.nvidia.com/compute/cuda/11.7.0/local_installers/cuda_11.7.0_515.43.04_linux.run
+wget "https://developer.download.nvidia.com/compute/cuda/11.7.0/local_installers/cuda_11.7.0_515.43.04_linux.run"
 echo " ----------------------------
   Instaling cuda driver...
  ----------------------------"
-sudo sh cuda_11.7.0_515.43.04_linux.run --silent
+sh cuda_11.7.0_515.43.04_linux.run --silent
 echo " ----------------------------
   Updating LD_LIBRARY_PATH and PATH env variables to see CUDA libraries
  ----------------------------"
@@ -45,28 +42,24 @@ export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028
 echo " ----------------------------
    Installing pip
  ----------------------------"
-sudo apt install -y python3-pip
+sudo apt-get -y install python3-pip
 echo " ----------------------------
    Installing scikit-fuzzy
  ----------------------------"
-pip install -U scikit-fuzzy
+sudo pip install -U scikit-fuzzy
 echo " ----------------------------
    Installing pycuda
  ----------------------------"
-pip install pycuda
+sudo pip install pycuda
 echo " ----------------------------
    Installing paramiko
  ----------------------------"
-pip install --upgrade --ignore-installed pip setuptools
-pip install paramiko
+sudo pip install --upgrade --ignore-installed pip setuptools
+sudo pip install paramiko
 echo " ----------------------------
    Installing psutil
  ----------------------------"
-pip install psutil
-echo " ----------------------------
-   Installing unzip
- ----------------------------"
-sudo apt install unzip -y
+ sudo pip install psutil
 echo " ----------------------------
    Downloading sequences
  ----------------------------"

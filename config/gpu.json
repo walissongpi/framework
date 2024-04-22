@@ -1,5 +1,6 @@
 {
   "model": "Nvidia MX-150",
+  "arch": "sm_75",
   "cores": "384",
   "memory_bandwidth": "48",
   "base_clock": "1469",
