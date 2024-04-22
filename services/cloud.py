@@ -2,7 +2,6 @@ from services.enviroment import SystemInfo
 from services.executor import Executor
 from services.ec2 import EC2Manager
 from services.ec2executor import EC2ApplicationExecutor
-from services.main_cloud import MainCLoud
 import math
 import os
 from pathlib import Path
@@ -101,7 +100,7 @@ class CloudEnviroment:
 
             destination_folder = "/home/ubuntu/"
             #Run the second main (mainCLoud)
-            command = "python3 "+destination_folder+"framework/services/main_cloud.py"
+            command = "python3 "+destination_folder+"framework/main_cloud.py"
 
             # Executando o comando na instância EC2
             output, error = ec2_executor.run_command_on_instance(command)
