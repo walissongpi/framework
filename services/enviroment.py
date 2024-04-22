@@ -3,7 +3,7 @@ import psutil
 import GPUtil
 import subprocess
 #import pycuda.driver as cuda
-cuda.init()
+#cuda.init()
 
 class SystemInfo:
     def __init__(self):
