@@ -6,6 +6,7 @@ echo " ----------------------------
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.7/lib64
 export PATH=$PATH:/usr/local/cuda-11.7/bin
 pip install gputil
+pip install -U matplotlib
 echo " ----------------------------
   Downloading MASA-CUDAlign...
  ----------------------------"

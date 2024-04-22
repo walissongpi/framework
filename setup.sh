@@ -53,6 +53,7 @@ echo " ----------------------------
 sudo apt-get install -y python3-testresources
 pip install --upgrade --ignore-installed pip setuptools
 pip install paramiko
+pip install -U matplotlib
 echo " ----------------------------
    Installing psutil
  ----------------------------"
