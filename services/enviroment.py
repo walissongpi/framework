@@ -2,7 +2,7 @@ import platform
 import psutil
 import GPUtil
 import subprocess
-import pycuda.driver as cuda
+#import pycuda.driver as cuda
 cuda.init()
 
 class SystemInfo:
@@ -38,7 +38,7 @@ class SystemInfo:
             print(f"Erro ao obter o clock da GPU: {e}")
             return None
 
-    def get_total_frequency(self):
+    '''def get_total_frequency(self):
         try:
             # Obter o primeiro dispositivo CUDA
             device = cuda.Device(0)
@@ -52,9 +52,9 @@ class SystemInfo:
                 return None
         except Exception as e:
             print(f"Erro ao obter a frequência total da GPU: {e}")
-            return None
+            return None'''
 
-    def get_cuda_cores(self):
+    '''def get_cuda_cores(self):
         try:
             # Obter o primeiro dispositivo CUDA
             device = cuda.Device(0)
@@ -70,9 +70,9 @@ class SystemInfo:
             return None
         except Exception as e:
             print(f"Erro ao obter a quantidade de CUDA Cores da GPU: {e}")
-            return None
+            return None'''
 
-    def get_clock_all(self):
+    '''def get_clock_all(self):
 
         device = cuda.Device(0)
         properties = device.get_attributes()
@@ -84,7 +84,7 @@ class SystemInfo:
             print(f"Base Clock da GPU: {base_clock_rate} MHz")
             print(f"Boost Clock da GPU: {max_clock_rate} MHz")
         else:
-            print("As informações sobre base clock e boost clock não estão disponíveis para este dispositivo.")
+            print("As informações sobre base clock e boost clock não estão disponíveis para este dispositivo.")'''
 
     def get_gpu_info(self):
         try:

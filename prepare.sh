@@ -1,44 +1,20 @@
 #!/bin/bash
 arch=$1
 echo " ----------------------------
-   Updating package repositories
- ----------------------------"
-sudo apt-get update
-sudo apt-get -y upgrade
-echo " ----------------------------
-   Installing build-essential package
- ----------------------------"
-sudo apt-get -y install build-essential
-echo " ----------------------------
-   Installing unzip
- ----------------------------"
-sudo apt-get -y install unzip
-echo " ----------------------------
-   Installing python
- ----------------------------"
-sudo apt-get -y install python
-echo " ----------------------------
-  Donloading cuda driver...
- ----------------------------"
-sudo apt-get -y install python3-testresources
-wget "https://developer.download.nvidia.com/compute/cuda/11.7.0/local_installers/cuda_11.7.0_515.43.04_linux.run"
-echo " ----------------------------
-  Instaling cuda driver...
- ----------------------------"
-sudo sh cuda_11.7.0_515.43.04_linux.run --silent
-echo " ----------------------------
   Updating LD_LIBRARY_PATH and PATH env variables to see CUDA libraries
  ----------------------------"
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.7/lib64
 export PATH=$PATH:/usr/local/cuda-11.7/bin
+pip install gputil
 echo " ----------------------------
   Downloading MASA-CUDAlign...
  ----------------------------"
 git clone https://github.com/walissongpi/MASA-CUDAlign.git
 cd MASA-CUDAlign
 unzip masa-cudalign-4.0.2.1028.zip
-cd masa-cudalign-4.0.2.1028.zip
-./configure -with-cuda-arch=arch
+cd masa-cudalign-4.0.2.1028
+make clean
+./configure -with-cuda-arch=$arch
 make
 cd ..
 cd ..
@@ -46,27 +22,6 @@ echo " ----------------------------
   Updating PATH env variables to see cudalign
  ----------------------------"
 export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028
-echo " ----------------------------
-   Installing pip
- ----------------------------"
-sudo apt-get -y install python3-pip
-echo " ----------------------------
-   Installing scikit-fuzzy
- ----------------------------"
-sudo pip install -U scikit-fuzzy
-echo " ----------------------------
-   Installing pycuda
- ----------------------------"
-sudo pip install pycuda
-echo " ----------------------------
-   Installing paramiko
- ----------------------------"
-sudo pip install --upgrade --ignore-installed pip setuptools
-sudo pip install paramiko
-echo " ----------------------------
-   Installing psutil
- ----------------------------"
-sudo pip install psutil
 echo " ----------------------------
    Downloading sequences
  ----------------------------"
@@ -89,6 +44,8 @@ unzip 6-47M.zip
 unzip chr21.zip
 unzip chr22.zip
 unzip chrY.zip
+unzip chr19-1.zip
+unzip chr19-2.zip
 cd ..
 echo " ----------------------------
    downloading framework

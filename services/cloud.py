@@ -83,7 +83,7 @@ class CloudEnviroment:
 
             print("Output:", output)
             print("Error:", error)
-            command = "sudo sh prepare.sh "+self.gpu_data["arch"]
+            command = "sh prepare.sh "+self.gpu_data["arch"]
             self.logger.info("Running setup script...")
             output, error = ec2_executor.run_command_on_instance(command)
 
@@ -97,6 +97,12 @@ class CloudEnviroment:
             ec2_executor.send_file_to_instance(os.getcwd()+"/"+"config/gpu.json",destination_folder)
             ec2_executor.send_file_to_instance(os.getcwd()+"/"+"config/input_data.json",destination_folder)
             ec2_executor.send_file_to_instance(os.getcwd()+"/"+"config/instance.json",destination_folder)
+
+            #self.logger.info("Sending sequences files to the instance...")
+            #self.logger.info(self.data["sequence0"])
+            #ec2_executor.send_file_to_instance(os.getcwd()+"/"+self.data["sequence0"],destination_folder)
+            #self.logger.info(self.data["sequence1"])
+            #ec2_executor.send_file_to_instance(os.getcwd()+"/"+self.data["sequence1"],destination_folder)
 
             destination_folder = "/home/ubuntu/"
             #Run the second main (mainCLoud)

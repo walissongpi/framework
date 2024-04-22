@@ -1,8 +1,8 @@
 {
-  "model": "Nvidia MX-150",
+  "model": "Nvidia Tesla T4",
   "arch": "sm_75",
-  "cores": "384",
-  "memory_bandwidth": "48",
+  "cores": "2560",
+  "memory_bandwidth": "320",
   "base_clock": "1469",
-  "boost_clock":"1532"
+  "boost_clock":"1590"
 }

@@ -1,5 +1,5 @@
 {
-  "image_id": "ami-03c5f06b2927fab3d",
+  "image_id": "ami-0ba48d0d5ee2019ba",
   "instance_type": "g4dn.xlarge",
   "name": "Adaptative Framework",
   "user": "ubuntu",
