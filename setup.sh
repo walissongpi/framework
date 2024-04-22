@@ -49,20 +49,28 @@ sudo apt install -y python3-pip
 echo " ----------------------------
    Installing scikit-fuzzy
  ----------------------------"
-sudo pip install -U scikit-fuzzy
+pip install -U scikit-fuzzy
 echo " ----------------------------
    Installing pycuda
  ----------------------------"
-sudo pip install pycuda
+pip install pycuda
 echo " ----------------------------
    Installing paramiko
  ----------------------------"
-sudo pip install --upgrade --ignore-installed pip setuptools
-sudo pip install paramiko
+pip install --upgrade --ignore-installed pip setuptools
+pip install paramiko
+echo " ----------------------------
+   Installing psutil
+ ----------------------------"
+pip install psutil
 echo " ----------------------------
    Installing unzip
  ----------------------------"
 sudo apt install unzip -y
+echo " ----------------------------
+   Downloading sequences
+ ----------------------------"
+git clone https://github.com/walissongpi/sequences.git
 echo " ----------------------------
    unzip sequences
  ----------------------------"
