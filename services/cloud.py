@@ -27,7 +27,7 @@ class CloudEnviroment:
         m = int(self.data["seq0_length"])
         n = int(self.data["seq1_length"])
         CP = int(self.gpu_data["cores"]) * int(self.gpu_data["boost_clock"])
-        BW = int(self.gpu_data["memory_bandwith"])
+        BW = int(self.gpu_data["memory_bandwidth"])
         BP = 0
         result = -3.036 + (0.979 * math.log10(m * n)) - (0.344 * math.log10(CP)) - (1.001 * math.log10(BW)) + (0.777* math.log10(1 - BP))
         #print(resp)
@@ -99,8 +99,8 @@ class CloudEnviroment:
             ec2_executor.send_file_to_instance(os.getcwd()+"/"+"config/input_data.json",destination_folder)
             ec2_executor.send_file_to_instance(os.getcwd()+"/"+"config/instance.json",destination_folder)
 
+            destination_folder = "/home/ubuntu/"
             #Run the second main (mainCLoud)
-
             command = "python3 "+destination_folder+"framework/services/main_cloud.py"
 
             # Executando o comando na instância EC2

@@ -3997,3 +3997,277 @@
 2024-04-21 08:55:43,372 - INFO - SRA size calculated: 3G
 2024-04-21 08:55:43,372 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
 2024-04-21 08:55:47,172 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-4-strategy=ORIGINAL_MM --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 09:18:14,773 - DEBUG - Starting the framework...
+2024-04-21 09:18:16,223 - INFO - Starting local module...
+2024-04-21 09:18:16,223 - INFO - Getting enviroment information...
+2024-04-21 09:18:16,468 - INFO - Enviroment information: 
+2024-04-21 09:18:16,468 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 09:18:16,469 - INFO - Processor: x86_64
+2024-04-21 09:18:16,469 - INFO - Architecture: 64bit
+2024-04-21 09:18:16,469 - INFO - Clock: 1405.7965
+2024-04-21 09:18:16,469 - INFO - Fisical Cores: 4
+2024-04-21 09:18:16,469 - INFO - Logical Cores: 8
+2024-04-21 09:18:16,469 - INFO - Total Memory: 16677801984
+2024-04-21 09:18:16,470 - INFO - Available Memory: 12193366016
+2024-04-21 09:18:16,470 - INFO - Total Storage: 51282223104
+2024-04-21 09:18:16,470 - INFO - Available Storage: 3334967296
+2024-04-21 09:18:16,470 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 09:18:16,470 - INFO - System information collected.
+2024-04-21 09:18:16,471 - INFO - Executing MASA-CUDALign...
+2024-04-21 09:18:16,471 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/fickett/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-21 09:18:16,471 - INFO - Current directory: /home/walisson/framework
+2024-04-21 09:18:16,472 - INFO - Home directory: /home/walisson
+2024-04-21 09:18:16,472 - INFO - SRA size calculated: 3G
+2024-04-21 09:18:16,472 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 09:25:43,139 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-4-strategy=ORIGINAL_MM --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 09:35:47,811 - DEBUG - Starting the framework...
+2024-04-21 09:35:48,517 - INFO - Starting local module...
+2024-04-21 09:35:48,520 - INFO - Getting enviroment information...
+2024-04-21 09:35:48,788 - INFO - Enviroment information: 
+2024-04-21 09:35:48,789 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 09:35:48,789 - INFO - Processor: x86_64
+2024-04-21 09:35:48,789 - INFO - Architecture: 64bit
+2024-04-21 09:35:48,789 - INFO - Clock: 972.7777499999999
+2024-04-21 09:35:48,790 - INFO - Fisical Cores: 4
+2024-04-21 09:35:48,790 - INFO - Logical Cores: 8
+2024-04-21 09:35:48,790 - INFO - Total Memory: 16677801984
+2024-04-21 09:35:48,790 - INFO - Available Memory: 12184469504
+2024-04-21 09:35:48,790 - INFO - Total Storage: 51282223104
+2024-04-21 09:35:48,790 - INFO - Available Storage: 157868032
+2024-04-21 09:35:48,791 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 09:35:48,791 - INFO - System information collected.
+2024-04-21 09:35:48,791 - INFO - Executing MASA-CUDALign...
+2024-04-21 09:35:48,791 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/fickett/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-21 09:35:48,791 - INFO - Current directory: /home/walisson/framework
+2024-04-21 09:35:48,792 - INFO - Home directory: /home/walisson
+2024-04-21 09:35:48,792 - INFO - SRA size calculated: 3G
+2024-04-21 09:35:48,792 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 09:35:51,682 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-4-strategy=ORIGINAL_MM --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 09:36:24,905 - DEBUG - Starting the framework...
+2024-04-21 09:36:28,797 - INFO - Starting local module...
+2024-04-21 09:36:28,799 - INFO - Getting enviroment information...
+2024-04-21 09:36:29,039 - INFO - Enviroment information: 
+2024-04-21 09:36:29,040 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 09:36:29,040 - INFO - Processor: x86_64
+2024-04-21 09:36:29,040 - INFO - Architecture: 64bit
+2024-04-21 09:36:29,040 - INFO - Clock: 993.471375
+2024-04-21 09:36:29,041 - INFO - Fisical Cores: 4
+2024-04-21 09:36:29,041 - INFO - Logical Cores: 8
+2024-04-21 09:36:29,041 - INFO - Total Memory: 16677801984
+2024-04-21 09:36:29,041 - INFO - Available Memory: 12768206848
+2024-04-21 09:36:29,042 - INFO - Total Storage: 51282223104
+2024-04-21 09:36:29,042 - INFO - Available Storage: 157229056
+2024-04-21 09:36:29,042 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 09:36:29,042 - INFO - System information collected.
+2024-04-21 09:36:29,043 - INFO - Executing MASA-CUDALign...
+2024-04-21 09:36:29,043 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/fickett/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-21 09:36:29,043 - INFO - Current directory: /home/walisson/framework
+2024-04-21 09:36:29,044 - INFO - Home directory: /home/walisson
+2024-04-21 09:36:29,044 - INFO - SRA size calculated: 3G
+2024-04-21 09:36:29,044 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 09:36:33,539 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-4-strategy=ORIGINAL_MM --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 09:36:36,520 - INFO - Execution time: 7.4765849113464355 seconds
+2024-04-21 09:37:00,961 - DEBUG - Starting the framework...
+2024-04-21 09:37:03,483 - INFO - Starting local module...
+2024-04-21 09:37:03,485 - INFO - Getting enviroment information...
+2024-04-21 09:37:03,733 - INFO - Enviroment information: 
+2024-04-21 09:37:03,734 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 09:37:03,734 - INFO - Processor: x86_64
+2024-04-21 09:37:03,735 - INFO - Architecture: 64bit
+2024-04-21 09:37:03,735 - INFO - Clock: 984.2572500000001
+2024-04-21 09:37:03,736 - INFO - Fisical Cores: 4
+2024-04-21 09:37:03,736 - INFO - Logical Cores: 8
+2024-04-21 09:37:03,737 - INFO - Total Memory: 16677801984
+2024-04-21 09:37:03,737 - INFO - Available Memory: 12772495360
+2024-04-21 09:37:03,737 - INFO - Total Storage: 51282223104
+2024-04-21 09:37:03,738 - INFO - Available Storage: 157523968
+2024-04-21 09:37:03,738 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 09:37:03,739 - INFO - System information collected.
+2024-04-21 09:37:03,739 - INFO - Executing MASA-CUDALign...
+2024-04-21 09:37:03,740 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/fickett/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-21 09:37:03,740 - INFO - Current directory: /home/walisson/framework
+2024-04-21 09:37:03,741 - INFO - Home directory: /home/walisson
+2024-04-21 09:37:03,741 - INFO - SRA size calculated: 3G
+2024-04-21 09:37:03,742 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 09:37:06,775 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-4-strategy=ORIGINAL_MM --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 09:37:10,589 - INFO - Execution time: 7 seconds
+2024-04-21 09:37:24,754 - DEBUG - Starting the framework...
+2024-04-21 09:37:35,045 - INFO - Starting local module...
+2024-04-21 09:37:35,047 - INFO - Getting enviroment information...
+2024-04-21 09:37:35,302 - INFO - Enviroment information: 
+2024-04-21 09:37:35,303 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 09:37:35,303 - INFO - Processor: x86_64
+2024-04-21 09:37:35,303 - INFO - Architecture: 64bit
+2024-04-21 09:37:35,303 - INFO - Clock: 799.9781250000001
+2024-04-21 09:37:35,303 - INFO - Fisical Cores: 4
+2024-04-21 09:37:35,303 - INFO - Logical Cores: 8
+2024-04-21 09:37:35,303 - INFO - Total Memory: 16677801984
+2024-04-21 09:37:35,303 - INFO - Available Memory: 12771266560
+2024-04-21 09:37:35,304 - INFO - Total Storage: 51282223104
+2024-04-21 09:37:35,304 - INFO - Available Storage: 3336347648
+2024-04-21 09:37:35,304 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 09:37:35,304 - INFO - System information collected.
+2024-04-21 09:37:35,304 - INFO - Executing MASA-CUDALign...
+2024-04-21 09:37:35,304 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/fickett/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-21 09:37:35,304 - INFO - Current directory: /home/walisson/framework
+2024-04-21 09:37:35,305 - INFO - Home directory: /home/walisson
+2024-04-21 09:37:35,305 - INFO - SRA size calculated: 3G
+2024-04-21 09:37:35,305 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 09:44:59,043 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-4-strategy=ORIGINAL_MM --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 09:45:02,221 - INFO - Execution time: 447 seconds
+2024-04-21 17:54:20,577 - DEBUG - Starting the framework...
+2024-04-21 17:54:22,352 - INFO - Starting local module...
+2024-04-21 17:54:22,354 - INFO - Getting enviroment information...
+2024-04-21 17:54:22,599 - INFO - Enviroment information: 
+2024-04-21 17:54:22,600 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 17:54:22,601 - INFO - Processor: x86_64
+2024-04-21 17:54:22,601 - INFO - Architecture: 64bit
+2024-04-21 17:54:22,601 - INFO - Clock: 939.3196250000001
+2024-04-21 17:54:22,601 - INFO - Fisical Cores: 4
+2024-04-21 17:54:22,601 - INFO - Logical Cores: 8
+2024-04-21 17:54:22,602 - INFO - Total Memory: 16677801984
+2024-04-21 17:54:22,602 - INFO - Available Memory: 12705763328
+2024-04-21 17:54:22,602 - INFO - Total Storage: 51282223104
+2024-04-21 17:54:22,602 - INFO - Available Storage: 163287040
+2024-04-21 17:54:22,602 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 17:54:22,603 - INFO - System information collected.
+2024-04-21 17:54:22,603 - INFO - Executing MASA-CUDALign...
+2024-04-21 17:54:22,603 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/fickett/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-21 17:54:22,603 - INFO - Current directory: /home/walisson/framework
+2024-04-21 17:54:22,604 - INFO - Home directory: /home/walisson
+2024-04-21 17:54:22,604 - INFO - SRA size calculated: 3G
+2024-04-21 17:54:22,605 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 17:54:25,356 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-4-strategy=ORIGINAL_MM --work-dir=framework_dir /home/walisson/fickett/sequences/1-3M/BA000035.2.fasta /home/walisson/fickett/sequences/1-3M/BX927147.1.fasta
+2024-04-21 17:54:28,363 - INFO - Execution time: 6 seconds
+2024-04-21 20:22:10,239 - DEBUG - Starting the framework...
+2024-04-21 20:22:13,073 - INFO - Starting cloud module...
+2024-04-21 20:22:13,076 - INFO - Listing AWS instances...
+2024-04-21 20:22:14,756 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'running'}
+2024-04-21 20:22:14,757 - INFO - {'InstanceId': 'i-04030283402b25961', 'InstanceType': 'c4.2xlarge', 'State': 'running'}
+2024-04-21 20:22:14,757 - INFO - {'InstanceId': 'i-0c0520ece2cb62986', 'InstanceType': 'c4.large', 'State': 'running'}
+2024-04-21 20:22:14,757 - INFO - {'InstanceId': 'i-0d410ee6575408846', 'InstanceType': 'c4.xlarge', 'State': 'running'}
+2024-04-21 20:22:14,757 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-04-21 20:22:14,758 - INFO - Loading input data information...
+2024-04-21 20:22:14,758 - INFO - Sequence 0: /sequences/1-3M/BA000035.2.fasta
+2024-04-21 20:22:14,758 - INFO - Sequence 1: /sequences/1-3M/BX927147.1.fasta
+2024-04-21 20:22:50,330 - DEBUG - Starting the framework...
+2024-04-21 20:22:51,598 - INFO - Starting cloud module...
+2024-04-21 20:22:51,601 - INFO - Listing AWS instances...
+2024-04-21 20:22:52,746 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'running'}
+2024-04-21 20:22:52,747 - INFO - {'InstanceId': 'i-04030283402b25961', 'InstanceType': 'c4.2xlarge', 'State': 'running'}
+2024-04-21 20:22:52,747 - INFO - {'InstanceId': 'i-0c0520ece2cb62986', 'InstanceType': 'c4.large', 'State': 'running'}
+2024-04-21 20:22:52,748 - INFO - {'InstanceId': 'i-0d410ee6575408846', 'InstanceType': 'c4.xlarge', 'State': 'running'}
+2024-04-21 20:22:52,748 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-04-21 20:22:52,748 - INFO - Loading input data information...
+2024-04-21 20:22:52,749 - INFO - Sequence 0: /sequences/1-3M/BA000035.2.fasta
+2024-04-21 20:22:52,749 - INFO - Sequence 1: /sequences/1-3M/BX927147.1.fasta
+2024-04-21 20:22:52,749 - INFO - Time estimated for sequence aligment: 16.34 minutes
+2024-04-21 20:22:52,749 - INFO - The expected time for sequence alignment (16.34 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-04-21 20:22:52,749 - INFO - Creating g4dn.xlarge Spot instance...
+2024-04-21 20:22:53,647 - INFO - Spot instance requested!
+2024-04-21 20:22:53,647 - INFO - Monitoring instance...
+2024-04-21 20:22:54,057 - INFO - Spot instance request state: open
+2024-04-21 20:22:59,378 - INFO - Spot instance request state: active
+2024-04-21 20:22:59,378 - INFO - Spot instance created successfully!
+2024-04-21 20:22:59,379 - INFO - Spot request information: 
+2024-04-21 20:22:59,379 - INFO - Spot request id: sir-s3g6vkmq
+2024-04-21 20:22:59,379 - INFO - {'CreateTime': datetime.datetime(2024, 4, 21, 23, 22, 53, tzinfo=tzutc()), 'LaunchSpecification': {'SecurityGroups': [{'GroupName': 'walisson-group', 'GroupId': 'sg-00e0330717614a689'}], 'ImageId': 'ami-01afb69abc2756b9e', 'InstanceType': 'g4dn.xlarge', 'KeyName': 'walisson-key', 'Placement': {'AvailabilityZone': 'us-east-1a'}, 'SubnetId': 'subnet-095b10be865b0c374', 'Monitoring': {'Enabled': False}}, 'ProductDescription': 'Linux/UNIX', 'SpotInstanceRequestId': 'sir-s3g6vkmq', 'SpotPrice': '0.530000', 'State': 'open', 'Status': {'Code': 'pending-evaluation', 'Message': 'Your Spot request has been submitted for review, and is pending evaluation.', 'UpdateTime': datetime.datetime(2024, 4, 21, 23, 22, 53, tzinfo=tzutc())}, 'Type': 'one-time', 'InstanceInterruptionBehavior': 'terminate'}
+2024-04-21 20:22:59,380 - INFO - Spot instance ID:i-00d7de3460079a103
+2024-04-21 20:22:59,380 - INFO - Starting spot instance monitor...
+2024-04-21 20:22:59,659 - INFO - Instance state: pending
+2024-04-21 20:23:05,009 - INFO - Instance running!
+2024-04-21 20:28:29,914 - INFO - Instance id: i-00d7de3460079a103
+2024-04-21 20:28:29,915 - INFO - Starting Executor Handler...
+2024-04-21 20:28:29,915 - INFO - Sending setup script to the instance...
+2024-04-21 20:28:35,628 - INFO - File /home/walisson/framework/setup.sh sent to 52.70.170.254:/home/ubuntu/ successfully!
+2024-04-21 20:28:35,629 - INFO - Setting file permission...
+2024-04-21 20:28:38,220 - INFO - Running setup script...
+2024-04-21 20:29:18,946 - INFO - Sending configuration files to the instance...
+2024-04-21 20:29:22,455 - INFO - File /home/walisson/framework/config/cloud.json sent to 52.70.170.254:/home/ubuntu/framework/config successfully!
+2024-04-21 20:29:25,732 - INFO - File /home/walisson/framework/config/gpu.json sent to 52.70.170.254:/home/ubuntu/framework/config successfully!
+2024-04-21 20:29:28,841 - INFO - File /home/walisson/framework/config/input_data.json sent to 52.70.170.254:/home/ubuntu/framework/config successfully!
+2024-04-21 20:29:33,142 - INFO - File /home/walisson/framework/config/instance.json sent to 52.70.170.254:/home/ubuntu/framework/config successfully!
+2024-04-21 20:49:33,576 - DEBUG - Starting the framework...
+2024-04-21 20:49:37,455 - INFO - Starting cloud module...
+2024-04-21 20:49:37,458 - INFO - Listing AWS instances...
+2024-04-21 20:49:38,826 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'running'}
+2024-04-21 20:49:38,827 - INFO - {'InstanceId': 'i-04030283402b25961', 'InstanceType': 'c4.2xlarge', 'State': 'running'}
+2024-04-21 20:49:38,827 - INFO - {'InstanceId': 'i-0c0520ece2cb62986', 'InstanceType': 'c4.large', 'State': 'running'}
+2024-04-21 20:49:38,827 - INFO - {'InstanceId': 'i-0d410ee6575408846', 'InstanceType': 'c4.xlarge', 'State': 'running'}
+2024-04-21 20:49:38,827 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-04-21 20:49:38,827 - INFO - {'InstanceId': 'i-00d7de3460079a103', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-21 20:49:38,827 - INFO - Loading input data information...
+2024-04-21 20:49:38,827 - INFO - Sequence 0: /sequences/1-3M/BA000035.2.fasta
+2024-04-21 20:49:38,827 - INFO - Sequence 1: /sequences/1-3M/BX927147.1.fasta
+2024-04-21 20:49:38,827 - INFO - Time estimated for sequence aligment: 16.34 minutes
+2024-04-21 20:49:38,828 - INFO - The expected time for sequence alignment (16.34 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-04-21 20:49:38,828 - INFO - Creating g4dn.xlarge Spot instance...
+2024-04-21 20:49:39,739 - INFO - Spot instance requested!
+2024-04-21 20:49:39,739 - INFO - Monitoring instance...
+2024-04-21 20:49:40,150 - INFO - Spot instance request state: open
+2024-04-21 20:49:45,574 - INFO - Spot instance request state: active
+2024-04-21 20:49:45,575 - INFO - Spot instance created successfully!
+2024-04-21 20:49:45,575 - INFO - Spot request information: 
+2024-04-21 20:49:45,575 - INFO - Spot request id: sir-18eys1tq
+2024-04-21 20:49:45,576 - INFO - {'CreateTime': datetime.datetime(2024, 4, 21, 23, 49, 39, tzinfo=tzutc()), 'LaunchSpecification': {'SecurityGroups': [{'GroupName': 'walisson-group', 'GroupId': 'sg-00e0330717614a689'}], 'ImageId': 'ami-01afb69abc2756b9e', 'InstanceType': 'g4dn.xlarge', 'KeyName': 'walisson-key', 'Placement': {'AvailabilityZone': 'us-east-1a'}, 'SubnetId': 'subnet-095b10be865b0c374', 'Monitoring': {'Enabled': False}}, 'ProductDescription': 'Linux/UNIX', 'SpotInstanceRequestId': 'sir-18eys1tq', 'SpotPrice': '0.530000', 'State': 'open', 'Status': {'Code': 'pending-evaluation', 'Message': 'Your Spot request has been submitted for review, and is pending evaluation.', 'UpdateTime': datetime.datetime(2024, 4, 21, 23, 49, 39, tzinfo=tzutc())}, 'Type': 'one-time', 'InstanceInterruptionBehavior': 'terminate'}
+2024-04-21 20:49:45,576 - INFO - Spot instance ID:i-0fdb8d115fa1cc396
+2024-04-21 20:49:45,576 - INFO - Starting spot instance monitor...
+2024-04-21 20:49:45,878 - INFO - Instance state: pending
+2024-04-21 20:49:51,171 - INFO - Instance running!
+2024-04-21 20:52:36,043 - INFO - Instance id: i-0fdb8d115fa1cc396
+2024-04-21 20:52:36,044 - INFO - Starting Executor Handler...
+2024-04-21 20:52:36,044 - INFO - Sending setup script to the instance...
+2024-04-21 20:52:41,128 - INFO - File /home/walisson/framework/setup.sh sent to 52.91.107.155:/home/ubuntu/ successfully!
+2024-04-21 20:52:41,128 - INFO - Setting file permission...
+2024-04-21 20:52:43,342 - INFO - Running setup script...
+2024-04-21 20:53:18,212 - INFO - Sending configuration files to the instance...
+2024-04-21 20:53:21,332 - INFO - File /home/walisson/framework/config/cloud.json sent to 52.91.107.155:/home/ubuntu/framework/config successfully!
+2024-04-21 20:53:25,251 - INFO - File /home/walisson/framework/config/gpu.json sent to 52.91.107.155:/home/ubuntu/framework/config successfully!
+2024-04-21 20:53:31,056 - INFO - File /home/walisson/framework/config/input_data.json sent to 52.91.107.155:/home/ubuntu/framework/config successfully!
+2024-04-21 20:53:34,044 - INFO - File /home/walisson/framework/config/instance.json sent to 52.91.107.155:/home/ubuntu/framework/config successfully!
+2024-04-21 21:05:39,525 - INFO - Starting the cloud execution...
+2024-04-21 21:07:26,523 - INFO - Starting the cloud execution...
+2024-04-21 21:08:18,372 - INFO - Starting the cloud execution...
+2024-04-21 21:08:18,409 - INFO - Enviroment information: 
+2024-04-21 21:08:18,410 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 21:08:18,410 - INFO - Processor: x86_64
+2024-04-21 21:08:18,410 - INFO - Architecture: 64bit
+2024-04-21 21:08:18,410 - INFO - Clock: 3558.48575
+2024-04-21 21:08:18,410 - INFO - Fisical Cores: 4
+2024-04-21 21:08:18,410 - INFO - Logical Cores: 8
+2024-04-21 21:08:18,410 - INFO - Total Memory: 16677801984
+2024-04-21 21:08:18,410 - INFO - Available Memory: 10392875008
+2024-04-21 21:08:18,410 - INFO - Total Storage: 51282223104
+2024-04-21 21:08:18,410 - INFO - Available Storage: 164839424
+2024-04-21 21:08:18,410 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 21:09:55,581 - INFO - Starting the cloud execution...
+2024-04-21 21:09:55,617 - INFO - Enviroment information: 
+2024-04-21 21:09:55,617 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 21:09:55,618 - INFO - Processor: x86_64
+2024-04-21 21:09:55,618 - INFO - Architecture: 64bit
+2024-04-21 21:09:55,618 - INFO - Clock: 3655.5758749999995
+2024-04-21 21:09:55,618 - INFO - Fisical Cores: 4
+2024-04-21 21:09:55,618 - INFO - Logical Cores: 8
+2024-04-21 21:09:55,618 - INFO - Total Memory: 16677801984
+2024-04-21 21:09:55,618 - INFO - Available Memory: 10242928640
+2024-04-21 21:09:55,618 - INFO - Total Storage: 51282223104
+2024-04-21 21:09:55,618 - INFO - Available Storage: 164405248
+2024-04-21 21:09:55,618 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 21:10:27,910 - INFO - Starting the cloud execution...
+2024-04-21 21:10:27,955 - INFO - Enviroment information: 
+2024-04-21 21:10:27,955 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-21 21:10:27,955 - INFO - Processor: x86_64
+2024-04-21 21:10:27,956 - INFO - Architecture: 64bit
+2024-04-21 21:10:27,956 - INFO - Clock: 3671.768375
+2024-04-21 21:10:27,956 - INFO - Fisical Cores: 4
+2024-04-21 21:10:27,956 - INFO - Logical Cores: 8
+2024-04-21 21:10:27,956 - INFO - Total Memory: 16677801984
+2024-04-21 21:10:27,956 - INFO - Available Memory: 10283368448
+2024-04-21 21:10:27,956 - INFO - Total Storage: 51282223104
+2024-04-21 21:10:27,956 - INFO - Available Storage: 164372480
+2024-04-21 21:10:27,956 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: type object 'device_attribute' has no attribute 'MAX_CLOCK_RATE'
+2024-04-21 21:10:27,957 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-21 21:10:27,957 - INFO - Current directory: /home/walisson/framework
+2024-04-21 21:10:27,957 - INFO - Home directory: /home/walisson
+2024-04-21 21:10:27,957 - INFO - SRA size calculated: 3G
+2024-04-21 21:10:27,957 - INFO - MASA-CUDAlign command created: cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta

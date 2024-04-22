@@ -57,3 +57,6 @@ echo " ----------------------------
    downloading framework
  ----------------------------"
 git clone https://github.com/walissongpi/framework.git
+git clone https://github.com/walissongpi/MASA-CUDAlign.git
+cd MASA-CUDAlign/
+unzip masa-cudalign-4.0.2.1028.zip
