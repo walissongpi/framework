@@ -47,7 +47,7 @@ class EC2ApplicationExecutor:
 
         self.logger.info("File "+local_file_path+" sent to "+str(host)+":"+str(remote_path)+" successfully!")
 
-    def run_command_on_instance(self, command):
+    def run_command_on_instance(self, command, command2=None):
         instance_ip = self.get_instance_ip()
 
         ssh_client = paramiko.SSHClient()
@@ -58,9 +58,14 @@ class EC2ApplicationExecutor:
         #print(private_key)
         ssh_client.connect(instance_ip, username=self.instance_data["user"], pkey=private_key)
         # Execute the command on the instance
+        if command2 is not None:
+            stdin, stdout, stderr = ssh_client.exec_command(command2)
+
         stdin, stdout, stderr = ssh_client.exec_command(command)
+
         output = stdout.read().decode('utf-8')
         error = stderr.read().decode('utf-8')
+
 
         # Close the SSH connection
         ssh_client.close()

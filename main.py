@@ -15,7 +15,7 @@ options = {
 }
 
 def show_menu():
-    os.system('clear') or None
+    #os.system('clear') or None
     print("\n--------------------------------------------------------------------------------\n")
     print("Welcome to the Adaptive Framework! \n")
     print("This software aims to facilitate the biological sequence alignment process on local or cloud enviroment. It runs over MASA-CUDAling and automatically choose the required parameters to do such process. Enjoy it!")
