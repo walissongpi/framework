@@ -20,10 +20,6 @@ make
 cd ..
 cd ..
 echo " ----------------------------
-  Updating PATH env variables to see cudalign
- ----------------------------"
-export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028
-echo " ----------------------------
    Downloading sequences
  ----------------------------"
 git clone https://github.com/walissongpi/sequences.git
@@ -52,3 +48,7 @@ echo " ----------------------------
    downloading framework
  ----------------------------"
 git clone https://github.com/walissongpi/framework.git
+echo " ----------------------------
+  Updating PATH env variables to see cudalign
+ ----------------------------"
+export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028
