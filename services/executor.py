@@ -89,7 +89,7 @@ class Executor:
         self.logger.info("SRA size calculated: "+SRA+"G")
         #stage-1 execution
         command = self.data["command"] + " --disk-size=" + SRA+"G" + " --stage-1" +" --work-dir=" + self.data["work_dir"] + " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
-
+        exec = "sh execute.sh "+ command
         response = self.execute(command)
 
         print("Stage 1 execution complete: ",response)
@@ -105,7 +105,9 @@ class Executor:
         #strategy = self.define_strategy(score)
 
         command = self.data["command"] + " --disk-size=" + SRA+"G" +" --stage-4-strategy=" + strategy + " --work-dir=" + self.data["work_dir"] + " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
-        #response = self.execute(command)
+
+        response = self.execute(command)
+
         exec = "sh execute.sh "+ command
         response = self.execute(exec)
 
