@@ -1,13 +1,6 @@
 #!/bin/bash
 arch=$1
 echo " ----------------------------
-  Updating LD_LIBRARY_PATH and PATH env variables to see CUDA libraries
- ----------------------------"
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda-11.7/lib64
-export PATH=$PATH:/usr/local/cuda-11.7/bin
-pip install gputil
-pip install -U matplotlib
-echo " ----------------------------
   Downloading MASA-CUDAlign...
  ----------------------------"
 git clone https://github.com/walissongpi/MASA-CUDAlign.git
