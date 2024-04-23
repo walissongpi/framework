@@ -53,7 +53,7 @@ class Executor:
         return sim
     #return the score stored at statistics_01 file after termination of stage 1
     def look_for_score(self):
-        framework_dir = os.getcwd() + "/" + self.data["work_dir"]
+        framework_dir = os.getcwd() + "/framework/" + self.data["work_dir"]
         file = open(framework_dir + "/statistics_01.00", "r")
         lines = file.readlines()
         line = lines[17 - 1]
@@ -65,7 +65,7 @@ class Executor:
         return score
         #corrigir para pegar o tempo de execução do estágio 1
     def look_for_time(self):
-        framework_dir = os.getcwd() + "/" + self.data["work_dir"]
+        framework_dir = os.getcwd() + "/framework/" + self.data["work_dir"]
         file = open(framework_dir + "/statistics_01.00", "r")
         lines = file.readlines()
         line = lines[17 - 1]
