@@ -104,6 +104,12 @@ class CloudEnviroment:
             #self.logger.info(self.data["sequence1"])
             #ec2_executor.send_file_to_instance(os.getcwd()+"/"+self.data["sequence1"],destination_folder)
 
+
+            command = "export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028"
+            output, error = ec2_executor.run_command_on_instance(command)
+            print("Output:", output)
+            print("Error:", error)
+
             destination_folder = "/home/ubuntu/"
             #Run the second main (mainCLoud)
             command = "python3 "+destination_folder+"framework/main_cloud.py"
