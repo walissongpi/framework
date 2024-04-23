@@ -31,8 +31,8 @@ class MainCLoud:
 if __name__ == "__main__":
     logger = Log("Adaptative Framework log file cloud module")
     logger.info("Starting the cloud execution...")
-    data = util.openJason(os.getcwd()+"/"+"config/input_data.json")
-    gpu_data = util.openJason(os.getcwd()+"/"+"config/gpu.json")
+    data = util.openJason(os.getcwd()+"/framework/config/input_data.json")
+    gpu_data = util.openJason(os.getcwd()+"/framework/config/gpu.json")
 
     main = MainCLoud(logger, data, gpu_data)
     main.get_system_info()
