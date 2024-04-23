@@ -93,7 +93,8 @@ class Executor:
         self.logger.info("SRA size calculated: "+SRA+"G")
         work_dir =  home+"/"+self.data["work_dir"]
         #stage-1 execution
-        command = self.data["command"] + " --disk-size=" + SRA+"G" + " --stage-1" +" --work-dir=" +work_dir + " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
+        masa = "./"+ home + "MASA-CUDAlign/masa-cudalign-4.0.2.1028/"
+        command = masa + self.data["command"] + " --disk-size=" + SRA+"G" + " --stage-1" +" --work-dir=" +work_dir + " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
         #exec = "sh framework/execute.sh "+ command
         response = self.execute(command)
 
@@ -109,7 +110,7 @@ class Executor:
         print("Stratrgy for stage 4: ",strategy)
         #strategy = self.define_strategy(score)
 
-        command = self.data["command"] + " --disk-size=" + SRA+"G" +" --stage-4-strategy=" + strategy + " --work-dir=" +work_dir+ " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
+        command = masa + self.data["command"] + " --disk-size=" + SRA+"G" +" --stage-4-strategy=" + strategy + " --work-dir=" +work_dir+ " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
 
         response = self.execute(command)
 
