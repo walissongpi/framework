@@ -112,7 +112,7 @@ class CloudEnviroment:
 
             destination_folder = "/home/ubuntu/"
             #Run the second main (mainCLoud)
-            path = "export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028"
+            #path = "export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028"
             command = "python3 "+destination_folder+"framework/main_cloud.py"
 
 
