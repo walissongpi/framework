@@ -112,7 +112,7 @@ class CloudEnviroment:
 
             destination_folder = "/home/ubuntu/"
             #Run the second main (mainCLoud)
-            path = "export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028 /n"
+            path = "export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028 \n"
             command = "python3 "+destination_folder+"framework/main_cloud.py"
 
             # Executando o comando na instância EC2
