@@ -9672,3 +9672,230 @@
 2024-04-23 09:37:20,893 - INFO - File /home/walisson/framework/execute.sh sent to 3.88.102.229:/home/ubuntu/framework successfully!
 2024-04-23 09:37:20,894 - INFO - Setting up file permission...
 2024-04-23 09:37:24,889 - INFO - Running executor cloud module...
+2024-04-23 09:52:23,961 - DEBUG - Starting the framework...
+2024-04-23 09:52:30,582 - INFO - Starting cloud module...
+2024-04-23 09:52:30,585 - INFO - Listing AWS instances...
+2024-04-23 09:52:32,231 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'running'}
+2024-04-23 09:52:32,231 - INFO - {'InstanceId': 'i-0273d28f658edc219', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-04-23 09:52:32,231 - INFO - {'InstanceId': 'i-04030283402b25961', 'InstanceType': 'c4.2xlarge', 'State': 'stopped'}
+2024-04-23 09:52:32,231 - INFO - {'InstanceId': 'i-0c0520ece2cb62986', 'InstanceType': 'c4.large', 'State': 'running'}
+2024-04-23 09:52:32,232 - INFO - {'InstanceId': 'i-0d410ee6575408846', 'InstanceType': 'c4.xlarge', 'State': 'running'}
+2024-04-23 09:52:32,232 - INFO - {'InstanceId': 'i-0c2eed283652aaeb0', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 09:52:32,232 - INFO - {'InstanceId': 'i-0921feff2c020c012', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 09:52:32,232 - INFO - {'InstanceId': 'i-0fc345451879edb30', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 09:52:32,232 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'running'}
+2024-04-23 09:52:32,232 - INFO - {'InstanceId': 'i-00766fedfdfca6a63', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 09:52:32,232 - INFO - {'InstanceId': 'i-0a9d8504fcbc59e13', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 09:52:32,232 - INFO - {'InstanceId': 'i-0c72c1c2d3850b542', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 09:52:32,232 - INFO - {'InstanceId': 'i-0e6176132945c3bd2', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 09:52:32,232 - INFO - {'InstanceId': 'i-067c3bbbe17d3433a', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-04-23 09:52:32,232 - INFO - Loading input data information...
+2024-04-23 09:52:32,232 - INFO - Sequence 0: /sequences/1-3M/BA000035.2.fasta
+2024-04-23 09:52:32,233 - INFO - Sequence 1: /sequences/1-3M/BX927147.1.fasta
+2024-04-23 09:52:32,233 - INFO - Time estimated for sequence aligment: 1.26 minutes
+2024-04-23 09:52:32,233 - INFO - The expected time for sequence alignment (1.26 minutes) is greater than the pre-established threshold (90 minutes). The execution will be carried out on an On-demand instance...
+2024-04-23 09:52:32,233 - INFO - Creating g4dn.xlarge On-demand instance...
+2024-04-23 09:52:32,233 - INFO - Creating On-demand instance...
+2024-04-23 09:52:33,861 - INFO - On-demand instance created successfully!
+2024-04-23 09:52:33,862 - INFO - On-demand instance ID:i-012f565e8b7be1272
+2024-04-23 09:52:33,862 - INFO - Starting On-demand instance monitor...
+2024-04-23 09:52:39,381 - INFO - Instance running!
+2024-04-23 09:52:39,382 - INFO - Instance status: initializing
+2024-04-23 09:52:44,609 - INFO - Instance running!
+2024-04-23 09:52:44,609 - INFO - Instance status: initializing
+2024-04-23 09:52:49,839 - INFO - Instance running!
+2024-04-23 09:52:49,839 - INFO - Instance status: initializing
+2024-04-23 09:52:55,067 - INFO - Instance running!
+2024-04-23 09:52:55,068 - INFO - Instance status: initializing
+2024-04-23 09:53:00,348 - INFO - Instance running!
+2024-04-23 09:53:00,349 - INFO - Instance status: initializing
+2024-04-23 09:53:05,594 - INFO - Instance running!
+2024-04-23 09:53:05,594 - INFO - Instance status: initializing
+2024-04-23 09:53:10,822 - INFO - Instance running!
+2024-04-23 09:53:10,822 - INFO - Instance status: initializing
+2024-04-23 09:53:16,050 - INFO - Instance running!
+2024-04-23 09:53:16,051 - INFO - Instance status: initializing
+2024-04-23 09:53:21,277 - INFO - Instance running!
+2024-04-23 09:53:21,278 - INFO - Instance status: initializing
+2024-04-23 09:53:26,504 - INFO - Instance running!
+2024-04-23 09:53:26,505 - INFO - Instance status: initializing
+2024-04-23 09:53:31,802 - INFO - Instance running!
+2024-04-23 09:53:31,803 - INFO - Instance status: initializing
+2024-04-23 09:53:37,051 - INFO - Instance running!
+2024-04-23 09:53:37,051 - INFO - Instance status: initializing
+2024-04-23 09:53:42,310 - INFO - Instance running!
+2024-04-23 09:53:42,310 - INFO - Instance status: initializing
+2024-04-23 09:53:47,659 - INFO - Instance running!
+2024-04-23 09:53:47,659 - INFO - Instance status: initializing
+2024-04-23 09:53:52,900 - INFO - Instance running!
+2024-04-23 09:53:52,900 - INFO - Instance status: initializing
+2024-04-23 09:53:58,126 - INFO - Instance running!
+2024-04-23 09:53:58,127 - INFO - Instance status: initializing
+2024-04-23 09:54:03,361 - INFO - Instance running!
+2024-04-23 09:54:03,362 - INFO - Instance status: initializing
+2024-04-23 09:54:08,590 - INFO - Instance running!
+2024-04-23 09:54:08,591 - INFO - Instance status: initializing
+2024-04-23 09:54:13,995 - INFO - Instance running!
+2024-04-23 09:54:13,995 - INFO - Instance status: initializing
+2024-04-23 09:54:19,213 - INFO - Instance running!
+2024-04-23 09:54:19,213 - INFO - Instance status: initializing
+2024-04-23 09:54:24,463 - INFO - Instance running!
+2024-04-23 09:54:24,463 - INFO - Instance status: initializing
+2024-04-23 09:54:29,866 - INFO - Instance running!
+2024-04-23 09:54:29,866 - INFO - Instance status: initializing
+2024-04-23 09:54:35,191 - INFO - Instance running!
+2024-04-23 09:54:35,191 - INFO - Instance status: initializing
+2024-04-23 09:54:40,426 - INFO - Instance running!
+2024-04-23 09:54:40,427 - INFO - Instance status: initializing
+2024-04-23 09:54:45,654 - INFO - Instance running!
+2024-04-23 09:54:45,655 - INFO - Instance status: initializing
+2024-04-23 09:54:50,890 - INFO - Instance running!
+2024-04-23 09:54:50,891 - INFO - Instance status: initializing
+2024-04-23 09:54:56,140 - INFO - Instance running!
+2024-04-23 09:54:56,141 - INFO - Instance status: initializing
+2024-04-23 09:55:01,376 - INFO - Instance running!
+2024-04-23 09:55:01,376 - INFO - Instance status: initializing
+2024-04-23 09:55:06,652 - INFO - Instance running!
+2024-04-23 09:55:06,652 - INFO - Instance status: initializing
+2024-04-23 09:55:11,885 - INFO - Instance running!
+2024-04-23 09:55:11,885 - INFO - Instance status: initializing
+2024-04-23 09:55:17,137 - INFO - Instance running!
+2024-04-23 09:55:17,138 - INFO - Instance status: initializing
+2024-04-23 09:55:22,750 - INFO - Instance running!
+2024-04-23 09:55:22,751 - INFO - Instance status: ok
+2024-04-23 09:55:22,751 - INFO - Instance is ready to use!
+2024-04-23 09:59:59,655 - INFO - Instance id: i-012f565e8b7be1272
+2024-04-23 09:59:59,655 - INFO - Starting Executor Handler...
+2024-04-23 09:59:59,656 - INFO - Sending setup script to the instance...
+2024-04-23 10:00:05,919 - INFO - File /home/walisson/framework/prepare.sh sent to 3.215.77.239:/home/ubuntu/ successfully!
+2024-04-23 10:00:05,919 - INFO - Setting up file permission...
+2024-04-23 10:00:08,295 - INFO - Running setup script...
+2024-04-23 10:01:43,331 - INFO - Sending configuration files to the instance...
+2024-04-23 10:01:48,801 - INFO - File /home/walisson/framework/config/cloud.json sent to 3.215.77.239:/home/ubuntu/framework/config successfully!
+2024-04-23 10:01:52,167 - INFO - File /home/walisson/framework/config/gpu.json sent to 3.215.77.239:/home/ubuntu/framework/config successfully!
+2024-04-23 10:01:55,711 - INFO - File /home/walisson/framework/config/input_data.json sent to 3.215.77.239:/home/ubuntu/framework/config successfully!
+2024-04-23 10:01:59,091 - INFO - File /home/walisson/framework/config/instance.json sent to 3.215.77.239:/home/ubuntu/framework/config successfully!
+2024-04-23 10:01:59,091 - INFO - Sending execution script file to the instance...
+2024-04-23 10:02:02,572 - INFO - File /home/walisson/framework/execute.sh sent to 3.215.77.239:/home/ubuntu/framework successfully!
+2024-04-23 10:02:02,572 - INFO - Setting up file permission...
+2024-04-23 10:02:08,205 - INFO - Running executor cloud module...
+2024-04-23 10:03:57,254 - DEBUG - Starting the framework...
+2024-04-23 10:03:58,088 - INFO - Starting cloud module...
+2024-04-23 10:03:58,090 - INFO - Listing AWS instances...
+2024-04-23 10:03:59,739 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'running'}
+2024-04-23 10:03:59,739 - INFO - {'InstanceId': 'i-0273d28f658edc219', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-04-23 10:03:59,739 - INFO - {'InstanceId': 'i-04030283402b25961', 'InstanceType': 'c4.2xlarge', 'State': 'stopped'}
+2024-04-23 10:03:59,739 - INFO - {'InstanceId': 'i-0c0520ece2cb62986', 'InstanceType': 'c4.large', 'State': 'running'}
+2024-04-23 10:03:59,740 - INFO - {'InstanceId': 'i-0d410ee6575408846', 'InstanceType': 'c4.xlarge', 'State': 'running'}
+2024-04-23 10:03:59,740 - INFO - {'InstanceId': 'i-0c2eed283652aaeb0', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 10:03:59,740 - INFO - {'InstanceId': 'i-0921feff2c020c012', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 10:03:59,740 - INFO - {'InstanceId': 'i-012f565e8b7be1272', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-04-23 10:03:59,740 - INFO - {'InstanceId': 'i-0fc345451879edb30', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 10:03:59,740 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'running'}
+2024-04-23 10:03:59,741 - INFO - {'InstanceId': 'i-00766fedfdfca6a63', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 10:03:59,741 - INFO - {'InstanceId': 'i-0a9d8504fcbc59e13', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 10:03:59,741 - INFO - {'InstanceId': 'i-0c72c1c2d3850b542', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 10:03:59,741 - INFO - {'InstanceId': 'i-0e6176132945c3bd2', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 10:03:59,741 - INFO - {'InstanceId': 'i-067c3bbbe17d3433a', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-04-23 10:03:59,741 - INFO - Loading input data information...
+2024-04-23 10:03:59,741 - INFO - Sequence 0: /sequences/1-3M/BA000035.2.fasta
+2024-04-23 10:03:59,742 - INFO - Sequence 1: /sequences/1-3M/BX927147.1.fasta
+2024-04-23 10:03:59,742 - INFO - Time estimated for sequence aligment: 1.26 minutes
+2024-04-23 10:03:59,742 - INFO - The expected time for sequence alignment (1.26 minutes) is greater than the pre-established threshold (90 minutes). The execution will be carried out on an On-demand instance...
+2024-04-23 10:03:59,742 - INFO - Creating g4dn.xlarge On-demand instance...
+2024-04-23 10:03:59,742 - INFO - Creating On-demand instance...
+2024-04-23 10:04:01,153 - INFO - On-demand instance created successfully!
+2024-04-23 10:04:01,153 - INFO - On-demand instance ID:i-055fbf4705cf6d9b5
+2024-04-23 10:04:01,153 - INFO - Starting On-demand instance monitor...
+2024-04-23 10:04:06,640 - INFO - Instance running!
+2024-04-23 10:04:06,640 - INFO - Instance status: initializing
+2024-04-23 10:04:11,867 - INFO - Instance running!
+2024-04-23 10:04:11,867 - INFO - Instance status: initializing
+2024-04-23 10:04:17,089 - INFO - Instance running!
+2024-04-23 10:04:17,090 - INFO - Instance status: initializing
+2024-04-23 10:04:22,311 - INFO - Instance running!
+2024-04-23 10:04:22,312 - INFO - Instance status: initializing
+2024-04-23 10:04:27,673 - INFO - Instance running!
+2024-04-23 10:04:27,673 - INFO - Instance status: initializing
+2024-04-23 10:04:32,932 - INFO - Instance running!
+2024-04-23 10:04:32,932 - INFO - Instance status: initializing
+2024-04-23 10:04:38,180 - INFO - Instance running!
+2024-04-23 10:04:38,181 - INFO - Instance status: initializing
+2024-04-23 10:04:43,545 - INFO - Instance running!
+2024-04-23 10:04:43,545 - INFO - Instance status: initializing
+2024-04-23 10:04:48,800 - INFO - Instance running!
+2024-04-23 10:04:48,800 - INFO - Instance status: initializing
+2024-04-23 10:04:54,042 - INFO - Instance running!
+2024-04-23 10:04:54,042 - INFO - Instance status: initializing
+2024-04-23 10:04:59,298 - INFO - Instance running!
+2024-04-23 10:04:59,299 - INFO - Instance status: initializing
+2024-04-23 10:05:04,626 - INFO - Instance running!
+2024-04-23 10:05:04,626 - INFO - Instance status: initializing
+2024-04-23 10:05:09,862 - INFO - Instance running!
+2024-04-23 10:05:09,863 - INFO - Instance status: initializing
+2024-04-23 10:05:15,085 - INFO - Instance running!
+2024-04-23 10:05:15,085 - INFO - Instance status: initializing
+2024-04-23 10:05:20,323 - INFO - Instance running!
+2024-04-23 10:05:20,323 - INFO - Instance status: initializing
+2024-04-23 10:05:25,630 - INFO - Instance running!
+2024-04-23 10:05:25,630 - INFO - Instance status: initializing
+2024-04-23 10:05:30,880 - INFO - Instance running!
+2024-04-23 10:05:30,881 - INFO - Instance status: initializing
+2024-04-23 10:05:36,150 - INFO - Instance running!
+2024-04-23 10:05:36,150 - INFO - Instance status: initializing
+2024-04-23 10:05:41,410 - INFO - Instance running!
+2024-04-23 10:05:41,410 - INFO - Instance status: initializing
+2024-04-23 10:05:46,632 - INFO - Instance running!
+2024-04-23 10:05:46,632 - INFO - Instance status: initializing
+2024-04-23 10:05:51,867 - INFO - Instance running!
+2024-04-23 10:05:51,868 - INFO - Instance status: initializing
+2024-04-23 10:05:57,101 - INFO - Instance running!
+2024-04-23 10:05:57,101 - INFO - Instance status: initializing
+2024-04-23 10:06:02,336 - INFO - Instance running!
+2024-04-23 10:06:02,336 - INFO - Instance status: initializing
+2024-04-23 10:06:07,719 - INFO - Instance running!
+2024-04-23 10:06:07,719 - INFO - Instance status: initializing
+2024-04-23 10:06:12,943 - INFO - Instance running!
+2024-04-23 10:06:12,944 - INFO - Instance status: initializing
+2024-04-23 10:06:18,205 - INFO - Instance running!
+2024-04-23 10:06:18,205 - INFO - Instance status: initializing
+2024-04-23 10:06:23,590 - INFO - Instance running!
+2024-04-23 10:06:23,591 - INFO - Instance status: initializing
+2024-04-23 10:06:29,018 - INFO - Instance running!
+2024-04-23 10:06:29,018 - INFO - Instance status: initializing
+2024-04-23 10:06:34,331 - INFO - Instance running!
+2024-04-23 10:06:34,332 - INFO - Instance status: initializing
+2024-04-23 10:06:39,769 - INFO - Instance running!
+2024-04-23 10:06:39,770 - INFO - Instance status: initializing
+2024-04-23 10:06:44,994 - INFO - Instance running!
+2024-04-23 10:06:44,995 - INFO - Instance status: initializing
+2024-04-23 10:06:50,216 - INFO - Instance running!
+2024-04-23 10:06:50,216 - INFO - Instance status: initializing
+2024-04-23 10:06:55,446 - INFO - Instance running!
+2024-04-23 10:06:55,446 - INFO - Instance status: initializing
+2024-04-23 10:07:00,736 - INFO - Instance running!
+2024-04-23 10:07:00,736 - INFO - Instance status: initializing
+2024-04-23 10:07:05,957 - INFO - Instance running!
+2024-04-23 10:07:05,958 - INFO - Instance status: initializing
+2024-04-23 10:07:11,205 - INFO - Instance running!
+2024-04-23 10:07:11,205 - INFO - Instance status: initializing
+2024-04-23 10:07:16,433 - INFO - Instance running!
+2024-04-23 10:07:16,433 - INFO - Instance status: initializing
+2024-04-23 10:07:21,663 - INFO - Instance running!
+2024-04-23 10:07:21,663 - INFO - Instance status: ok
+2024-04-23 10:07:21,664 - INFO - Instance is ready to use!
+2024-04-23 10:07:40,733 - INFO - Instance id: i-055fbf4705cf6d9b5
+2024-04-23 10:07:40,734 - INFO - Starting Executor Handler...
+2024-04-23 10:07:40,734 - INFO - Sending setup script to the instance...
+2024-04-23 10:07:45,691 - INFO - File /home/walisson/framework/prepare.sh sent to 3.227.3.166:/home/ubuntu/ successfully!
+2024-04-23 10:07:45,691 - INFO - Setting up file permission...
+2024-04-23 10:07:48,276 - INFO - Running setup script...
+2024-04-23 10:09:20,276 - INFO - Sending configuration files to the instance...
+2024-04-23 10:09:24,224 - INFO - File /home/walisson/framework/config/cloud.json sent to 3.227.3.166:/home/ubuntu/framework/config successfully!
+2024-04-23 10:09:27,705 - INFO - File /home/walisson/framework/config/gpu.json sent to 3.227.3.166:/home/ubuntu/framework/config successfully!
+2024-04-23 10:09:31,083 - INFO - File /home/walisson/framework/config/input_data.json sent to 3.227.3.166:/home/ubuntu/framework/config successfully!
+2024-04-23 10:09:34,060 - INFO - File /home/walisson/framework/config/instance.json sent to 3.227.3.166:/home/ubuntu/framework/config successfully!
+2024-04-23 10:09:34,060 - INFO - Sending execution script file to the instance...
+2024-04-23 10:09:37,432 - INFO - File /home/walisson/framework/execute.sh sent to 3.227.3.166:/home/ubuntu/framework successfully!
+2024-04-23 10:09:37,433 - INFO - Setting up file permission...
+2024-04-23 10:09:40,915 - INFO - Running executor cloud module...
