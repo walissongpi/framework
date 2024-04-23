@@ -103,6 +103,10 @@ class CloudEnviroment:
             ec2_executor.send_file_to_instance(os.getcwd()+"/"+"execute.sh",destination_folder)
             self.logger.info("Setting up file permission...")
             command = "chmod +x framework/execute.sh"
+            output, error = ec2_executor.run_command_on_instance(command)
+            # Exibindo a saída e erros (se houver)
+            print("Output:", output)
+            print("Error:", error)
             #self.logger.info("Sending sequences files to the instance...")
             #self.logger.info(self.data["sequence0"])
             #ec2_executor.send_file_to_instance(os.getcwd()+"/"+self.data["sequence0"],destination_folder)
@@ -118,14 +122,8 @@ class CloudEnviroment:
 
             #Run the second main (mainCLoud)
             #path = "export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028"
-            #command = "python3 "+destination_folder+"framework/main_cloud.py"
-
-
-
-            # Executando o comando na instância EC2
-
-
-            #self.logger.info("Sending execution script file to the instance...")
+            self.logger.info("Running executor cloud module...")
+            command = "python3 "+destination_folder+"framework/main_cloud.py"
             output, error = ec2_executor.run_command_on_instance(command)
             # Exibindo a saída e erros (se houver)
             print("Output:", output)
