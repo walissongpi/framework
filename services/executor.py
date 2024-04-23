@@ -53,7 +53,10 @@ class Executor:
         return sim
     #return the score stored at statistics_01 file after termination of stage 1
     def look_for_score(self):
-        framework_dir = os.getcwd() + "/framework/" + self.data["work_dir"]
+        home = str(Path.home())
+        framework_dir =  home+"/"+self.data["work_dir"]
+
+         #= os.getcwd() + "/framework/" + self.data["work_dir"]
         file = open(framework_dir + "/statistics_01.00", "r")
         lines = file.readlines()
         line = lines[17 - 1]
@@ -65,7 +68,8 @@ class Executor:
         return score
         #corrigir para pegar o tempo de execução do estágio 1
     def look_for_time(self):
-        framework_dir = os.getcwd() + "/framework/" + self.data["work_dir"]
+        home = str(Path.home())
+        framework_dir = home + "/" + self.data["work_dir"]
         file = open(framework_dir + "/statistics_01.00", "r")
         lines = file.readlines()
         line = lines[17 - 1]
@@ -87,9 +91,10 @@ class Executor:
         SRA = self.calculate_sra_size(self.data["seq1_length"])
 
         self.logger.info("SRA size calculated: "+SRA+"G")
+        work_dir =  home+"/"+self.data["work_dir"]
         #stage-1 execution
-        command = self.data["command"] + " --disk-size=" + SRA+"G" + " --stage-1" +" --work-dir=" + self.data["work_dir"] + " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
-        exec = "sh framework/execute.sh "+ command
+        command = self.data["command"] + " --disk-size=" + SRA+"G" + " --stage-1" +" --work-dir=" +work_dir + " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
+        #exec = "sh framework/execute.sh "+ command
         response = self.execute(command)
 
         print("Stage 1 execution complete: ",response)
@@ -104,11 +109,11 @@ class Executor:
         print("Stratrgy for stage 4: ",strategy)
         #strategy = self.define_strategy(score)
 
-        command = self.data["command"] + " --disk-size=" + SRA+"G" +" --stage-4-strategy=" + strategy + " --work-dir=" + self.data["work_dir"] + " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
+        command = self.data["command"] + " --disk-size=" + SRA+"G" +" --stage-4-strategy=" + strategy + " --work-dir=" +work_dir+ " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
 
         response = self.execute(command)
 
-        exec = "sh framework/execute.sh "+ command
-        response = self.execute(exec)
+        #exec = "sh framework/execute.sh "+ command
+        #response = self.execute(exec)
 
         return command

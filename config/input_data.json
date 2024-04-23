@@ -7,7 +7,7 @@
   "ld_library_path": "$LD_LIBRARY_PATH:/usr/local/cuda-11.7/lib64",
   "path": "$PATH:/usr/local/cuda-11.7/bin",
   "masa_path": "$PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028",
-  "command": "./MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512",
+  "command": "cudalign --blocks=512",
   "task_file": "task.txt",
   "strategy_threshold": ".3"
 }
