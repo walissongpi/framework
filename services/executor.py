@@ -22,7 +22,14 @@ class Executor:
     def execute(self, args):
         command = args.split(" ")# + list(args)
         self.logger.info("MASA-CUDAlign command created: "+ args)
-        process = subprocess.run(command)
+
+        framework_dir =  home+"/"+self.data["work_dir"]
+
+        process = None
+        with open(framework_dir+'/framework_out.txt', 'w') as outfile:
+            subprocess.run(command, shell=True, stdout=outfile, text=True)
+            
+        #process = subprocess.run(command)
         return process
 
     #calculate SRA size
