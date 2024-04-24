@@ -33,7 +33,7 @@ class Executor:
         os.environ['LD_LIBRARY_PATH'] = '$LD_LIBRARY_PATH:/usr/local/cuda-11.7/lib64'
         os.environ['PATH'] = '$PATH:/usr/local/cuda-11.7/bin'
 
-        process = subprocess.call(command, shell=True)
+        process = subprocess.call(command)
         self.logger.info("Process: "+str(process))
         #process = subprocess.run(command)
         return process
