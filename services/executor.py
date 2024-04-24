@@ -23,12 +23,14 @@ class Executor:
         command = args.split(" ")# + list(args)
         self.logger.info("MASA-CUDAlign command created: "+ args)
 
+        home = str(Path.home())
         framework_dir =  home+"/"+self.data["work_dir"]
 
         process = None
-        with open(framework_dir+'/framework_out.txt', 'w') as outfile:
-            subprocess.run(command, shell=True, stdout=outfile, text=True)
-            
+        #with open(framework_dir+'/framework_out.txt', 'w') as outfile:
+        #process = subprocess.run(command, shell=True, stdout=outfile, capture_output=True, text=True)
+        process = subprocess.run(command)
+        self.logger.info("Process: "+str(process))
         #process = subprocess.run(command)
         return process
 
