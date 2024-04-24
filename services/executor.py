@@ -29,7 +29,7 @@ class Executor:
         process = None
         #with open(framework_dir+'/framework_out.txt', 'w') as outfile:
         #process = subprocess.run(command, shell=True, stdout=outfile, capture_output=True, text=True)
-        process = subprocess.run(command)
+        process = subprocess.run(command, shell=True)
         self.logger.info("Process: "+str(process))
         #process = subprocess.run(command)
         return process
