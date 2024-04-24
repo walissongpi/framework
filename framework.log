@@ -11631,3 +11631,180 @@
 2024-04-23 19:03:00,526 - INFO - File /home/walisson/framework/execute.sh sent to 3.93.186.92:/home/ubuntu/framework successfully!
 2024-04-23 19:03:00,527 - INFO - Setting up file permission...
 2024-04-23 19:03:03,130 - INFO - Running executor cloud module...
+2024-04-23 19:24:16,783 - DEBUG - Starting the framework...
+2024-04-23 19:24:18,040 - INFO - Starting cloud module...
+2024-04-23 19:24:18,041 - INFO - Listing AWS instances...
+2024-04-23 19:24:19,391 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'running'}
+2024-04-23 19:24:19,391 - INFO - {'InstanceId': 'i-04030283402b25961', 'InstanceType': 'c4.2xlarge', 'State': 'stopped'}
+2024-04-23 19:24:19,392 - INFO - {'InstanceId': 'i-0c0520ece2cb62986', 'InstanceType': 'c4.large', 'State': 'running'}
+2024-04-23 19:24:19,392 - INFO - {'InstanceId': 'i-0d410ee6575408846', 'InstanceType': 'c4.xlarge', 'State': 'stopped'}
+2024-04-23 19:24:19,392 - INFO - {'InstanceId': 'i-0dfac20c1f4d5a72c', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 19:24:19,392 - INFO - {'InstanceId': 'i-000be9daaf156a649', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 19:24:19,392 - INFO - {'InstanceId': 'i-0edd01af2c36b65de', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 19:24:19,392 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-04-23 19:24:19,392 - INFO - {'InstanceId': 'i-0ad8b75f0a0890b7e', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 19:24:19,392 - INFO - {'InstanceId': 'i-0d3f5614216af21ea', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-04-23 19:24:19,392 - INFO - Loading input data information...
+2024-04-23 19:24:19,393 - INFO - Sequence 0: /sequences/1-3M/BA000035.2.fasta
+2024-04-23 19:24:19,393 - INFO - Sequence 1: /sequences/1-3M/BX927147.1.fasta
+2024-04-23 19:24:19,393 - INFO - Time estimated for sequence aligment: 1.26 minutes
+2024-04-23 19:24:19,393 - INFO - The expected time for sequence alignment (1.26 minutes) is greater than the pre-established threshold (90 minutes). The execution will be carried out on an On-demand instance...
+2024-04-23 19:24:19,393 - INFO - Creating g4dn.xlarge On-demand instance...
+2024-04-23 19:24:19,393 - INFO - Creating On-demand instance...
+2024-04-23 19:24:20,702 - INFO - On-demand instance created successfully!
+2024-04-23 19:24:20,702 - INFO - On-demand instance ID:i-0dd7471fdddb6f15a
+2024-04-23 19:24:20,703 - INFO - Starting On-demand instance monitor...
+2024-04-23 19:24:26,233 - INFO - Instance running!
+2024-04-23 19:24:26,233 - INFO - Instance status: initializing
+2024-04-23 19:24:31,476 - INFO - Instance running!
+2024-04-23 19:24:31,476 - INFO - Instance status: initializing
+2024-04-23 19:24:36,718 - INFO - Instance running!
+2024-04-23 19:24:36,719 - INFO - Instance status: initializing
+2024-04-23 19:24:41,998 - INFO - Instance running!
+2024-04-23 19:24:41,999 - INFO - Instance status: initializing
+2024-04-23 19:24:47,234 - INFO - Instance running!
+2024-04-23 19:24:47,235 - INFO - Instance status: initializing
+2024-04-23 19:24:52,553 - INFO - Instance running!
+2024-04-23 19:24:52,553 - INFO - Instance status: initializing
+2024-04-23 19:24:57,777 - INFO - Instance running!
+2024-04-23 19:24:57,777 - INFO - Instance status: initializing
+2024-04-23 19:25:03,086 - INFO - Instance running!
+2024-04-23 19:25:03,087 - INFO - Instance status: initializing
+2024-04-23 19:25:08,425 - INFO - Instance running!
+2024-04-23 19:25:08,425 - INFO - Instance status: initializing
+2024-04-23 19:25:13,652 - INFO - Instance running!
+2024-04-23 19:25:13,652 - INFO - Instance status: initializing
+2024-04-23 19:25:18,875 - INFO - Instance running!
+2024-04-23 19:25:18,875 - INFO - Instance status: initializing
+2024-04-23 19:25:24,162 - INFO - Instance running!
+2024-04-23 19:25:24,162 - INFO - Instance status: initializing
+2024-04-23 19:25:29,409 - INFO - Instance running!
+2024-04-23 19:25:29,410 - INFO - Instance status: initializing
+2024-04-23 19:25:34,642 - INFO - Instance running!
+2024-04-23 19:25:34,642 - INFO - Instance status: initializing
+2024-04-23 19:25:39,874 - INFO - Instance running!
+2024-04-23 19:25:39,875 - INFO - Instance status: initializing
+2024-04-23 19:25:45,084 - INFO - Instance running!
+2024-04-23 19:25:45,084 - INFO - Instance status: initializing
+2024-04-23 19:25:50,326 - INFO - Instance running!
+2024-04-23 19:25:50,326 - INFO - Instance status: initializing
+2024-04-23 19:25:55,553 - INFO - Instance running!
+2024-04-23 19:25:55,553 - INFO - Instance status: initializing
+2024-04-23 19:26:00,783 - INFO - Instance running!
+2024-04-23 19:26:00,783 - INFO - Instance status: initializing
+2024-04-23 19:26:06,023 - INFO - Instance running!
+2024-04-23 19:26:06,023 - INFO - Instance status: initializing
+2024-04-23 19:26:11,293 - INFO - Instance running!
+2024-04-23 19:26:11,294 - INFO - Instance status: initializing
+2024-04-23 19:26:16,522 - INFO - Instance running!
+2024-04-23 19:26:16,523 - INFO - Instance status: initializing
+2024-04-23 19:26:21,765 - INFO - Instance running!
+2024-04-23 19:26:21,765 - INFO - Instance status: initializing
+2024-04-23 19:26:27,144 - INFO - Instance running!
+2024-04-23 19:26:27,144 - INFO - Instance status: initializing
+2024-04-23 19:26:32,371 - INFO - Instance running!
+2024-04-23 19:26:32,371 - INFO - Instance status: initializing
+2024-04-23 19:26:37,783 - INFO - Instance running!
+2024-04-23 19:26:37,784 - INFO - Instance status: initializing
+2024-04-23 19:26:43,010 - INFO - Instance running!
+2024-04-23 19:26:43,010 - INFO - Instance status: initializing
+2024-04-23 19:26:48,223 - INFO - Instance running!
+2024-04-23 19:26:48,223 - INFO - Instance status: initializing
+2024-04-23 19:26:53,469 - INFO - Instance running!
+2024-04-23 19:26:53,470 - INFO - Instance status: initializing
+2024-04-23 19:26:58,740 - INFO - Instance running!
+2024-04-23 19:26:58,740 - INFO - Instance status: initializing
+2024-04-23 19:27:04,011 - INFO - Instance running!
+2024-04-23 19:27:04,012 - INFO - Instance status: initializing
+2024-04-23 19:27:09,421 - INFO - Instance running!
+2024-04-23 19:27:09,421 - INFO - Instance status: initializing
+2024-04-23 19:27:14,704 - INFO - Instance running!
+2024-04-23 19:27:14,705 - INFO - Instance status: initializing
+2024-04-23 19:27:20,032 - INFO - Instance running!
+2024-04-23 19:27:20,032 - INFO - Instance status: initializing
+2024-04-23 19:27:25,308 - INFO - Instance running!
+2024-04-23 19:27:25,308 - INFO - Instance status: initializing
+2024-04-23 19:27:30,737 - INFO - Instance running!
+2024-04-23 19:27:30,737 - INFO - Instance status: initializing
+2024-04-23 19:27:35,961 - INFO - Instance running!
+2024-04-23 19:27:35,961 - INFO - Instance status: initializing
+2024-04-23 19:27:41,432 - INFO - Instance running!
+2024-04-23 19:27:41,433 - INFO - Instance status: initializing
+2024-04-23 19:27:46,865 - INFO - Instance running!
+2024-04-23 19:27:46,865 - INFO - Instance status: initializing
+2024-04-23 19:27:52,094 - INFO - Instance running!
+2024-04-23 19:27:52,095 - INFO - Instance status: initializing
+2024-04-23 19:27:57,327 - INFO - Instance running!
+2024-04-23 19:27:57,327 - INFO - Instance status: initializing
+2024-04-23 19:28:02,562 - INFO - Instance running!
+2024-04-23 19:28:02,563 - INFO - Instance status: initializing
+2024-04-23 19:28:07,793 - INFO - Instance running!
+2024-04-23 19:28:07,794 - INFO - Instance status: initializing
+2024-04-23 19:28:13,005 - INFO - Instance running!
+2024-04-23 19:28:13,005 - INFO - Instance status: initializing
+2024-04-23 19:28:18,766 - INFO - Instance running!
+2024-04-23 19:28:18,766 - INFO - Instance status: ok
+2024-04-23 19:28:18,767 - INFO - Instance is ready to use!
+2024-04-23 19:28:36,919 - INFO - Instance id: i-0dd7471fdddb6f15a
+2024-04-23 19:28:36,920 - INFO - Starting Executor Handler...
+2024-04-23 19:28:36,920 - INFO - Sending setup script to the instance...
+2024-04-23 19:28:41,853 - INFO - File /home/walisson/framework/prepare.sh sent to 44.222.111.127:/home/ubuntu/ successfully!
+2024-04-23 19:28:41,853 - INFO - Setting up file permission...
+2024-04-23 19:28:44,517 - INFO - Running setup script...
+2024-04-23 19:30:17,511 - INFO - Sending configuration files to the instance...
+2024-04-23 19:30:21,774 - INFO - File /home/walisson/framework/config/cloud.json sent to 44.222.111.127:/home/ubuntu/framework/config successfully!
+2024-04-23 19:30:25,688 - INFO - File /home/walisson/framework/config/gpu.json sent to 44.222.111.127:/home/ubuntu/framework/config successfully!
+2024-04-23 19:30:29,092 - INFO - File /home/walisson/framework/config/input_data.json sent to 44.222.111.127:/home/ubuntu/framework/config successfully!
+2024-04-23 19:30:32,557 - INFO - File /home/walisson/framework/config/instance.json sent to 44.222.111.127:/home/ubuntu/framework/config successfully!
+2024-04-23 19:30:32,557 - INFO - Sending execution script file to the instance...
+2024-04-23 19:30:36,155 - INFO - File /home/walisson/framework/execute.sh sent to 44.222.111.127:/home/ubuntu/framework successfully!
+2024-04-23 19:30:36,156 - INFO - Setting up file permission...
+2024-04-23 19:30:39,062 - INFO - Running executor cloud module...
+2024-04-23 22:13:02,946 - DEBUG - Starting the framework...
+2024-04-23 22:13:04,574 - INFO - Starting local module...
+2024-04-23 22:13:04,575 - INFO - Getting enviroment information...
+2024-04-23 22:13:04,817 - INFO - Enviroment information: 
+2024-04-23 22:13:04,817 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-23 22:13:04,818 - INFO - Processor: x86_64
+2024-04-23 22:13:04,818 - INFO - Architecture: 64bit
+2024-04-23 22:13:04,818 - INFO - Clock: 800.0600000000001
+2024-04-23 22:13:04,818 - INFO - Fisical Cores: 4
+2024-04-23 22:13:04,818 - INFO - Logical Cores: 8
+2024-04-23 22:13:04,818 - INFO - Total Memory: 16677801984
+2024-04-23 22:13:04,818 - INFO - Available Memory: 12470050816
+2024-04-23 22:13:04,818 - INFO - Total Storage: 51282223104
+2024-04-23 22:13:04,818 - INFO - Available Storage: 197623808
+2024-04-23 22:13:04,818 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-04-23 22:13:04,818 - INFO - System information collected.
+2024-04-23 22:13:04,818 - INFO - Executing MASA-CUDALign...
+2024-04-23 22:13:04,818 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-23 22:13:04,818 - INFO - Current directory: /home/walisson/framework
+2024-04-23 22:13:04,819 - INFO - Home directory: /home/walisson
+2024-04-23 22:13:04,819 - INFO - SRA size calculated: 3G
+2024-04-23 22:13:04,819 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta
+2024-04-23 22:13:07,652 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=3G --stage-4-strategy=ORIGINAL_MM --work-dir=/home/walisson/framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta
+2024-04-23 22:13:10,630 - INFO - Execution time: 6 seconds
+2024-04-23 22:18:25,245 - DEBUG - Starting the framework...
+2024-04-23 22:18:26,752 - INFO - Starting local module...
+2024-04-23 22:18:27,909 - INFO - Getting enviroment information...
+2024-04-23 22:18:28,302 - INFO - Enviroment information: 
+2024-04-23 22:18:28,303 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-04-23 22:18:28,303 - INFO - Processor: x86_64
+2024-04-23 22:18:28,303 - INFO - Architecture: 64bit
+2024-04-23 22:18:28,303 - INFO - Clock: 2582.384875
+2024-04-23 22:18:28,303 - INFO - Fisical Cores: 4
+2024-04-23 22:18:28,303 - INFO - Logical Cores: 8
+2024-04-23 22:18:28,303 - INFO - Total Memory: 16677801984
+2024-04-23 22:18:28,303 - INFO - Available Memory: 14887497728
+2024-04-23 22:18:28,303 - INFO - Total Storage: 51282223104
+2024-04-23 22:18:28,304 - INFO - Available Storage: 206606336
+2024-04-23 22:18:28,304 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-04-23 22:18:28,304 - INFO - System information collected.
+2024-04-23 22:18:28,304 - INFO - Executing MASA-CUDALign...
+2024-04-23 22:18:28,304 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-04-23 22:18:28,304 - INFO - Current directory: /home/walisson/framework
+2024-04-23 22:18:28,304 - INFO - Home directory: /home/walisson
+2024-04-23 22:18:28,304 - INFO - SRA size calculated: 3G
+2024-04-23 22:18:28,305 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta
+2024-04-23 22:18:33,942 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=3G --stage-4-strategy=ORIGINAL_MM --work-dir=/home/walisson/framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta
+2024-04-23 22:18:37,410 - INFO - Execution time: 9 seconds
