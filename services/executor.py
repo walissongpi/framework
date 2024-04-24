@@ -29,7 +29,11 @@ class Executor:
         process = None
         #with open(framework_dir+'/framework_out.txt', 'w') as outfile:
         #process = subprocess.run(command, shell=True, stdout=outfile, capture_output=True, text=True)
-        process = subprocess.run(command, shell=True)
+        #process = subprocess.run(command, shell=True)
+        os.environ['LD_LIBRARY_PATH'] = '$LD_LIBRARY_PATH:/usr/local/cuda-11.7/lib64'
+        os.environ['PATH'] = '$PATH:/usr/local/cuda-11.7/bin'
+
+        process = subprocess.call(command, shell=True)
         self.logger.info("Process: "+str(process))
         #process = subprocess.run(command)
         return process
