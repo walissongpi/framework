@@ -1,7 +1,7 @@
 {
   "image_id": "ami-00b334278194e3561",
   "instance_type": "g4dn.xlarge",
-  "name": "Adaptative Framework",
+  "name": "AdaptativeFramework",
   "user": "ubuntu",
   "min_count": 1,
   "max_count": 1,

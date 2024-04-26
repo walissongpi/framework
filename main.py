@@ -2,7 +2,7 @@ from services.enviroment import SystemInfo
 from services.executor import Executor
 from services.local import LocalEnviroment
 from services.cloud import CloudEnviroment
-
+import time
 import log
 import util
 from log import Log
@@ -45,7 +45,19 @@ def execute_action(choice, logger):
             data = util.openJason("config/input_data.json")
             gpu_data = util.openJason("config/gpu.json")
             cloud_enviroment = CloudEnviroment(logger, data, instance_data, cloud_data, gpu_data)
+
+            start = time.time()
+
             cloud_enviroment.start()
+
+            #response = executor.execute(command,1)
+            end = time.time()
+            execution_time = end - start
+            logger.info("Total framework execution time: "+str(round(execution_time))+" seconds")
+            #if cloud_data["auto_spot_selection"] is "no":
+
+            #self.logger.info("Estimated monetary cost: "+ "US$")
+
             print("Press ENTER to cotinue...")
         elif choice == "3":
             exit()

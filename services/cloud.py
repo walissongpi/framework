@@ -53,11 +53,33 @@ class CloudEnviroment:
         if minutes < self.cloud_data["market_threshold"] and self.cloud_data["auto_spot_selection"] == "yes":
             self.logger.info("The expected time for sequence alignment ("+minutes+" minutes) is less than the pre-established threshold ("+self.cloud_data["market_threshold"]+" minutes). The execution will be carried out on a Spot instance...")
             self.logger.info("Creating " + self.instance_data["instance_type"] + " Spot instance...")
+
+            spot_price = ec2Manager.get_spot_price()
+            if spot_price:
+                msg = "The current spot price for "+self.instance_data["instance_type"]+ " in " + self.cloud_data["region"]+" region is $" + spot_price
+                self.logger.info(msg)
+            else:
+                msg = "Unable to find out the spot price for "+self.instance_data["instance_type"]+" in "+self.cloud_data["region"] +" region"
+                self.logger.info(msg)
+
             instance_id, ec2 = ec2Manager.create_spot_instance()
             input("Press ENTER to continue execution...")
         else:
-            self.logger.info("The expected time for sequence alignment ("+minutes+" minutes) is greater than the pre-established threshold ("+self.cloud_data["market_threshold"]+" minutes). The execution will be carried out on an On-demand instance...")
+            if self.cloud_data["auto_spot_selection"] != "yes":
+                self.logger.info("Automatic Spot Instance selection is disabled. The execution will be carried out in an on-demand instance.")
+            else:
+                self.logger.info("The expected time for sequence alignment ("+minutes+" minutes) is greater than the pre-established threshold ("+self.cloud_data["market_threshold"]+" minutes). The execution will be carried out on an On-demand instance...")
+
             self.logger.info("Creating "+ self.instance_data["instance_type"]+" On-demand instance...")
+
+            price = ec2Manager.get_instance_price()
+            if price:
+                msg = "The current on-demand price for "+self.instance_data["instance_type"]+ " in " + self.cloud_data["region"]+" region is $" + price +" per hour"
+                self.logger.info(msg)
+            else:
+                msg = "Unable to find out the on-demand price for "+self.instance_data["instance_type"]+" in "+self.cloud_data["region"] +" region"
+                self.logger.info(msg)
+
             instance_id, ec2 = ec2Manager.create_instance()
             input("Press ENTER to continue execution...")
 
