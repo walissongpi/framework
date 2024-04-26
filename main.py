@@ -50,12 +50,9 @@ def execute_action(choice, logger):
 
             cloud_enviroment.start()
 
-            #response = executor.execute(command,1)
             end = time.time()
             execution_time = end - start
             logger.info("Total framework execution time: "+str(round(execution_time))+" seconds")
-            #if cloud_data["auto_spot_selection"] is "no":
-
             #self.logger.info("Estimated monetary cost: "+ "US$")
 
             print("Press ENTER to cotinue...")

@@ -95,6 +95,7 @@ class Executor:
 
     #somar o tempo total de execução
     def create_masa_command(self):
+
         current_dir = os.getcwd()
         self.logger.info("Current directory: "+current_dir)
 
@@ -111,23 +112,19 @@ class Executor:
         #exec = "sh framework/execute.sh "+ command
         response = self.execute(command)
 
-        print("Stage 1 execution complete: ",response)
+        self.logger.info("Stage 1 execution complete: "+response)
 
         score = self.look_for_score()
 
         sequence_similarity = round(self.calculate_similarity(score))
-        print("Sequence similarity: ", sequence_similarity)
+        self.logger.info("Sequence similarity: "+ sequence_similarity)
 
         decision_maker = DecisionMaker(self.logger, self.data, self.gpu_data, sequence_similarity)
         strategy = decision_maker.decide_strategy_stage4()
-        print("Stratrgy for stage 4: ",strategy)
+        self.logger.info("Stratrgy for stage 4: "+strategy)
         #strategy = self.define_strategy(score)
-
         command = masa + self.data["command"] + " --disk-size=" + SRA+"G" +" --stage-4-strategy=" + strategy + " --work-dir=" +work_dir+ " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
 
         response = self.execute(command)
-
-        #exec = "sh framework/execute.sh "+ command
-        #response = self.execute(exec)
 
         return command

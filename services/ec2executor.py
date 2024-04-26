@@ -16,7 +16,6 @@ class EC2ApplicationExecutor:
         return instance_ip
 
     def send_file_to_instance(self, file, folder_destination):
-
         # Configurações de conexão SSH
         host = self.get_instance_ip()
         username = self.instance_data["user"]
@@ -41,7 +40,6 @@ class EC2ApplicationExecutor:
         # Enviando o arquivo para a instância remota
         sftp.put(local_file_path, os.path.join(remote_path, os.path.basename(local_file_path)))
 
-        # Fechando conexão SFTP e SSH
         sftp.close()
         ssh.close()
 

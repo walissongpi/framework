@@ -129,38 +129,11 @@ class CloudEnviroment:
             # Exibindo a saída e erros (se houver)
             print("Output:", output)
             print("Error:", error)
-            #self.logger.info("Sending sequences files to the instance...")
-            #self.logger.info(self.data["sequence0"])
-            #ec2_executor.send_file_to_instance(os.getcwd()+"/"+self.data["sequence0"],destination_folder)
-            #self.logger.info(self.data["sequence1"])
-            #ec2_executor.send_file_to_instance(os.getcwd()+"/"+self.data["sequence1"],destination_folder)
 
-
-            #command = "export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028"
-            #output, error = ec2_executor.run_command_on_instance(command)
-            #print("Output:", output)
-            #print("Error:", error)
-
-
-            #Run the second main (mainCLoud)
-            #path = "export PATH=$PATH:/home/ubuntu/MASA-CUDAlign/masa-cudalign-4.0.2.1028"
             self.logger.info("Running executor cloud module...")
             command = "python3 "+destination_folder+"/main_cloud.py"
+
             output, error = ec2_executor.run_command_on_instance(command)
             # Exibindo a saída e erros (se houver)
             print("Output:", output)
             print("Error:", error)
-            #input("")
-
-#logger.info("Creating AWS instance...")
-#instance = ec2Manager.create_instance("ami-01afb69abc2756b9e", "g4dn.xlarge",1, "walisson-key", ["walisson-group"])
-
-#print(instance)
-
-#instance_id=instance["InstanceId"]
-
-
-#logger.info("Conectando ao banco de dados")
-#logger.warning("Falha ao conectar ao banco de dados")
-#logger.error("Tentativa de login inválida")
-#logger.critical("Erro crítico no sistema")
