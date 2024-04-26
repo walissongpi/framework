@@ -3,5 +3,5 @@
   "secret_access_key": "",
   "region": "us-east-1",
   "market_threshold":"90",
-  "auto_spot_selection": "no"
+  "auto_spot_selection": "yes"
 }

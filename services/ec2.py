@@ -1,7 +1,7 @@
 import boto3
 import time
 import datetime
-
+from botocore.exceptions import ClientError
 
 class EC2Manager:
     def __init__(self, logger, instance_data, cloud_data, gpu_data):
@@ -107,22 +107,9 @@ class EC2Manager:
 
 
     def get_instance_price(self):
-        instance_type = self.instance_data["instance_type"]
-        response = self.ec2.describe_instance_type_offerings(
-            Filters=[
-                {'Name': 'instance-type', 'Values': [instance_type]}
-            ]
-        )
-        ##prices = response['InstanceTypeOfferings'][0]['PricingDetails']
-        print("response: "+str(response))
-        if 'InstanceTypeOfferings' in response:
-            for offering in response['InstanceTypeOfferings']:
-                prices = offering.get('PricingDetails', [])
-                for price in prices:
-                    if price['Unit'] == 'Hrs':
-                        return price['Price']
-
+        region = self.cloud_data["region"]
         return None
+
 
     def monitor_spot_request(self,spot_request_id):
         spot_instance_id = None
@@ -158,12 +145,7 @@ class EC2Manager:
                 'SecurityGroups': [self.instance_data["security_group"]]
             },
             'SpotPrice': str(self.instance_data["spot_price"]),
-            'Type': 'one-time',
-
-            'TagSpecifications':{
-                'ResourceType': 'spot-instances-request',
-                'Tags': tags
-            }
+            'Type': 'one-time'
         }
 
         response = self.ec2.request_spot_instances(**spot_params)
