@@ -112,7 +112,7 @@ class Executor:
         #exec = "sh framework/execute.sh "+ command
         response = self.execute(command)
 
-        self.logger.info("Stage 1 execution complete: "+response)
+        self.logger.info("Stage 1 execution complete: "+str(response))
 
         score = self.look_for_score()
 
