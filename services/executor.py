@@ -117,7 +117,7 @@ class Executor:
         score = self.look_for_score()
 
         sequence_similarity = round(self.calculate_similarity(score))
-        self.logger.info("Sequence similarity: "+ sequence_similarity)
+        self.logger.info("Sequence similarity: "+ str(sequence_similarity))
 
         decision_maker = DecisionMaker(self.logger, self.data, self.gpu_data, sequence_similarity)
         strategy = decision_maker.decide_strategy_stage4()
