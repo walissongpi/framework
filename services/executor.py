@@ -72,6 +72,8 @@ class Executor:
          #= os.getcwd() + "/framework/" + self.data["work_dir"]
         file = open(framework_dir + "/statistics_01.00", "r")
         lines = file.readlines()
+        print("testando lines aqui")
+        print(lines)
         line = lines[17 - 1]
         print("Passou pela linha aqui")
         print("testando a line:", line)
