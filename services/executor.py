@@ -70,15 +70,15 @@ class Executor:
         framework_dir =  home+"/"+self.data["work_dir"]
 
          #= os.getcwd() + "/framework/" + self.data["work_dir"]
-        file = open(framework_dir + "/statistics_01.00", "r")
+        #file = open(framework_dir + "/statistics_01.00", "r")
+        file = open(framework_dir + "/status", "r")
         lines = file.readlines()
-        print("testando lines aqui")
-        print(lines)
-        line = lines[17 - 1]
+        
+        line = lines[2]
         print("Passou pela linha aqui")
         print("testando a line:", line)
-        sco = line.split(": ")
-        print("score[1]: ",int(sco[1]))
+        sco = line.split(" ")
+        print("score[2]: ",int(sco[2]))
         score = int(sco[1])
         file.close()
         return score

@@ -16396,3 +16396,109 @@
 2024-10-26 23:34:23,564 - INFO - Setting up file permission...
 2024-10-26 23:34:25,714 - INFO - Running executor cloud module...
 2024-10-26 23:35:26,877 - INFO - Total framework execution time: 468 seconds
+2024-10-26 23:39:11,599 - DEBUG - Starting the framework...
+2024-10-26 23:39:14,033 - INFO - Starting cloud module...
+2024-10-26 23:39:14,034 - INFO - Listing AWS instances...
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-0b277bb5caebb7964', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-092be18447eabead3', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-03dce5ff3e20eff5c', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-0f19980e8d5572627', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-00820967fdecd3a2f', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-26 23:39:16,143 - INFO - {'InstanceId': 'i-0e85cbe7eb36417b2', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-26 23:39:16,143 - INFO - Loading input data information...
+2024-10-26 23:39:16,143 - INFO - Sequence 0: /sequences/10k/AB052995.1.fasta
+2024-10-26 23:39:16,144 - INFO - Sequence 1: /sequences/10k/KX174312.1.fasta
+2024-10-26 23:39:16,144 - INFO - Time estimated for sequence aligment: 0.00 minutes
+2024-10-26 23:39:16,144 - INFO - The expected time for sequence alignment (0.00 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-10-26 23:39:16,144 - INFO - Creating g4dn.xlarge Spot instance...
+2024-10-26 23:39:16,422 - INFO - The current spot price for g4dn.xlarge in us-east-1 region is $0.164800
+2024-10-26 23:39:17,344 - INFO - Spot instance requested!
+2024-10-26 23:39:17,344 - INFO - Monitoring instance...
+2024-10-26 23:39:17,549 - INFO - Spot instance request state: open
+2024-10-26 23:39:22,859 - INFO - Spot instance request state: active
+2024-10-26 23:39:22,859 - INFO - Spot instance created successfully!
+2024-10-26 23:39:22,860 - INFO - Spot request information: 
+2024-10-26 23:39:22,860 - INFO - Spot request id: sir-pd46y9gp
+2024-10-26 23:39:22,861 - INFO - {'CreateTime': datetime.datetime(2024, 10, 27, 2, 39, 17, tzinfo=tzutc()), 'LaunchSpecification': {'SecurityGroups': [{'GroupName': 'walisson-group', 'GroupId': 'sg-00e0330717614a689'}], 'ImageId': 'ami-00b334278194e3561', 'InstanceType': 'g4dn.xlarge', 'KeyName': 'walisson-key', 'Placement': {'AvailabilityZone': 'us-east-1a'}, 'SubnetId': 'subnet-095b10be865b0c374', 'Monitoring': {'Enabled': False}}, 'ProductDescription': 'Linux/UNIX', 'SpotInstanceRequestId': 'sir-pd46y9gp', 'SpotPrice': '0.530000', 'State': 'open', 'Status': {'Code': 'pending-evaluation', 'Message': 'Your Spot request has been submitted for review, and is pending evaluation.', 'UpdateTime': datetime.datetime(2024, 10, 27, 2, 39, 17, tzinfo=tzutc())}, 'Type': 'one-time', 'InstanceInterruptionBehavior': 'terminate'}
+2024-10-26 23:39:22,861 - INFO - Spot instance ID:i-004f6e95823f42c92
+2024-10-26 23:39:22,862 - INFO - Starting spot instance monitor...
+2024-10-26 23:39:28,306 - INFO - Instance running!
+2024-10-26 23:39:28,306 - INFO - Instance status: initializing
+2024-10-26 23:39:33,523 - INFO - Instance running!
+2024-10-26 23:39:33,523 - INFO - Instance status: initializing
+2024-10-26 23:39:38,723 - INFO - Instance running!
+2024-10-26 23:39:38,723 - INFO - Instance status: initializing
+2024-10-26 23:39:44,058 - INFO - Instance running!
+2024-10-26 23:39:44,059 - INFO - Instance status: initializing
+2024-10-26 23:39:49,293 - INFO - Instance running!
+2024-10-26 23:39:49,294 - INFO - Instance status: initializing
+2024-10-26 23:39:54,515 - INFO - Instance running!
+2024-10-26 23:39:54,515 - INFO - Instance status: initializing
+2024-10-26 23:39:59,737 - INFO - Instance running!
+2024-10-26 23:39:59,737 - INFO - Instance status: initializing
+2024-10-26 23:40:04,960 - INFO - Instance running!
+2024-10-26 23:40:04,960 - INFO - Instance status: initializing
+2024-10-26 23:40:10,170 - INFO - Instance running!
+2024-10-26 23:40:10,170 - INFO - Instance status: initializing
+2024-10-26 23:40:15,405 - INFO - Instance running!
+2024-10-26 23:40:15,405 - INFO - Instance status: initializing
+2024-10-26 23:40:20,625 - INFO - Instance running!
+2024-10-26 23:40:20,626 - INFO - Instance status: initializing
+2024-10-26 23:40:25,885 - INFO - Instance running!
+2024-10-26 23:40:25,886 - INFO - Instance status: initializing
+2024-10-26 23:40:31,096 - INFO - Instance running!
+2024-10-26 23:40:31,096 - INFO - Instance status: initializing
+2024-10-26 23:40:36,302 - INFO - Instance running!
+2024-10-26 23:40:36,302 - INFO - Instance status: initializing
+2024-10-26 23:40:41,515 - INFO - Instance running!
+2024-10-26 23:40:41,515 - INFO - Instance status: initializing
+2024-10-26 23:40:46,713 - INFO - Instance running!
+2024-10-26 23:40:46,713 - INFO - Instance status: initializing
+2024-10-26 23:40:51,959 - INFO - Instance running!
+2024-10-26 23:40:51,959 - INFO - Instance status: initializing
+2024-10-26 23:40:57,260 - INFO - Instance running!
+2024-10-26 23:40:57,260 - INFO - Instance status: initializing
+2024-10-26 23:41:02,462 - INFO - Instance running!
+2024-10-26 23:41:02,463 - INFO - Instance status: initializing
+2024-10-26 23:41:07,681 - INFO - Instance running!
+2024-10-26 23:41:07,681 - INFO - Instance status: initializing
+2024-10-26 23:41:12,901 - INFO - Instance running!
+2024-10-26 23:41:12,901 - INFO - Instance status: initializing
+2024-10-26 23:41:18,109 - INFO - Instance running!
+2024-10-26 23:41:18,109 - INFO - Instance status: initializing
+2024-10-26 23:41:23,324 - INFO - Instance running!
+2024-10-26 23:41:23,325 - INFO - Instance status: initializing
+2024-10-26 23:41:28,528 - INFO - Instance running!
+2024-10-26 23:41:28,528 - INFO - Instance status: initializing
+2024-10-26 23:41:33,742 - INFO - Instance running!
+2024-10-26 23:41:33,742 - INFO - Instance status: initializing
+2024-10-26 23:41:38,966 - INFO - Instance running!
+2024-10-26 23:41:38,967 - INFO - Instance status: initializing
+2024-10-26 23:41:44,185 - INFO - Instance running!
+2024-10-26 23:41:44,185 - INFO - Instance status: ok
+2024-10-26 23:41:44,185 - INFO - Instance is ready to use!
+2024-10-26 23:43:39,461 - INFO - Instance id: i-004f6e95823f42c92
+2024-10-26 23:43:39,462 - INFO - Starting Executor Handler...
+2024-10-26 23:43:39,462 - INFO - Sending setup script to the instance...
+2024-10-26 23:43:44,911 - INFO - File /home/walisson/framework/prepare.sh sent to 44.212.8.190:/home/ubuntu/ successfully!
+2024-10-26 23:43:44,912 - INFO - Setting up file permission...
+2024-10-26 23:43:47,267 - INFO - Running setup script...
+2024-10-26 23:45:17,351 - INFO - Sending configuration files to the instance...
+2024-10-26 23:45:21,473 - INFO - File /home/walisson/framework/config/cloud.json sent to 44.212.8.190:/home/ubuntu/framework/config successfully!
+2024-10-26 23:45:24,546 - INFO - File /home/walisson/framework/config/gpu.json sent to 44.212.8.190:/home/ubuntu/framework/config successfully!
+2024-10-26 23:45:27,719 - INFO - File /home/walisson/framework/config/input_data.json sent to 44.212.8.190:/home/ubuntu/framework/config successfully!
+2024-10-26 23:45:31,201 - INFO - File /home/walisson/framework/config/instance.json sent to 44.212.8.190:/home/ubuntu/framework/config successfully!
+2024-10-26 23:45:31,202 - INFO - Sending execution script file to the instance...
+2024-10-26 23:45:35,195 - INFO - File /home/walisson/framework/execute.sh sent to 44.212.8.190:/home/ubuntu/framework successfully!
+2024-10-26 23:45:35,195 - INFO - Setting up file permission...
+2024-10-26 23:45:38,678 - INFO - Running executor cloud module...
+2024-10-26 23:46:31,177 - INFO - Total framework execution time: 437 seconds
