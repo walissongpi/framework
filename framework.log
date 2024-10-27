@@ -16502,3 +16502,328 @@
 2024-10-26 23:45:35,195 - INFO - Setting up file permission...
 2024-10-26 23:45:38,678 - INFO - Running executor cloud module...
 2024-10-26 23:46:31,177 - INFO - Total framework execution time: 437 seconds
+2024-10-26 23:59:07,463 - DEBUG - Starting the framework...
+2024-10-26 23:59:08,890 - INFO - Starting cloud module...
+2024-10-26 23:59:08,891 - INFO - Listing AWS instances...
+2024-10-26 23:59:10,426 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-10-26 23:59:10,426 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-10-26 23:59:10,426 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-10-26 23:59:10,426 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-10-26 23:59:10,426 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-10-26 23:59:10,427 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-10-26 23:59:10,427 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-26 23:59:10,427 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-10-26 23:59:10,427 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-26 23:59:10,427 - INFO - {'InstanceId': 'i-0b277bb5caebb7964', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-26 23:59:10,427 - INFO - {'InstanceId': 'i-092be18447eabead3', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-26 23:59:10,427 - INFO - {'InstanceId': 'i-004f6e95823f42c92', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-26 23:59:10,427 - INFO - {'InstanceId': 'i-03dce5ff3e20eff5c', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-10-26 23:59:10,427 - INFO - {'InstanceId': 'i-0f19980e8d5572627', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-26 23:59:10,427 - INFO - {'InstanceId': 'i-00820967fdecd3a2f', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-26 23:59:10,427 - INFO - {'InstanceId': 'i-0e85cbe7eb36417b2', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-26 23:59:10,427 - INFO - Loading input data information...
+2024-10-26 23:59:10,427 - INFO - Sequence 0: /sequences/10k/AB052995.1.fasta
+2024-10-26 23:59:10,427 - INFO - Sequence 1: /sequences/10k/KX174312.1.fasta
+2024-10-26 23:59:10,427 - INFO - Time estimated for sequence aligment: 0.00 minutes
+2024-10-26 23:59:10,427 - INFO - The expected time for sequence alignment (0.00 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-10-26 23:59:10,427 - INFO - Creating g4dn.xlarge Spot instance...
+2024-10-26 23:59:10,723 - INFO - The current spot price for g4dn.xlarge in us-east-1 region is $0.164800
+2024-10-27 00:00:09,881 - DEBUG - Starting the framework...
+2024-10-27 00:00:11,359 - INFO - Starting cloud module...
+2024-10-27 00:00:11,360 - INFO - Listing AWS instances...
+2024-10-27 00:00:12,985 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-10-27 00:00:12,985 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-10-27 00:00:12,985 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-10-27 00:00:12,985 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-10-27 00:00:12,985 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-10-27 00:00:12,985 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-10-27 00:00:12,985 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:00:12,985 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-10-27 00:00:12,985 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:00:12,985 - INFO - {'InstanceId': 'i-0b277bb5caebb7964', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:00:12,986 - INFO - {'InstanceId': 'i-092be18447eabead3', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:00:12,986 - INFO - {'InstanceId': 'i-004f6e95823f42c92', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-27 00:00:12,986 - INFO - {'InstanceId': 'i-03dce5ff3e20eff5c', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-10-27 00:00:12,986 - INFO - {'InstanceId': 'i-0f19980e8d5572627', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-27 00:00:12,986 - INFO - {'InstanceId': 'i-00820967fdecd3a2f', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:00:12,986 - INFO - {'InstanceId': 'i-0e85cbe7eb36417b2', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:00:12,986 - INFO - Loading input data information...
+2024-10-27 00:00:12,986 - INFO - Sequence 0: /sequences/10k/AB052995.1.fasta
+2024-10-27 00:00:12,986 - INFO - Sequence 1: /sequences/10k/KX174312.1.fasta
+2024-10-27 00:00:12,986 - INFO - Time estimated for sequence aligment: 0.00 minutes
+2024-10-27 00:00:12,986 - INFO - The expected time for sequence alignment (0.00 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-10-27 00:00:12,986 - INFO - Creating g4dn.xlarge Spot instance...
+2024-10-27 00:00:13,181 - INFO - The current spot price for g4dn.xlarge in us-east-1 region is $0.164800
+2024-10-27 00:00:34,409 - DEBUG - Starting the framework...
+2024-10-27 00:00:35,539 - INFO - Starting cloud module...
+2024-10-27 00:00:35,540 - INFO - Listing AWS instances...
+2024-10-27 00:00:37,060 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-10-27 00:00:37,061 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-10-27 00:00:37,062 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-10-27 00:00:37,062 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-10-27 00:00:37,062 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-10-27 00:00:37,062 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-10-27 00:00:37,062 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:00:37,062 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-10-27 00:00:37,062 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:00:37,062 - INFO - {'InstanceId': 'i-0b277bb5caebb7964', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:00:37,062 - INFO - {'InstanceId': 'i-092be18447eabead3', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:00:37,062 - INFO - {'InstanceId': 'i-004f6e95823f42c92', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-27 00:00:37,062 - INFO - {'InstanceId': 'i-03dce5ff3e20eff5c', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-10-27 00:00:37,062 - INFO - {'InstanceId': 'i-0f19980e8d5572627', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-27 00:00:37,063 - INFO - {'InstanceId': 'i-00820967fdecd3a2f', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:00:37,063 - INFO - {'InstanceId': 'i-0e85cbe7eb36417b2', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:00:37,063 - INFO - Loading input data information...
+2024-10-27 00:00:37,063 - INFO - Sequence 0: /sequences/10k/AB052995.1.fasta
+2024-10-27 00:00:37,063 - INFO - Sequence 1: /sequences/10k/KX174312.1.fasta
+2024-10-27 00:00:37,063 - INFO - Time estimated for sequence aligment: 0.00 minutes
+2024-10-27 00:00:37,063 - INFO - The expected time for sequence alignment (0.00 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-10-27 00:00:37,063 - INFO - Creating g4dn.xlarge Spot instance...
+2024-10-27 00:00:37,242 - INFO - The current spot price for g4dn.xlarge in us-east-1 region is $0.164800
+2024-10-27 00:01:06,218 - DEBUG - Starting the framework...
+2024-10-27 00:01:07,993 - INFO - Starting cloud module...
+2024-10-27 00:01:07,994 - INFO - Listing AWS instances...
+2024-10-27 00:01:10,341 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-10-27 00:01:10,342 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-10-27 00:01:10,342 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-10-27 00:01:10,342 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-10-27 00:01:10,342 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-10-27 00:01:10,342 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-10-27 00:01:10,342 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:01:10,342 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-10-27 00:01:10,342 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:01:10,342 - INFO - {'InstanceId': 'i-0b277bb5caebb7964', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:01:10,342 - INFO - {'InstanceId': 'i-092be18447eabead3', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:01:10,342 - INFO - {'InstanceId': 'i-004f6e95823f42c92', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-27 00:01:10,343 - INFO - {'InstanceId': 'i-03dce5ff3e20eff5c', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-10-27 00:01:10,343 - INFO - {'InstanceId': 'i-0f19980e8d5572627', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-27 00:01:10,343 - INFO - {'InstanceId': 'i-00820967fdecd3a2f', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:01:10,343 - INFO - {'InstanceId': 'i-0e85cbe7eb36417b2', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:01:10,343 - INFO - Loading input data information...
+2024-10-27 00:01:10,343 - INFO - Sequence 0: /sequences/10k/AB052995.1.fasta
+2024-10-27 00:01:10,343 - INFO - Sequence 1: /sequences/10k/KX174312.1.fasta
+2024-10-27 00:01:10,343 - INFO - Time estimated for sequence aligment: 0.00 minutes
+2024-10-27 00:01:10,343 - INFO - The expected time for sequence alignment (0.00 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-10-27 00:01:10,343 - INFO - Creating g4dn.xlarge Spot instance...
+2024-10-27 00:01:10,529 - INFO - The current spot price for g4dn.xlarge in us-east-1 region is $0.164800
+2024-10-27 00:02:02,609 - DEBUG - Starting the framework...
+2024-10-27 00:02:05,674 - INFO - Starting cloud module...
+2024-10-27 00:02:05,675 - INFO - Listing AWS instances...
+2024-10-27 00:02:08,184 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-10-27 00:02:08,185 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-10-27 00:02:08,185 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-10-27 00:02:08,185 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-10-27 00:02:08,185 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-10-27 00:02:08,185 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-10-27 00:02:08,185 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:02:08,185 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-10-27 00:02:08,185 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:02:08,185 - INFO - {'InstanceId': 'i-0b277bb5caebb7964', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:02:08,185 - INFO - {'InstanceId': 'i-092be18447eabead3', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:02:08,185 - INFO - {'InstanceId': 'i-004f6e95823f42c92', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-27 00:02:08,186 - INFO - {'InstanceId': 'i-03dce5ff3e20eff5c', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-10-27 00:02:08,186 - INFO - {'InstanceId': 'i-0f19980e8d5572627', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-27 00:02:08,186 - INFO - {'InstanceId': 'i-00820967fdecd3a2f', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:02:08,186 - INFO - {'InstanceId': 'i-0e85cbe7eb36417b2', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:02:08,186 - INFO - Loading input data information...
+2024-10-27 00:02:08,186 - INFO - Sequence 0: /sequences/10k/AB052995.1.fasta
+2024-10-27 00:02:08,186 - INFO - Sequence 1: /sequences/10k/KX174312.1.fasta
+2024-10-27 00:02:08,186 - INFO - Time estimated for sequence aligment: 0.00 minutes
+2024-10-27 00:02:08,186 - INFO - The expected time for sequence alignment (0.00 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-10-27 00:02:08,186 - INFO - Creating g4dn.xlarge Spot instance...
+2024-10-27 00:02:08,380 - INFO - The current spot price for g4dn.xlarge in us-east-1 region is $0.164800
+2024-10-27 00:03:33,231 - DEBUG - Starting the framework...
+2024-10-27 00:03:35,100 - INFO - Starting cloud module...
+2024-10-27 00:03:35,101 - INFO - Listing AWS instances...
+2024-10-27 00:03:37,121 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-10-27 00:03:37,121 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-10-27 00:03:37,121 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-10-27 00:03:37,121 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-10-27 00:03:37,122 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-10-27 00:03:37,122 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-10-27 00:03:37,122 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:03:37,122 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-10-27 00:03:37,122 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:03:37,123 - INFO - {'InstanceId': 'i-0b277bb5caebb7964', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:03:37,123 - INFO - {'InstanceId': 'i-092be18447eabead3', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:03:37,123 - INFO - {'InstanceId': 'i-004f6e95823f42c92', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-27 00:03:37,123 - INFO - {'InstanceId': 'i-03dce5ff3e20eff5c', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-10-27 00:03:37,123 - INFO - {'InstanceId': 'i-0f19980e8d5572627', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-27 00:03:37,123 - INFO - {'InstanceId': 'i-00820967fdecd3a2f', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:03:37,123 - INFO - {'InstanceId': 'i-0e85cbe7eb36417b2', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:03:37,124 - INFO - Loading input data information...
+2024-10-27 00:03:37,124 - INFO - Sequence 0: /sequences/10k/AB052995.1.fasta
+2024-10-27 00:03:37,124 - INFO - Sequence 1: /sequences/10k/KX174312.1.fasta
+2024-10-27 00:03:37,124 - INFO - Time estimated for sequence aligment: 0.00 minutes
+2024-10-27 00:03:37,124 - INFO - The expected time for sequence alignment (0.00 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-10-27 00:03:37,124 - INFO - Creating g4dn.xlarge Spot instance...
+2024-10-27 00:03:37,312 - INFO - The current spot price for g4dn.xlarge in us-east-1 region is $0.161500
+2024-10-27 00:04:34,620 - DEBUG - Starting the framework...
+2024-10-27 00:04:36,017 - INFO - Starting cloud module...
+2024-10-27 00:04:36,017 - INFO - Listing AWS instances...
+2024-10-27 00:04:37,987 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-10-27 00:04:37,987 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-10-27 00:04:37,987 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-10-27 00:04:37,987 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-10-27 00:04:37,987 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-10-27 00:04:37,988 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-10-27 00:04:37,988 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:04:37,988 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-10-27 00:04:37,988 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:04:37,988 - INFO - {'InstanceId': 'i-0b277bb5caebb7964', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:04:37,988 - INFO - {'InstanceId': 'i-092be18447eabead3', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:04:37,988 - INFO - {'InstanceId': 'i-004f6e95823f42c92', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-27 00:04:37,988 - INFO - {'InstanceId': 'i-03dce5ff3e20eff5c', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-10-27 00:04:37,988 - INFO - {'InstanceId': 'i-0f19980e8d5572627', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-10-27 00:04:37,988 - INFO - {'InstanceId': 'i-00820967fdecd3a2f', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:04:37,989 - INFO - {'InstanceId': 'i-0e85cbe7eb36417b2', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:04:37,989 - INFO - Loading input data information...
+2024-10-27 00:04:37,989 - INFO - Sequence 0: /sequences/10k/AB052995.1.fasta
+2024-10-27 00:04:37,989 - INFO - Sequence 1: /sequences/10k/KX174312.1.fasta
+2024-10-27 00:04:37,989 - INFO - Time estimated for sequence aligment: 0.00 minutes
+2024-10-27 00:04:37,989 - INFO - The expected time for sequence alignment (0.00 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-10-27 00:04:37,989 - INFO - Creating g4dn.xlarge Spot instance...
+2024-10-27 00:04:38,205 - INFO - The current spot price for g4dn.xlarge in us-east-1 region is $0.161500
+2024-10-27 00:05:19,443 - DEBUG - Starting the framework...
+2024-10-27 00:05:20,412 - INFO - Starting cloud module...
+2024-10-27 00:05:20,413 - INFO - Listing AWS instances...
+2024-10-27 00:05:22,559 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-10-27 00:05:22,559 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-10-27 00:05:22,560 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-10-27 00:05:22,560 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-10-27 00:05:22,560 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-10-27 00:05:22,560 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-10-27 00:05:22,560 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:05:22,560 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-10-27 00:05:22,560 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 00:05:22,560 - INFO - {'InstanceId': 'i-0b277bb5caebb7964', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:05:22,560 - INFO - {'InstanceId': 'i-092be18447eabead3', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:05:22,560 - INFO - {'InstanceId': 'i-004f6e95823f42c92', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:05:22,560 - INFO - {'InstanceId': 'i-03dce5ff3e20eff5c', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-10-27 00:05:22,560 - INFO - {'InstanceId': 'i-0f19980e8d5572627', 'InstanceType': 'g4dn.xlarge', 'State': 'terminated'}
+2024-10-27 00:05:22,560 - INFO - {'InstanceId': 'i-00820967fdecd3a2f', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:05:22,561 - INFO - {'InstanceId': 'i-0e85cbe7eb36417b2', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 00:05:22,561 - INFO - Loading input data information...
+2024-10-27 00:05:22,561 - INFO - Sequence 0: /sequences/10k/AB052995.1.fasta
+2024-10-27 00:05:22,561 - INFO - Sequence 1: /sequences/10k/KX174312.1.fasta
+2024-10-27 00:05:22,561 - INFO - Time estimated for sequence aligment: 0.00 minutes
+2024-10-27 00:05:22,561 - INFO - The expected time for sequence alignment (0.00 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-10-27 00:05:22,561 - INFO - Creating g4dn.xlarge Spot instance...
+2024-10-27 00:05:22,853 - INFO - The current spot price for g4dn.xlarge in us-east-1 region is $0.161500
+2024-10-27 06:44:33,640 - DEBUG - Starting the framework...
+2024-10-27 06:44:34,494 - INFO - Starting cloud module...
+2024-10-27 06:44:34,495 - INFO - Listing AWS instances...
+2024-10-27 06:44:36,275 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-10-27 06:44:36,276 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-10-27 06:44:36,276 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-10-27 06:44:36,276 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-10-27 06:44:36,276 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-10-27 06:44:36,276 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-10-27 06:44:36,276 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 06:44:36,276 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-10-27 06:44:36,276 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-27 06:44:36,276 - INFO - {'InstanceId': 'i-03dce5ff3e20eff5c', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-10-27 06:44:36,276 - INFO - {'InstanceId': 'i-00820967fdecd3a2f', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 06:44:36,276 - INFO - {'InstanceId': 'i-0e85cbe7eb36417b2', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-27 06:44:36,276 - INFO - Loading input data information...
+2024-10-27 06:44:36,276 - INFO - Sequence 0: /sequences/10k/AB052995.1.fasta
+2024-10-27 06:44:36,276 - INFO - Sequence 1: /sequences/10k/KX174312.1.fasta
+2024-10-27 06:44:36,276 - INFO - Time estimated for sequence aligment: 0.00 minutes
+2024-10-27 06:44:36,276 - INFO - The expected time for sequence alignment (0.00 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-10-27 06:44:36,276 - INFO - Creating g4dn.xlarge Spot instance...
+2024-10-27 06:44:36,566 - INFO - The current spot price for g4dn.xlarge in us-east-1 region is $0.165300
+2024-10-27 06:44:37,596 - INFO - Spot instance requested!
+2024-10-27 06:44:37,597 - INFO - Monitoring instance...
+2024-10-27 06:44:37,800 - INFO - Spot instance request state: open
+2024-10-27 06:44:43,111 - INFO - Spot instance request state: active
+2024-10-27 06:44:43,111 - INFO - Spot instance created successfully!
+2024-10-27 06:44:43,112 - INFO - Spot request information: 
+2024-10-27 06:44:43,112 - INFO - Spot request id: sir-r926x6sp
+2024-10-27 06:44:43,112 - INFO - {'CreateTime': datetime.datetime(2024, 10, 27, 9, 44, 37, tzinfo=tzutc()), 'LaunchSpecification': {'SecurityGroups': [{'GroupName': 'walisson-group', 'GroupId': 'sg-00e0330717614a689'}], 'ImageId': 'ami-00b334278194e3561', 'InstanceType': 'g4dn.xlarge', 'KeyName': 'walisson-key', 'Placement': {'AvailabilityZone': 'us-east-1a'}, 'SubnetId': 'subnet-095b10be865b0c374', 'Monitoring': {'Enabled': False}}, 'ProductDescription': 'Linux/UNIX', 'SpotInstanceRequestId': 'sir-r926x6sp', 'SpotPrice': '0.530000', 'State': 'open', 'Status': {'Code': 'pending-evaluation', 'Message': 'Your Spot request has been submitted for review, and is pending evaluation.', 'UpdateTime': datetime.datetime(2024, 10, 27, 9, 44, 37, tzinfo=tzutc())}, 'Type': 'one-time', 'InstanceInterruptionBehavior': 'terminate'}
+2024-10-27 06:44:43,112 - INFO - Spot instance ID:i-086ed6222c84d02ea
+2024-10-27 06:44:43,113 - INFO - Starting spot instance monitor...
+2024-10-27 06:44:48,653 - INFO - Instance running!
+2024-10-27 06:44:48,654 - INFO - Instance status: initializing
+2024-10-27 06:44:53,875 - INFO - Instance running!
+2024-10-27 06:44:53,875 - INFO - Instance status: initializing
+2024-10-27 06:44:59,095 - INFO - Instance running!
+2024-10-27 06:44:59,096 - INFO - Instance status: initializing
+2024-10-27 06:45:04,320 - INFO - Instance running!
+2024-10-27 06:45:04,321 - INFO - Instance status: initializing
+2024-10-27 06:45:09,539 - INFO - Instance running!
+2024-10-27 06:45:09,540 - INFO - Instance status: initializing
+2024-10-27 06:45:14,764 - INFO - Instance running!
+2024-10-27 06:45:14,765 - INFO - Instance status: initializing
+2024-10-27 06:45:19,988 - INFO - Instance running!
+2024-10-27 06:45:19,988 - INFO - Instance status: initializing
+2024-10-27 06:45:25,210 - INFO - Instance running!
+2024-10-27 06:45:25,211 - INFO - Instance status: initializing
+2024-10-27 06:45:30,432 - INFO - Instance running!
+2024-10-27 06:45:30,432 - INFO - Instance status: initializing
+2024-10-27 06:45:35,655 - INFO - Instance running!
+2024-10-27 06:45:35,656 - INFO - Instance status: initializing
+2024-10-27 06:45:40,880 - INFO - Instance running!
+2024-10-27 06:45:40,881 - INFO - Instance status: initializing
+2024-10-27 06:45:46,099 - INFO - Instance running!
+2024-10-27 06:45:46,099 - INFO - Instance status: initializing
+2024-10-27 06:45:51,322 - INFO - Instance running!
+2024-10-27 06:45:51,322 - INFO - Instance status: initializing
+2024-10-27 06:45:56,544 - INFO - Instance running!
+2024-10-27 06:45:56,545 - INFO - Instance status: initializing
+2024-10-27 06:46:01,768 - INFO - Instance running!
+2024-10-27 06:46:01,768 - INFO - Instance status: initializing
+2024-10-27 06:46:06,992 - INFO - Instance running!
+2024-10-27 06:46:06,993 - INFO - Instance status: initializing
+2024-10-27 06:46:12,212 - INFO - Instance running!
+2024-10-27 06:46:12,213 - INFO - Instance status: initializing
+2024-10-27 06:46:17,433 - INFO - Instance running!
+2024-10-27 06:46:17,434 - INFO - Instance status: initializing
+2024-10-27 06:46:22,657 - INFO - Instance running!
+2024-10-27 06:46:22,657 - INFO - Instance status: initializing
+2024-10-27 06:46:27,878 - INFO - Instance running!
+2024-10-27 06:46:27,879 - INFO - Instance status: initializing
+2024-10-27 06:46:33,101 - INFO - Instance running!
+2024-10-27 06:46:33,101 - INFO - Instance status: initializing
+2024-10-27 06:46:38,323 - INFO - Instance running!
+2024-10-27 06:46:38,324 - INFO - Instance status: initializing
+2024-10-27 06:46:43,534 - INFO - Instance running!
+2024-10-27 06:46:43,535 - INFO - Instance status: initializing
+2024-10-27 06:46:48,768 - INFO - Instance running!
+2024-10-27 06:46:48,769 - INFO - Instance status: initializing
+2024-10-27 06:46:53,993 - INFO - Instance running!
+2024-10-27 06:46:53,994 - INFO - Instance status: initializing
+2024-10-27 06:46:59,213 - INFO - Instance running!
+2024-10-27 06:46:59,214 - INFO - Instance status: initializing
+2024-10-27 06:47:04,435 - INFO - Instance running!
+2024-10-27 06:47:04,436 - INFO - Instance status: initializing
+2024-10-27 06:47:09,658 - INFO - Instance running!
+2024-10-27 06:47:09,658 - INFO - Instance status: initializing
+2024-10-27 06:47:14,965 - INFO - Instance running!
+2024-10-27 06:47:14,965 - INFO - Instance status: initializing
+2024-10-27 06:47:20,202 - INFO - Instance running!
+2024-10-27 06:47:20,202 - INFO - Instance status: initializing
+2024-10-27 06:47:25,438 - INFO - Instance running!
+2024-10-27 06:47:25,439 - INFO - Instance status: initializing
+2024-10-27 06:47:30,650 - INFO - Instance running!
+2024-10-27 06:47:30,650 - INFO - Instance status: initializing
+2024-10-27 06:47:35,873 - INFO - Instance running!
+2024-10-27 06:47:35,873 - INFO - Instance status: initializing
+2024-10-27 06:47:41,096 - INFO - Instance running!
+2024-10-27 06:47:41,096 - INFO - Instance status: ok
+2024-10-27 06:47:41,097 - INFO - Instance is ready to use!
+2024-10-27 06:47:48,976 - INFO - Instance id: i-086ed6222c84d02ea
+2024-10-27 06:47:48,976 - INFO - Starting Executor Handler...
+2024-10-27 06:47:48,977 - INFO - Sending setup script to the instance...
+2024-10-27 06:47:55,532 - INFO - File /home/walisson/framework/prepare.sh sent to 44.204.71.54:/home/ubuntu/ successfully!
+2024-10-27 06:47:55,532 - INFO - Setting up file permission...
+2024-10-27 06:47:57,990 - INFO - Running setup script...
+2024-10-27 06:49:43,211 - INFO - Sending configuration files to the instance...
+2024-10-27 06:49:47,148 - INFO - File /home/walisson/framework/config/cloud.json sent to 44.204.71.54:/home/ubuntu/framework/config successfully!
+2024-10-27 06:49:50,732 - INFO - File /home/walisson/framework/config/gpu.json sent to 44.204.71.54:/home/ubuntu/framework/config successfully!
+2024-10-27 06:49:54,009 - INFO - File /home/walisson/framework/config/input_data.json sent to 44.204.71.54:/home/ubuntu/framework/config successfully!
+2024-10-27 06:49:57,900 - INFO - File /home/walisson/framework/config/instance.json sent to 44.204.71.54:/home/ubuntu/framework/config successfully!
+2024-10-27 06:49:57,900 - INFO - Sending execution script file to the instance...
+2024-10-27 06:50:01,279 - INFO - File /home/walisson/framework/execute.sh sent to 44.204.71.54:/home/ubuntu/framework successfully!
+2024-10-27 06:50:01,280 - INFO - Setting up file permission...
+2024-10-27 06:50:03,738 - INFO - Running executor cloud module...
+2024-10-27 06:51:11,505 - INFO - Total framework execution time: 397 seconds
