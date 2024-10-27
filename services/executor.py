@@ -73,6 +73,7 @@ class Executor:
         file = open(framework_dir + "/statistics_01.00", "r")
         lines = file.readlines()
         line = lines[17 - 1]
+        print("Passou pela linha aqui")
         print("line:", line)
         sco = line.split(": ")
         print("score[1]: ",int(sco[1]))
