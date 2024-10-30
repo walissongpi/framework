@@ -1,9 +1,9 @@
 {
-  "sequence0": "/sequences/1-3M/BA000035.2.fasta",
-  "sequence1": "/sequences/1-3M/BX927147.1.fasta",
+  "sequence0": "/sequences/3-7M/NC_003997.3.fasta",
+  "sequence1": "/sequences/3-7M/NC_005027.1.fasta",
   "work_dir": "framework_dir",
-  "seq0_length": 3147090,
-  "seq1_length": 3282708,
+  "seq0_length": 5227293,
+  "seq1_length": 7145576,
   "ld_library_path": "$LD_LIBRARY_PATH:/usr/local/cuda-11.7/lib64",
   "path": "$PATH:/usr/local/cuda-11.7/bin",
   "masa_path": "$PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028",

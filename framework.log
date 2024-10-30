@@ -17662,3 +17662,4 @@
 2024-10-30 15:21:30,619 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=3G --stage-4-strategy=ORIGINAL_MM --work-dir=/home/walisson/framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta
 2024-10-30 15:21:33,694 - INFO - Process: 0
 2024-10-30 15:21:33,694 - INFO - Execution time: 6 seconds
+2024-10-30 15:27:04,217 - DEBUG - Starting the framework...
