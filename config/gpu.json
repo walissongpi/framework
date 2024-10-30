@@ -1,8 +1,8 @@
 {
-  "model": "Nvidia mx-150",
-  "arch": "sm_30",
-  "cores": "384",
-  "memory_bandwidth": "40",
-  "base_clock": "1532",
-  "boost_clock":"1532"
+  "model": "NVidia T4",
+  "arch": "sm_75",
+  "cores": "2560",
+  "memory_bandwidth": "320",
+  "base_clock": "1590",
+  "boost_clock":"1590"
 }
