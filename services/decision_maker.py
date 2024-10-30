@@ -74,10 +74,8 @@ class DecisionMaker:
         cpu_freq = ctrl.Antecedent(np.arange(1, 5, 0.1), 'CPU_Frequency')
         gpu = ctrl.Antecedent(np.arange(1, 11, 0.1), 'GPU')
         ram_memory = ctrl.Antecedent(np.arange(1, 65, 1), 'RAM_Memory')
-
             #output variable
         execution_device = ctrl.Consequent(np.arange(0, 11, 1), 'Execution_Device')
-
             #membership functions for each variable (Million)
         sequence_size['small'] = fuzz.trapmf(sequence_size.universe, [0.001,1, 3, 10])
         sequence_size['medium'] = fuzz.trapmf(sequence_size.universe, [3, 8,12, 23])
@@ -122,11 +120,10 @@ class DecisionMaker:
         rule4 = ctrl.Rule(sequence_size['medium'] & cpu_cores['some'] & cpu_freq['medium'] & ram_memory['medium'] & gpu['medium'], execution_device['GPU'])
         rule5 = ctrl.Rule((sequence_size['large'] | sequence_size['huge']) & (gpu['high'] | gpu['medium']) & (similarity['medium'] | similarity['high']) , execution_device['GPU'])
         rule6 = ctrl.Rule((sequence_size['large'] | sequence_size['huge']) & (gpu['low'] | gpu['medium']) & (similarity['low'] | similarity['medium']) , execution_device['CPU'])
-        rule7 = ctrl.Rule(sequence_size['small'] & similarity['low'] , execution_device['CPU'])
+        rule7 = ctrl.Rule(sequence_size['small'] & (similarity['low']  | similarity['medium'] | similarity['high']) , execution_device['CPU'])
             # Creating the control system
         device_ctrl = ctrl.ControlSystem([rule1, rule2, rule3, rule4, rule5, rule6, rule7])
         execution_sys = ctrl.ControlSystemSimulation(device_ctrl)
-
             # Setting input values
         execution_sys.input['Sequence_Size'] = float(self.data["seq1_length"])/(1024*1024*1024)
         execution_sys.input['CPU_Cores'] = int(self.cpu_data["Fisical Cores"])

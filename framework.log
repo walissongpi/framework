@@ -17216,3 +17216,449 @@
 2024-10-29 15:20:38,677 - INFO - Setting up file permission...
 2024-10-29 15:20:40,861 - INFO - Running executor cloud module...
 2024-10-29 15:25:39,331 - INFO - Total framework execution time: 1757 seconds
+2024-10-29 16:05:43,320 - DEBUG - Starting the framework...
+2024-10-29 16:05:44,301 - INFO - Starting cloud module...
+2024-10-29 16:05:44,303 - INFO - Listing AWS instances...
+2024-10-29 16:05:46,247 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-10-29 16:05:46,247 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-10-29 16:05:46,247 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-10-29 16:05:46,247 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-10-29 16:05:46,247 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-10-29 16:05:46,247 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-10-29 16:05:46,247 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-29 16:05:46,247 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-10-29 16:05:46,247 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-29 16:05:46,247 - INFO - {'InstanceId': 'i-034552c9198f7060f', 'InstanceType': 't2.micro', 'State': 'terminated'}
+2024-10-29 16:05:46,247 - INFO - {'InstanceId': 'i-0fd47c9548279a640', 'InstanceType': 't2.micro', 'State': 'terminated'}
+2024-10-29 16:05:46,247 - INFO - {'InstanceId': 'i-09d6d079c8dbaae24', 'InstanceType': 't2.micro', 'State': 'terminated'}
+2024-10-29 16:05:46,248 - INFO - {'InstanceId': 'i-09e4cd49c7c9d1001', 'InstanceType': 't2.micro', 'State': 'terminated'}
+2024-10-29 16:05:46,248 - INFO - {'InstanceId': 'i-0461e15dc25db6224', 'InstanceType': 't2.micro', 'State': 'terminated'}
+2024-10-29 16:05:46,248 - INFO - {'InstanceId': 'i-03dce5ff3e20eff5c', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-10-29 16:05:46,248 - INFO - {'InstanceId': 'i-039e832fc19529ea3', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-29 16:05:46,248 - INFO - {'InstanceId': 'i-069f0a24eb1cd69f1', 'InstanceType': 't2.micro', 'State': 'terminated'}
+2024-10-29 16:05:46,248 - INFO - {'InstanceId': 'i-059539351434cb58c', 'InstanceType': 't2.micro', 'State': 'terminated'}
+2024-10-29 16:05:46,248 - INFO - {'InstanceId': 'i-08d4f1c630134cff1', 'InstanceType': 't2.micro', 'State': 'terminated'}
+2024-10-29 16:05:46,248 - INFO - {'InstanceId': 'i-089fdc1bffc2d0613', 'InstanceType': 't2.micro', 'State': 'terminated'}
+2024-10-29 16:05:46,248 - INFO - {'InstanceId': 'i-06c472c37d0a8b0e3', 'InstanceType': 't2.micro', 'State': 'terminated'}
+2024-10-29 16:05:46,248 - INFO - Loading input data information...
+2024-10-29 16:05:46,248 - INFO - Sequence 0: /sequences/3-7M/NC_003997.3.fasta
+2024-10-29 16:05:46,248 - INFO - Sequence 1: /sequences/3-7M/NC_005027.1.fasta
+2024-10-29 16:05:46,248 - INFO - Time estimated for sequence aligment: 4.43 minutes
+2024-10-29 16:05:46,248 - INFO - The expected time for sequence alignment (4.43 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-10-29 16:05:46,248 - INFO - Creating g4dn.xlarge Spot instance...
+2024-10-29 16:05:46,547 - INFO - The current spot price for g4dn.xlarge in us-east-1 region is $0.170900
+2024-10-29 16:05:47,673 - INFO - Spot instance requested!
+2024-10-29 16:05:47,673 - INFO - Monitoring instance...
+2024-10-29 16:05:47,872 - INFO - Spot instance request state: open
+2024-10-29 16:05:53,301 - INFO - Spot instance request state: active
+2024-10-29 16:05:53,301 - INFO - Spot instance created successfully!
+2024-10-29 16:05:53,301 - INFO - Spot request information: 
+2024-10-29 16:05:53,301 - INFO - Spot request id: sir-xzfpxhvq
+2024-10-29 16:05:53,301 - INFO - {'CreateTime': datetime.datetime(2024, 10, 29, 19, 5, 47, tzinfo=tzutc()), 'LaunchSpecification': {'SecurityGroups': [{'GroupName': 'walisson-group', 'GroupId': 'sg-00e0330717614a689'}], 'ImageId': 'ami-00b334278194e3561', 'InstanceType': 'g4dn.xlarge', 'KeyName': 'walisson-key', 'Placement': {'AvailabilityZone': 'us-east-1a'}, 'SubnetId': 'subnet-095b10be865b0c374', 'Monitoring': {'Enabled': False}}, 'ProductDescription': 'Linux/UNIX', 'SpotInstanceRequestId': 'sir-xzfpxhvq', 'SpotPrice': '0.530000', 'State': 'open', 'Status': {'Code': 'pending-evaluation', 'Message': 'Your Spot request has been submitted for review, and is pending evaluation.', 'UpdateTime': datetime.datetime(2024, 10, 29, 19, 5, 47, tzinfo=tzutc())}, 'Type': 'one-time', 'InstanceInterruptionBehavior': 'terminate'}
+2024-10-29 16:05:53,301 - INFO - Spot instance ID:i-049acbc604c74e030
+2024-10-29 16:05:53,302 - INFO - Starting spot instance monitor...
+2024-10-29 16:05:58,785 - INFO - Instance running!
+2024-10-29 16:05:58,786 - INFO - Instance status: initializing
+2024-10-29 16:06:03,984 - INFO - Instance running!
+2024-10-29 16:06:03,984 - INFO - Instance status: initializing
+2024-10-29 16:06:09,276 - INFO - Instance running!
+2024-10-29 16:06:09,276 - INFO - Instance status: initializing
+2024-10-29 16:06:14,497 - INFO - Instance running!
+2024-10-29 16:06:14,497 - INFO - Instance status: initializing
+2024-10-29 16:06:19,740 - INFO - Instance running!
+2024-10-29 16:06:19,740 - INFO - Instance status: initializing
+2024-10-29 16:06:24,946 - INFO - Instance running!
+2024-10-29 16:06:24,946 - INFO - Instance status: initializing
+2024-10-29 16:06:30,266 - INFO - Instance running!
+2024-10-29 16:06:30,266 - INFO - Instance status: initializing
+2024-10-29 16:06:35,694 - INFO - Instance running!
+2024-10-29 16:06:35,694 - INFO - Instance status: initializing
+2024-10-29 16:06:40,917 - INFO - Instance running!
+2024-10-29 16:06:40,918 - INFO - Instance status: initializing
+2024-10-29 16:06:46,139 - INFO - Instance running!
+2024-10-29 16:06:46,139 - INFO - Instance status: initializing
+2024-10-29 16:06:51,327 - INFO - Instance running!
+2024-10-29 16:06:51,327 - INFO - Instance status: initializing
+2024-10-29 16:06:56,549 - INFO - Instance running!
+2024-10-29 16:06:56,549 - INFO - Instance status: initializing
+2024-10-29 16:07:01,758 - INFO - Instance running!
+2024-10-29 16:07:01,758 - INFO - Instance status: initializing
+2024-10-29 16:07:06,953 - INFO - Instance running!
+2024-10-29 16:07:06,954 - INFO - Instance status: initializing
+2024-10-29 16:07:12,156 - INFO - Instance running!
+2024-10-29 16:07:12,157 - INFO - Instance status: initializing
+2024-10-29 16:07:17,370 - INFO - Instance running!
+2024-10-29 16:07:17,370 - INFO - Instance status: initializing
+2024-10-29 16:07:22,593 - INFO - Instance running!
+2024-10-29 16:07:22,593 - INFO - Instance status: initializing
+2024-10-29 16:07:27,813 - INFO - Instance running!
+2024-10-29 16:07:27,813 - INFO - Instance status: initializing
+2024-10-29 16:07:33,035 - INFO - Instance running!
+2024-10-29 16:07:33,036 - INFO - Instance status: initializing
+2024-10-29 16:07:38,328 - INFO - Instance running!
+2024-10-29 16:07:38,329 - INFO - Instance status: initializing
+2024-10-29 16:07:43,534 - INFO - Instance running!
+2024-10-29 16:07:43,535 - INFO - Instance status: initializing
+2024-10-29 16:07:48,736 - INFO - Instance running!
+2024-10-29 16:07:48,736 - INFO - Instance status: initializing
+2024-10-29 16:07:53,936 - INFO - Instance running!
+2024-10-29 16:07:53,937 - INFO - Instance status: initializing
+2024-10-29 16:07:59,147 - INFO - Instance running!
+2024-10-29 16:07:59,147 - INFO - Instance status: initializing
+2024-10-29 16:08:04,357 - INFO - Instance running!
+2024-10-29 16:08:04,357 - INFO - Instance status: initializing
+2024-10-29 16:08:09,570 - INFO - Instance running!
+2024-10-29 16:08:09,570 - INFO - Instance status: initializing
+2024-10-29 16:08:14,818 - INFO - Instance running!
+2024-10-29 16:08:14,818 - INFO - Instance status: initializing
+2024-10-29 16:08:20,027 - INFO - Instance running!
+2024-10-29 16:08:20,027 - INFO - Instance status: initializing
+2024-10-29 16:08:25,261 - INFO - Instance running!
+2024-10-29 16:08:25,261 - INFO - Instance status: initializing
+2024-10-29 16:08:30,483 - INFO - Instance running!
+2024-10-29 16:08:30,484 - INFO - Instance status: initializing
+2024-10-29 16:08:35,716 - INFO - Instance running!
+2024-10-29 16:08:35,717 - INFO - Instance status: initializing
+2024-10-29 16:08:40,926 - INFO - Instance running!
+2024-10-29 16:08:40,927 - INFO - Instance status: initializing
+2024-10-29 16:08:46,150 - INFO - Instance running!
+2024-10-29 16:08:46,151 - INFO - Instance status: initializing
+2024-10-29 16:08:51,373 - INFO - Instance running!
+2024-10-29 16:08:51,373 - INFO - Instance status: initializing
+2024-10-29 16:08:56,595 - INFO - Instance running!
+2024-10-29 16:08:56,595 - INFO - Instance status: initializing
+2024-10-29 16:09:01,815 - INFO - Instance running!
+2024-10-29 16:09:01,816 - INFO - Instance status: initializing
+2024-10-29 16:09:07,039 - INFO - Instance running!
+2024-10-29 16:09:07,040 - INFO - Instance status: initializing
+2024-10-29 16:09:12,262 - INFO - Instance running!
+2024-10-29 16:09:12,262 - INFO - Instance status: initializing
+2024-10-29 16:09:17,537 - INFO - Instance running!
+2024-10-29 16:09:17,537 - INFO - Instance status: initializing
+2024-10-29 16:09:22,752 - INFO - Instance running!
+2024-10-29 16:09:22,753 - INFO - Instance status: initializing
+2024-10-29 16:09:27,965 - INFO - Instance running!
+2024-10-29 16:09:27,966 - INFO - Instance status: initializing
+2024-10-29 16:09:33,179 - INFO - Instance running!
+2024-10-29 16:09:33,180 - INFO - Instance status: initializing
+2024-10-29 16:09:38,397 - INFO - Instance running!
+2024-10-29 16:09:38,397 - INFO - Instance status: initializing
+2024-10-29 16:09:44,211 - INFO - Instance running!
+2024-10-29 16:09:44,211 - INFO - Instance status: ok
+2024-10-29 16:09:44,212 - INFO - Instance is ready to use!
+2024-10-29 16:11:55,591 - INFO - Instance id: i-049acbc604c74e030
+2024-10-29 16:11:55,591 - INFO - Starting Executor Handler...
+2024-10-29 16:11:55,592 - INFO - Sending setup script to the instance...
+2024-10-29 16:12:02,242 - INFO - File /home/walisson/framework/prepare.sh sent to 54.161.243.153:/home/ubuntu/ successfully!
+2024-10-29 16:12:02,242 - INFO - Setting up file permission...
+2024-10-29 16:12:04,805 - INFO - Running setup script...
+2024-10-29 16:13:52,578 - INFO - Sending configuration files to the instance...
+2024-10-29 16:13:56,624 - INFO - File /home/walisson/framework/config/cloud.json sent to 54.161.243.153:/home/ubuntu/framework/config successfully!
+2024-10-29 16:13:59,696 - INFO - File /home/walisson/framework/config/gpu.json sent to 54.161.243.153:/home/ubuntu/framework/config successfully!
+2024-10-29 16:14:02,769 - INFO - File /home/walisson/framework/config/input_data.json sent to 54.161.243.153:/home/ubuntu/framework/config successfully!
+2024-10-29 16:14:07,274 - INFO - File /home/walisson/framework/config/instance.json sent to 54.161.243.153:/home/ubuntu/framework/config successfully!
+2024-10-29 16:14:07,274 - INFO - Sending execution script file to the instance...
+2024-10-29 16:14:10,595 - INFO - File /home/walisson/framework/execute.sh sent to 54.161.243.153:/home/ubuntu/framework successfully!
+2024-10-29 16:14:10,596 - INFO - Setting up file permission...
+2024-10-29 16:14:12,907 - INFO - Running executor cloud module...
+2024-10-29 16:19:06,902 - INFO - Total framework execution time: 803 seconds
+2024-10-29 17:33:37,735 - DEBUG - Starting the framework...
+2024-10-29 17:33:40,936 - INFO - Starting local module...
+2024-10-29 17:33:40,937 - INFO - Getting enviroment information...
+2024-10-29 17:33:41,329 - INFO - Enviroment information: 
+2024-10-29 17:33:41,330 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-10-29 17:33:41,330 - INFO - Processor: x86_64
+2024-10-29 17:33:41,331 - INFO - Architecture: 64bit
+2024-10-29 17:33:41,331 - INFO - Clock: 800.0105
+2024-10-29 17:33:41,331 - INFO - Fisical Cores: 4
+2024-10-29 17:33:41,331 - INFO - Logical Cores: 8
+2024-10-29 17:33:41,332 - INFO - Total Memory: 16677801984
+2024-10-29 17:33:41,332 - INFO - Available Memory: 8168202240
+2024-10-29 17:33:41,332 - INFO - Total Storage: 51282223104
+2024-10-29 17:33:41,332 - INFO - Available Storage: 2303377408
+2024-10-29 17:33:41,332 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-10-29 17:33:41,333 - INFO - System information collected.
+2024-10-29 17:33:41,333 - INFO - Executing MASA-CUDALign...
+2024-10-29 17:33:41,333 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-10-29 17:33:41,334 - INFO - Current directory: /home/walisson/framework
+2024-10-29 17:33:41,334 - INFO - Home directory: /home/walisson
+2024-10-29 17:33:41,335 - INFO - SRA size calculated: 6G
+2024-10-29 17:33:41,335 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=6G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/3-7M/NC_003997.3.fasta /home/walisson/sequences/3-7M/NC_005027.1.fasta
+2024-10-29 17:33:41,746 - INFO - Process: 1
+2024-10-29 17:33:41,747 - INFO - Stage 1 execution complete: 1
+2024-10-29 17:33:45,269 - DEBUG - Starting the framework...
+2024-10-29 17:33:46,245 - INFO - Starting local module...
+2024-10-29 17:33:46,246 - INFO - Getting enviroment information...
+2024-10-29 17:33:46,491 - INFO - Enviroment information: 
+2024-10-29 17:33:46,492 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-10-29 17:33:46,492 - INFO - Processor: x86_64
+2024-10-29 17:33:46,492 - INFO - Architecture: 64bit
+2024-10-29 17:33:46,492 - INFO - Clock: 852.57825
+2024-10-29 17:33:46,492 - INFO - Fisical Cores: 4
+2024-10-29 17:33:46,492 - INFO - Logical Cores: 8
+2024-10-29 17:33:46,492 - INFO - Total Memory: 16677801984
+2024-10-29 17:33:46,493 - INFO - Available Memory: 8165548032
+2024-10-29 17:33:46,493 - INFO - Total Storage: 51282223104
+2024-10-29 17:33:46,493 - INFO - Available Storage: 2303377408
+2024-10-29 17:33:46,493 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-10-29 17:33:46,493 - INFO - System information collected.
+2024-10-29 17:33:46,493 - INFO - Executing MASA-CUDALign...
+2024-10-29 17:33:46,493 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-10-29 17:33:46,494 - INFO - Current directory: /home/walisson/framework
+2024-10-29 17:33:46,494 - INFO - Home directory: /home/walisson
+2024-10-29 17:33:46,494 - INFO - SRA size calculated: 6G
+2024-10-29 17:33:46,494 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=6G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/3-7M/NC_003997.3.fasta /home/walisson/sequences/3-7M/NC_005027.1.fasta
+2024-10-29 17:33:46,528 - INFO - Process: 1
+2024-10-29 17:33:46,528 - INFO - Stage 1 execution complete: 1
+2024-10-29 17:34:42,239 - DEBUG - Starting the framework...
+2024-10-29 17:34:43,945 - INFO - Starting local module...
+2024-10-29 17:34:43,946 - INFO - Getting enviroment information...
+2024-10-29 17:34:44,193 - INFO - Enviroment information: 
+2024-10-29 17:34:44,194 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-10-29 17:34:44,194 - INFO - Processor: x86_64
+2024-10-29 17:34:44,194 - INFO - Architecture: 64bit
+2024-10-29 17:34:44,194 - INFO - Clock: 800.090375
+2024-10-29 17:34:44,194 - INFO - Fisical Cores: 4
+2024-10-29 17:34:44,195 - INFO - Logical Cores: 8
+2024-10-29 17:34:44,195 - INFO - Total Memory: 16677801984
+2024-10-29 17:34:44,195 - INFO - Available Memory: 8165756928
+2024-10-29 17:34:44,195 - INFO - Total Storage: 51282223104
+2024-10-29 17:34:44,195 - INFO - Available Storage: 2303168512
+2024-10-29 17:34:44,196 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-10-29 17:34:44,196 - INFO - System information collected.
+2024-10-29 17:34:44,196 - INFO - Executing MASA-CUDALign...
+2024-10-29 17:34:44,196 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-10-29 17:34:44,197 - INFO - Current directory: /home/walisson/framework
+2024-10-29 17:34:44,197 - INFO - Home directory: /home/walisson
+2024-10-29 17:34:44,197 - INFO - SRA size calculated: 6G
+2024-10-29 17:34:44,198 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=6G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/3-7M/NC_003997.3.fasta /home/walisson/sequences/3-7M/NC_005027.1.fasta
+2024-10-29 17:34:44,265 - INFO - Process: 1
+2024-10-29 17:34:44,266 - INFO - Stage 1 execution complete: 1
+2024-10-30 12:58:37,762 - DEBUG - Starting the framework...
+2024-10-30 12:58:40,701 - INFO - Starting local module...
+2024-10-30 12:58:40,702 - INFO - Getting enviroment information...
+2024-10-30 12:58:41,020 - INFO - Enviroment information: 
+2024-10-30 12:58:41,021 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-10-30 12:58:41,021 - INFO - Processor: x86_64
+2024-10-30 12:58:41,021 - INFO - Architecture: 64bit
+2024-10-30 12:58:41,021 - INFO - Clock: 1261.695
+2024-10-30 12:58:41,021 - INFO - Fisical Cores: 4
+2024-10-30 12:58:41,021 - INFO - Logical Cores: 8
+2024-10-30 12:58:41,021 - INFO - Total Memory: 16677801984
+2024-10-30 12:58:41,021 - INFO - Available Memory: 8521613312
+2024-10-30 12:58:41,022 - INFO - Total Storage: 51282223104
+2024-10-30 12:58:41,022 - INFO - Available Storage: 2264739840
+2024-10-30 12:58:41,022 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-10-30 12:58:41,022 - INFO - System information collected.
+2024-10-30 12:58:41,022 - INFO - Executing MASA-CUDALign...
+2024-10-30 12:58:41,022 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-10-30 12:58:41,022 - INFO - Current directory: /home/walisson/framework
+2024-10-30 12:58:41,023 - INFO - Home directory: /home/walisson
+2024-10-30 12:58:41,023 - INFO - SRA size calculated: 6G
+2024-10-30 12:58:41,023 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=6G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/3-7M/NC_003997.3.fasta /home/walisson/sequences/3-7M/NC_005027.1.fasta
+2024-10-30 12:58:41,150 - INFO - Process: 1
+2024-10-30 12:58:41,150 - INFO - Stage 1 execution complete: 1
+2024-10-30 13:00:34,358 - DEBUG - Starting the framework...
+2024-10-30 13:00:35,416 - INFO - Starting local module...
+2024-10-30 13:00:35,417 - INFO - Getting enviroment information...
+2024-10-30 13:00:35,685 - INFO - Enviroment information: 
+2024-10-30 13:00:35,686 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-10-30 13:00:35,686 - INFO - Processor: x86_64
+2024-10-30 13:00:35,686 - INFO - Architecture: 64bit
+2024-10-30 13:00:35,686 - INFO - Clock: 976.3039999999999
+2024-10-30 13:00:35,686 - INFO - Fisical Cores: 4
+2024-10-30 13:00:35,686 - INFO - Logical Cores: 8
+2024-10-30 13:00:35,687 - INFO - Total Memory: 16677801984
+2024-10-30 13:00:35,687 - INFO - Available Memory: 8534224896
+2024-10-30 13:00:35,687 - INFO - Total Storage: 51282223104
+2024-10-30 13:00:35,687 - INFO - Available Storage: 2264195072
+2024-10-30 13:00:35,687 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-10-30 13:00:35,687 - INFO - System information collected.
+2024-10-30 13:00:35,687 - INFO - Executing MASA-CUDALign...
+2024-10-30 13:00:35,687 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-10-30 13:00:35,688 - INFO - Current directory: /home/walisson/framework
+2024-10-30 13:00:35,688 - INFO - Home directory: /home/walisson
+2024-10-30 13:00:35,688 - INFO - SRA size calculated: 6G
+2024-10-30 13:00:35,688 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=6G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/3-7M/NC_003997.3.fasta /home/walisson/sequences/3-7M/NC_005027.1.fasta
+2024-10-30 13:00:35,732 - INFO - Process: 1
+2024-10-30 13:00:35,732 - INFO - Stage 1 execution complete: 1
+2024-10-30 13:02:34,362 - DEBUG - Starting the framework...
+2024-10-30 13:02:35,894 - INFO - Starting local module...
+2024-10-30 13:02:35,895 - INFO - Getting enviroment information...
+2024-10-30 13:02:36,158 - INFO - Enviroment information: 
+2024-10-30 13:02:36,158 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-10-30 13:02:36,158 - INFO - Processor: x86_64
+2024-10-30 13:02:36,158 - INFO - Architecture: 64bit
+2024-10-30 13:02:36,159 - INFO - Clock: 798.363875
+2024-10-30 13:02:36,159 - INFO - Fisical Cores: 4
+2024-10-30 13:02:36,159 - INFO - Logical Cores: 8
+2024-10-30 13:02:36,159 - INFO - Total Memory: 16677801984
+2024-10-30 13:02:36,159 - INFO - Available Memory: 8406138880
+2024-10-30 13:02:36,159 - INFO - Total Storage: 51282223104
+2024-10-30 13:02:36,159 - INFO - Available Storage: 2241245184
+2024-10-30 13:02:36,159 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-10-30 13:02:36,159 - INFO - System information collected.
+2024-10-30 13:02:36,159 - INFO - Executing MASA-CUDALign...
+2024-10-30 13:02:36,159 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-10-30 13:02:36,159 - INFO - Current directory: /home/walisson/framework
+2024-10-30 13:02:36,160 - INFO - Home directory: /home/walisson
+2024-10-30 13:02:36,160 - INFO - SRA size calculated: 6G
+2024-10-30 13:02:36,160 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=6G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/3-7M/NC_003997.3.fasta /home/walisson/sequences/3-7M/NC_005027.1.fasta
+2024-10-30 13:14:55,669 - DEBUG - Starting the framework...
+2024-10-30 13:14:58,032 - INFO - Starting local module...
+2024-10-30 13:14:58,033 - INFO - Getting enviroment information...
+2024-10-30 13:14:58,261 - INFO - Enviroment information: 
+2024-10-30 13:14:58,261 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-10-30 13:14:58,261 - INFO - Processor: x86_64
+2024-10-30 13:14:58,261 - INFO - Architecture: 64bit
+2024-10-30 13:14:58,262 - INFO - Clock: 811.5047500000001
+2024-10-30 13:14:58,262 - INFO - Fisical Cores: 4
+2024-10-30 13:14:58,262 - INFO - Logical Cores: 8
+2024-10-30 13:14:58,262 - INFO - Total Memory: 16677801984
+2024-10-30 13:14:58,262 - INFO - Available Memory: 8622792704
+2024-10-30 13:14:58,262 - INFO - Total Storage: 51282223104
+2024-10-30 13:14:58,262 - INFO - Available Storage: 2353569792
+2024-10-30 13:14:58,262 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-10-30 13:14:58,262 - INFO - System information collected.
+2024-10-30 13:14:58,262 - INFO - Executing MASA-CUDALign...
+2024-10-30 13:14:58,262 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-10-30 13:14:58,262 - INFO - Current directory: /home/walisson/framework
+2024-10-30 13:14:58,263 - INFO - Home directory: /home/walisson
+2024-10-30 13:14:58,263 - INFO - SRA size calculated: 3G
+2024-10-30 13:14:58,263 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta
+2024-10-30 13:20:33,896 - INFO - Process: 1
+2024-10-30 13:20:33,896 - INFO - Stage 1 execution complete: 1
+2024-10-30 13:20:33,896 - INFO - Sequence similarity: 16
+2024-10-30 13:20:34,266 - INFO - Stratrgy for stage 4: ORIGINAL_MM
+2024-10-30 13:20:34,266 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=3G --stage-4-strategy=ORIGINAL_MM --work-dir=/home/walisson/framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta
+2024-10-30 13:21:13,480 - INFO - Process: 1
+2024-10-30 13:21:13,480 - INFO - Execution time: 375 seconds
+2024-10-30 13:23:12,642 - DEBUG - Starting the framework...
+2024-10-30 13:23:16,631 - INFO - Starting local module...
+2024-10-30 13:23:16,632 - INFO - Getting enviroment information...
+2024-10-30 13:23:16,857 - INFO - Enviroment information: 
+2024-10-30 13:23:16,858 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-10-30 13:23:16,858 - INFO - Processor: x86_64
+2024-10-30 13:23:16,858 - INFO - Architecture: 64bit
+2024-10-30 13:23:16,858 - INFO - Clock: 922.65925
+2024-10-30 13:23:16,859 - INFO - Fisical Cores: 4
+2024-10-30 13:23:16,859 - INFO - Logical Cores: 8
+2024-10-30 13:23:16,859 - INFO - Total Memory: 16677801984
+2024-10-30 13:23:16,859 - INFO - Available Memory: 8858951680
+2024-10-30 13:23:16,859 - INFO - Total Storage: 51282223104
+2024-10-30 13:23:16,860 - INFO - Available Storage: 4759113728
+2024-10-30 13:23:16,860 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-10-30 13:23:16,860 - INFO - System information collected.
+2024-10-30 13:23:16,860 - INFO - Executing MASA-CUDALign...
+2024-10-30 13:23:16,861 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-10-30 13:23:16,861 - INFO - Current directory: /home/walisson/framework
+2024-10-30 13:23:16,861 - INFO - Home directory: /home/walisson
+2024-10-30 13:23:16,862 - INFO - SRA size calculated: 3G
+2024-10-30 13:23:16,862 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta
+2024-10-30 13:31:01,325 - INFO - Process: 0
+2024-10-30 13:31:01,325 - INFO - Stage 1 execution complete: 0
+2024-10-30 13:31:01,325 - INFO - Sequence similarity: 82
+2024-10-30 13:39:39,069 - DEBUG - Starting the framework...
+2024-10-30 13:39:41,188 - INFO - Starting local module...
+2024-10-30 13:39:41,189 - INFO - Getting enviroment information...
+2024-10-30 13:39:41,431 - INFO - Enviroment information: 
+2024-10-30 13:39:41,432 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-10-30 13:39:41,432 - INFO - Processor: x86_64
+2024-10-30 13:39:41,432 - INFO - Architecture: 64bit
+2024-10-30 13:39:41,432 - INFO - Clock: 975.1695000000001
+2024-10-30 13:39:41,433 - INFO - Fisical Cores: 4
+2024-10-30 13:39:41,433 - INFO - Logical Cores: 8
+2024-10-30 13:39:41,433 - INFO - Total Memory: 16677801984
+2024-10-30 13:39:41,433 - INFO - Available Memory: 8845430784
+2024-10-30 13:39:41,433 - INFO - Total Storage: 51282223104
+2024-10-30 13:39:41,433 - INFO - Available Storage: 4751249408
+2024-10-30 13:39:41,434 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-10-30 13:39:41,434 - INFO - System information collected.
+2024-10-30 13:39:41,434 - INFO - Executing MASA-CUDALign...
+2024-10-30 13:39:41,434 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-10-30 13:39:41,435 - INFO - Current directory: /home/walisson/framework
+2024-10-30 13:39:41,435 - INFO - Home directory: /home/walisson
+2024-10-30 13:39:41,435 - INFO - SRA size calculated: 3G
+2024-10-30 13:39:41,436 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta
+2024-10-30 13:46:55,513 - INFO - Process: 0
+2024-10-30 13:46:55,513 - INFO - Stage 1 execution complete: 0
+2024-10-30 13:46:55,514 - INFO - Sequence similarity: 82
+2024-10-30 13:54:00,531 - DEBUG - Starting the framework...
+2024-10-30 13:54:01,772 - INFO - Starting local module...
+2024-10-30 13:54:01,773 - INFO - Getting enviroment information...
+2024-10-30 13:54:02,013 - INFO - Enviroment information: 
+2024-10-30 13:54:02,014 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-10-30 13:54:02,015 - INFO - Processor: x86_64
+2024-10-30 13:54:02,015 - INFO - Architecture: 64bit
+2024-10-30 13:54:02,015 - INFO - Clock: 810.6115
+2024-10-30 13:54:02,015 - INFO - Fisical Cores: 4
+2024-10-30 13:54:02,015 - INFO - Logical Cores: 8
+2024-10-30 13:54:02,016 - INFO - Total Memory: 16677801984
+2024-10-30 13:54:02,016 - INFO - Available Memory: 8849059840
+2024-10-30 13:54:02,016 - INFO - Total Storage: 51282223104
+2024-10-30 13:54:02,016 - INFO - Available Storage: 1592127488
+2024-10-30 13:54:02,016 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-10-30 13:54:02,016 - INFO - System information collected.
+2024-10-30 13:54:02,017 - INFO - Executing MASA-CUDALign...
+2024-10-30 13:54:02,017 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-10-30 13:54:02,017 - INFO - Current directory: /home/walisson/framework
+2024-10-30 13:54:02,018 - INFO - Home directory: /home/walisson
+2024-10-30 13:54:02,018 - INFO - SRA size calculated: 3G
+2024-10-30 13:54:02,018 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta
+2024-10-30 13:54:04,556 - INFO - Process: 0
+2024-10-30 13:54:04,556 - INFO - Stage 1 execution complete: 0
+2024-10-30 13:54:04,556 - INFO - Sequence similarity: 82
+2024-10-30 15:19:20,603 - DEBUG - Starting the framework...
+2024-10-30 15:19:21,888 - INFO - Starting local module...
+2024-10-30 15:19:21,889 - INFO - Getting enviroment information...
+2024-10-30 15:19:22,118 - INFO - Enviroment information: 
+2024-10-30 15:19:22,118 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-10-30 15:19:22,119 - INFO - Processor: x86_64
+2024-10-30 15:19:22,119 - INFO - Architecture: 64bit
+2024-10-30 15:19:22,119 - INFO - Clock: 850.7291250000001
+2024-10-30 15:19:22,119 - INFO - Fisical Cores: 4
+2024-10-30 15:19:22,119 - INFO - Logical Cores: 8
+2024-10-30 15:19:22,120 - INFO - Total Memory: 16677801984
+2024-10-30 15:19:22,120 - INFO - Available Memory: 8333205504
+2024-10-30 15:19:22,120 - INFO - Total Storage: 51282223104
+2024-10-30 15:19:22,120 - INFO - Available Storage: 1509564416
+2024-10-30 15:19:22,120 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-10-30 15:19:22,121 - INFO - System information collected.
+2024-10-30 15:19:22,121 - INFO - Executing MASA-CUDALign...
+2024-10-30 15:19:22,121 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-10-30 15:19:22,121 - INFO - Current directory: /home/walisson/framework
+2024-10-30 15:19:22,122 - INFO - Home directory: /home/walisson
+2024-10-30 15:19:22,122 - INFO - SRA size calculated: 3G
+2024-10-30 15:19:22,122 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta
+2024-10-30 15:19:24,727 - INFO - Process: 0
+2024-10-30 15:19:24,727 - INFO - Stage 1 execution complete: 0
+2024-10-30 15:19:24,727 - INFO - Sequence similarity: 82
+2024-10-30 15:21:26,079 - DEBUG - Starting the framework...
+2024-10-30 15:21:27,533 - INFO - Starting local module...
+2024-10-30 15:21:27,534 - INFO - Getting enviroment information...
+2024-10-30 15:21:27,771 - INFO - Enviroment information: 
+2024-10-30 15:21:27,772 - INFO - Operacional System: Linux-5.4.0-150-generic-x86_64-with-Ubuntu-18.04-bionic
+2024-10-30 15:21:27,772 - INFO - Processor: x86_64
+2024-10-30 15:21:27,772 - INFO - Architecture: 64bit
+2024-10-30 15:21:27,772 - INFO - Clock: 1312.75625
+2024-10-30 15:21:27,773 - INFO - Fisical Cores: 4
+2024-10-30 15:21:27,773 - INFO - Logical Cores: 8
+2024-10-30 15:21:27,773 - INFO - Total Memory: 16677801984
+2024-10-30 15:21:27,773 - INFO - Available Memory: 8343900160
+2024-10-30 15:21:27,773 - INFO - Total Storage: 51282223104
+2024-10-30 15:21:27,773 - INFO - Available Storage: 1508880384
+2024-10-30 15:21:27,774 - INFO - Placas de Vídeo: Erro ao obter informações da placa de vídeo: 'SystemInfo' object has no attribute 'get_cuda_cores'
+2024-10-30 15:21:27,774 - INFO - System information collected.
+2024-10-30 15:21:27,774 - INFO - Executing MASA-CUDALign...
+2024-10-30 15:21:27,774 - INFO - Exporting MASA-CUDAlign path: $PATH:/home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028
+2024-10-30 15:21:27,775 - INFO - Current directory: /home/walisson/framework
+2024-10-30 15:21:27,775 - INFO - Home directory: /home/walisson
+2024-10-30 15:21:27,775 - INFO - SRA size calculated: 3G
+2024-10-30 15:21:27,776 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=3G --stage-1 --work-dir=/home/walisson/framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta
+2024-10-30 15:21:30,373 - INFO - Process: 0
+2024-10-30 15:21:30,373 - INFO - Stage 1 execution complete: 0
+2024-10-30 15:21:30,373 - INFO - Sequence similarity: 82
+2024-10-30 15:21:30,619 - INFO - Stratrgy for stage 4: ORIGINAL_MM
+2024-10-30 15:21:30,619 - INFO - MASA-CUDAlign command created: /home/walisson/MASA-CUDAlign/masa-cudalign-4.0.2.1028/cudalign --blocks=512 --disk-size=3G --stage-4-strategy=ORIGINAL_MM --work-dir=/home/walisson/framework_dir /home/walisson/sequences/1-3M/BA000035.2.fasta /home/walisson/sequences/1-3M/BX927147.1.fasta
+2024-10-30 15:21:33,694 - INFO - Process: 0
+2024-10-30 15:21:33,694 - INFO - Execution time: 6 seconds
