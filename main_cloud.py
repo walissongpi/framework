@@ -36,4 +36,13 @@ if __name__ == "__main__":
 
     main = MainCLoud(logger, data, gpu_data)
     main.get_system_info()
+    #medir o tempo aqui
+
+    start = time.time()
+
     main.execute()
+
+    end = time.time()
+    execution_time = end - start
+    logger.info("alignment time: "+str(round(execution_time))+" seconds")
+    #self.logger.info("Estimated monetary cost: "+ "US$")
