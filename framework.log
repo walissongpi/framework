@@ -18517,3 +18517,124 @@
 2024-10-31 11:08:58,113 - INFO - Setting up file permission...
 2024-10-31 11:09:00,573 - INFO - Running executor cloud module...
 2024-10-31 13:11:37,240 - INFO - Total framework execution time: 7729 seconds
+2024-10-31 14:43:10,139 - DEBUG - Starting the framework...
+2024-10-31 14:43:17,190 - INFO - Starting cloud module...
+2024-10-31 14:43:17,191 - INFO - Listing AWS instances...
+2024-10-31 14:43:18,803 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-10-31 14:43:18,803 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-10-31 14:43:18,804 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-10-31 14:43:18,804 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-10-31 14:43:18,804 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-10-31 14:43:18,804 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-10-31 14:43:18,804 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-31 14:43:18,804 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-10-31 14:43:18,804 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-31 14:43:18,804 - INFO - {'InstanceId': 'i-09a2524e0c7d38a92', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-31 14:43:18,804 - INFO - {'InstanceId': 'i-0f015792db3de04d4', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-10-31 14:43:18,804 - INFO - {'InstanceId': 'i-0c8d8ac4d22f44b89', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-31 14:43:18,804 - INFO - Loading input data information...
+2024-10-31 14:43:18,804 - INFO - Sequence 0: /sequences/chrY/NC_000024.10.fasta
+2024-10-31 14:43:18,804 - INFO - Sequence 1: /sequences/chrY/NC_006492.4.fasta
+2024-10-31 14:43:18,804 - INFO - Time estimated for sequence aligment: 165.34 minutes
+2024-10-31 14:43:18,804 - INFO - The expected time for sequence alignment (165.34 minutes) is less than the pre-established threshold (90 minutes). The execution will be carried out on a Spot instance...
+2024-10-31 14:43:18,804 - INFO - Creating g4dn.xlarge Spot instance...
+2024-10-31 14:43:19,173 - INFO - The current spot price for g4dn.xlarge in us-east-1 region is $0.236600
+2024-10-31 14:44:35,841 - DEBUG - Starting the framework...
+2024-10-31 14:44:40,813 - INFO - Starting cloud module...
+2024-10-31 14:44:40,814 - INFO - Listing AWS instances...
+2024-10-31 14:44:46,641 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-10-31 14:44:46,641 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-10-31 14:44:46,641 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-10-31 14:44:46,641 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-10-31 14:44:46,641 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-10-31 14:44:46,641 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-10-31 14:44:46,641 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-31 14:44:46,641 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-10-31 14:44:46,641 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-10-31 14:44:46,641 - INFO - {'InstanceId': 'i-09a2524e0c7d38a92', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-31 14:44:46,641 - INFO - {'InstanceId': 'i-0f015792db3de04d4', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-10-31 14:44:46,641 - INFO - {'InstanceId': 'i-0c8d8ac4d22f44b89', 'InstanceType': 'g4dn.xlarge', 'State': 'running'}
+2024-10-31 14:44:46,641 - INFO - Loading input data information...
+2024-10-31 14:44:46,642 - INFO - Sequence 0: /sequences/chrY/NC_000024.10.fasta
+2024-10-31 14:44:46,642 - INFO - Sequence 1: /sequences/chrY/NC_006492.4.fasta
+2024-10-31 14:44:46,642 - INFO - Time estimated for sequence aligment: 165.34 minutes
+2024-10-31 14:44:46,642 - INFO - Automatic Spot Instance selection is disabled. The execution will be carried out in an on-demand instance.
+2024-10-31 14:44:46,642 - INFO - Creating g4dn.xlarge On-demand instance...
+2024-10-31 14:44:46,642 - INFO - Unable to find out the on-demand price for g4dn.xlarge in us-east-1 region
+2024-10-31 14:44:46,642 - INFO - Creating On-demand instance...
+2024-10-31 14:44:48,050 - INFO - On-demand instance created successfully!
+2024-10-31 14:44:48,050 - INFO - On-demand instance ID:i-00fd24b302c5b509f
+2024-10-31 14:44:48,051 - INFO - Starting On-demand instance monitor...
+2024-10-31 14:44:53,923 - INFO - Instance running!
+2024-10-31 14:44:53,924 - INFO - Instance status: initializing
+2024-10-31 14:44:59,416 - INFO - Instance running!
+2024-10-31 14:44:59,417 - INFO - Instance status: initializing
+2024-10-31 14:45:04,634 - INFO - Instance running!
+2024-10-31 14:45:04,634 - INFO - Instance status: initializing
+2024-10-31 14:45:10,043 - INFO - Instance running!
+2024-10-31 14:45:10,043 - INFO - Instance status: initializing
+2024-10-31 14:45:15,280 - INFO - Instance running!
+2024-10-31 14:45:15,281 - INFO - Instance status: initializing
+2024-10-31 14:45:20,700 - INFO - Instance running!
+2024-10-31 14:45:20,701 - INFO - Instance status: initializing
+2024-10-31 14:45:26,147 - INFO - Instance running!
+2024-10-31 14:45:26,148 - INFO - Instance status: initializing
+2024-10-31 14:45:31,674 - INFO - Instance running!
+2024-10-31 14:45:31,675 - INFO - Instance status: initializing
+2024-10-31 14:45:36,887 - INFO - Instance running!
+2024-10-31 14:45:36,888 - INFO - Instance status: initializing
+2024-10-31 14:45:42,138 - INFO - Instance running!
+2024-10-31 14:45:42,138 - INFO - Instance status: initializing
+2024-10-31 14:45:47,546 - INFO - Instance running!
+2024-10-31 14:45:47,547 - INFO - Instance status: initializing
+2024-10-31 14:45:52,752 - INFO - Instance running!
+2024-10-31 14:45:52,753 - INFO - Instance status: initializing
+2024-10-31 14:45:58,140 - INFO - Instance running!
+2024-10-31 14:45:58,141 - INFO - Instance status: initializing
+2024-10-31 14:46:03,355 - INFO - Instance running!
+2024-10-31 14:46:03,355 - INFO - Instance status: initializing
+2024-10-31 14:46:08,630 - INFO - Instance running!
+2024-10-31 14:46:08,631 - INFO - Instance status: initializing
+2024-10-31 14:46:13,842 - INFO - Instance running!
+2024-10-31 14:46:13,843 - INFO - Instance status: initializing
+2024-10-31 14:46:19,178 - INFO - Instance running!
+2024-10-31 14:46:19,178 - INFO - Instance status: initializing
+2024-10-31 14:46:24,705 - INFO - Instance running!
+2024-10-31 14:46:24,705 - INFO - Instance status: initializing
+2024-10-31 14:46:29,930 - INFO - Instance running!
+2024-10-31 14:46:29,930 - INFO - Instance status: initializing
+2024-10-31 14:46:35,132 - INFO - Instance running!
+2024-10-31 14:46:35,132 - INFO - Instance status: initializing
+2024-10-31 14:46:40,377 - INFO - Instance running!
+2024-10-31 14:46:40,377 - INFO - Instance status: initializing
+2024-10-31 14:46:45,618 - INFO - Instance running!
+2024-10-31 14:46:45,618 - INFO - Instance status: initializing
+2024-10-31 14:46:50,833 - INFO - Instance running!
+2024-10-31 14:46:50,833 - INFO - Instance status: initializing
+2024-10-31 14:46:56,043 - INFO - Instance running!
+2024-10-31 14:46:56,044 - INFO - Instance status: initializing
+2024-10-31 14:47:01,264 - INFO - Instance running!
+2024-10-31 14:47:01,265 - INFO - Instance status: initializing
+2024-10-31 14:47:06,487 - INFO - Instance running!
+2024-10-31 14:47:06,487 - INFO - Instance status: initializing
+2024-10-31 14:47:12,017 - INFO - Instance running!
+2024-10-31 14:47:12,018 - INFO - Instance status: initializing
+2024-10-31 14:47:17,240 - INFO - Instance running!
+2024-10-31 14:47:17,241 - INFO - Instance status: ok
+2024-10-31 14:47:17,242 - INFO - Instance is ready to use!
+2024-10-31 14:47:18,318 - INFO - Instance id: i-00fd24b302c5b509f
+2024-10-31 14:47:18,318 - INFO - Starting Executor Handler...
+2024-10-31 14:47:18,318 - INFO - Sending setup script to the instance...
+2024-10-31 14:47:24,813 - INFO - File /home/walisson/framework/prepare.sh sent to 44.200.137.114:/home/ubuntu/ successfully!
+2024-10-31 14:47:24,814 - INFO - Setting up file permission...
+2024-10-31 14:47:27,273 - INFO - Running setup script...
+2024-10-31 14:49:15,462 - INFO - Sending configuration files to the instance...
+2024-10-31 14:49:19,194 - INFO - File /home/walisson/framework/config/cloud.json sent to 44.200.137.114:/home/ubuntu/framework/config successfully!
+2024-10-31 14:49:22,572 - INFO - File /home/walisson/framework/config/gpu.json sent to 44.200.137.114:/home/ubuntu/framework/config successfully!
+2024-10-31 14:49:26,003 - INFO - File /home/walisson/framework/config/input_data.json sent to 44.200.137.114:/home/ubuntu/framework/config successfully!
+2024-10-31 14:49:29,331 - INFO - File /home/walisson/framework/config/instance.json sent to 44.200.137.114:/home/ubuntu/framework/config successfully!
+2024-10-31 14:49:29,332 - INFO - Sending execution script file to the instance...
+2024-10-31 14:49:32,711 - INFO - File /home/walisson/framework/execute.sh sent to 44.200.137.114:/home/ubuntu/framework successfully!
+2024-10-31 14:49:32,712 - INFO - Setting up file permission...
+2024-10-31 14:49:35,067 - INFO - Running executor cloud module...
+2024-10-31 17:17:08,838 - INFO - Total framework execution time: 9148 seconds
