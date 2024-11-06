@@ -36,7 +36,6 @@ class EC2ApplicationExecutor:
 
         # Iniciando o SFTP (Protocolo de Transferência de Arquivos SSH)
         sftp = ssh.open_sftp()
-
         # Enviando o arquivo para a instância remota
         sftp.put(local_file_path, os.path.join(remote_path, os.path.basename(local_file_path)))
 
@@ -64,10 +63,40 @@ class EC2ApplicationExecutor:
         output = stdout.read().decode('utf-8')
         error = stderr.read().decode('utf-8')
 
-
         # Close the SSH connection
         ssh_client.close()
         print(output)
         print(error)
 
         return output, error
+
+
+    def replace_instance(self):
+        try:
+            #ec2_client = boto3.client('ec2')
+
+            new_instance_type = self.instance_data["new_instance_type"]
+
+            self.ec2.stop_instances(InstanceIds=[self.instance_id])
+            print(f'Instance {self.instance_id} is being interruped...')
+
+            waiter = self.ec2.get_waiter('instance_stopped')
+            waiter.wait(InstanceIds=[self.instance_id])
+            print(f'Instance {self.instance_id} Stopped.')
+
+            self.ec2.modify_instance_attribute(InstanceId=self.instance_id, Attribute='instanceType', Value=new_instance_type)
+            print(f'Instance changed to {new_instance_type}.')
+            self.ec2.start_instances(InstanceIds=[self.instance_id])
+            print(f'Instance {self.instance_id} is being started...')
+
+            waiter = self.ec2.get_waiter('instance_running')
+            waiter.wait(InstanceIds=[self.instance_id])
+            print(f'Instance {self.instance_id} is running.')
+
+        except Exception as e:
+            print(f'Error when replacing instance: {e}')
+
+
+#instance_id = 'i-0abcdef1234567890'
+#new_instance = 'g4dn.8xlarge'
+#replace_instance(instance_id, new_instance)

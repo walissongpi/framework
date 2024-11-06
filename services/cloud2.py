@@ -1,12 +1,12 @@
 from services.enviroment import SystemInfo
-from services.executor import Executor
+from services.executor2 import Executor2
 from services.ec2 import EC2Manager
 from services.ec2executor import EC2ApplicationExecutor
 import math
 import os
 from pathlib import Path
 
-class CloudEnviroment:
+class CloudEnviroment2:
 
     def __init__(self, logger, data, instance_data, cloud_data, gpu_data):
         self.logger = logger
@@ -32,6 +32,32 @@ class CloudEnviroment:
         #print(resp)
         minutes = (math.pow(10,result)/60000)*.9
         return minutes
+
+
+    def replace_instance(self, ec2):
+        try:
+            #ec2_client = boto3.client('ec2')
+
+            new_instance_type = self.instance_data["new_instance_type"]
+
+            self.ec2.stop_instances(InstanceIds=[self.instance_id])
+            print(f'Instance {self.instance_id} is being interruped...')
+
+            waiter = self.ec2.get_waiter('instance_stopped')
+            waiter.wait(InstanceIds=[self.instance_id])
+            print(f'Instance {self.instance_id} Stopped.')
+
+            self.ec2.modify_instance_attribute(InstanceId=self.instance_id, Attribute='instanceType', Value=new_instance_type)
+            print(f'Instance changed to {new_instance_type}.')
+            self.ec2.start_instances(InstanceIds=[self.instance_id])
+            print(f'Instance {self.instance_id} is being started...')
+
+            waiter = self.ec2.get_waiter('instance_running')
+            waiter.wait(InstanceIds=[self.instance_id])
+            print(f'Instance {self.instance_id} is running.')
+
+        except Exception as e:
+            print(f'Error when replacing instance: {e}')
 
     def start(self):
         self.logger.info("Listing AWS instances...")
@@ -131,9 +157,14 @@ class CloudEnviroment:
             print("Error:", error)
 
             self.logger.info("Running executor cloud module...")
-            command = "python3 "+destination_folder+"/main_cloud.py"
+            command = "python3 "+destination_folder+"/main_cloud2.py"
 
             output, error = ec2_executor.run_command_on_instance(command)
+
+            #interromper a instância neste ponto e reiniciar a execução
+
+            self.logger.info("Trying to replacing instance...")
+            replace_instance(ec2)
 
             print("Output:", output)
             print("Error:", error)

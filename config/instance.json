@@ -1,6 +1,7 @@
 {
   "image_id": "ami-00b334278194e3561",
   "instance_type": "g4dn.xlarge",
+  "new_instance_type": "g4dn.8xlarge",
   "name": "AdaptativeFramework",
   "user": "ubuntu",
   "min_count": 1,
@@ -8,5 +9,6 @@
   "key_name": "walisson-key",
   "key_path": "/home/walisson",
   "security_group": "walisson-group",
-  "spot_price": "0.53"
+  "spot_price": "0.53",
+  "stage_4_new_instance":"yes"
 }

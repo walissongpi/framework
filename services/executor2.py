@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 from services.decision_maker import DecisionMaker
 
-class Executor:
+class Executor2:
 
     def __init__(self, logger, data, gpu_data):
         self.logger = logger
@@ -125,11 +125,16 @@ class Executor:
 
         decision_maker = DecisionMaker(self.logger, self.data, self.gpu_data, sequence_similarity)
         strategy = decision_maker.decide_strategy_stage4()
+
         self.logger.info("Stratrgy for stage 4: "+strategy)
+
+        #preciso interromper a instância e executar novamente
         #strategy = self.define_strategy(score)
         command = masa + self.data["command"] + " --disk-size=" + SRA+"G" +" --stage-4-strategy=" + strategy + " --work-dir=" +work_dir+ " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
 
-        response = self.execute(command)
+        #stage subsequentes execution
+
+        #response = self.execute(command)
 
         return command
 
@@ -163,8 +168,10 @@ class Executor:
         strategy = decision_maker.decide_strategy_stage4()
         self.logger.info("Stratrgy for stage 4: "+strategy)
         #strategy = self.define_strategy(score)
+
         command = masa + self.data["command"] + " --disk-size=" + SRA+"G" +" --stage-4-strategy=" + strategy + " --work-dir=" +work_dir+ " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
 
-        response = self.execute(command)
+        self.logger("It is time to execute subsequente stages on a new and powerful instance");
+        #response = self.execute(command)
 
         return command
