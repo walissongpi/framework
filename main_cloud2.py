@@ -21,7 +21,7 @@ class MainCLoud2:
         command = executor.create_masa_command()
 
         self.logger.info("Trying to replace the instance for a new one...")
-        executor.replace_instance()
+        #executor.replace_instance()
         #response = executor.execute(command,1)
 
 

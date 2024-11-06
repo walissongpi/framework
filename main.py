@@ -71,6 +71,8 @@ def execute_action(choice, logger):
 
             cloud_enviroment.start()
 
+
+            
             end = time.time()
             execution_time = end - start
             logger.info("Total framework execution time: "+str(round(execution_time))+" seconds")

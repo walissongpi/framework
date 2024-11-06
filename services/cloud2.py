@@ -162,6 +162,7 @@ class CloudEnviroment2:
             #interromper a instância neste ponto e reiniciar a execução
 
             self.logger.info("Trying to replacing instance...")
+
             self.replace_instance(ec2)
 
             print("Output:", output)
