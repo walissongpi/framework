@@ -160,14 +160,21 @@ class CloudEnviroment2:
             command = "python3 "+destination_folder+"/main_cloud2.py"
 
             output, error = ec2_executor.run_command_on_instance(command)
-
+            print("Output:", output)
+            print("Error:", error)
             #interromper a instância neste ponto e reiniciar a execução
-            self.logger.info("Passou aqui...")
+
             self.logger.info("Trying to replacing instance...")
 
             #neste ponto eu substituí a instância por uma nova
             self.replace_instance(ec2,instance_id)
             self.ec2Manager.monitor_instance(instance_id)
+
+            #executar os outros estágios aqui
+            self.logger.info("Runing 2-6 MASA-CUDALign stages")
+            command = "python3 "+destination_folder+"/main_stage_4.py"
+
+            output, error = ec2_executor.run_command_on_instance(command)
 
             print("Output:", output)
             print("Error:", error)
