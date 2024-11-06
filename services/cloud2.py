@@ -33,26 +33,26 @@ class CloudEnviroment2:
         minutes = (math.pow(10,result)/60000)*.9
         return minutes
 
-    def replace_instance(self, ec2):
+    def replace_instance(self, ec2, instance_id):
         try:
             #ec2_client = boto3.client('ec2')
             new_instance_type = self.instance_data["new_instance_type"]
-            self.logger.info("Trying to replacing...")
-            ec2.stop_instances(InstanceIds=[self.instance_id])
-            print(f'Instance {self.instance_id} is being interruped...')
+            self.logger.info("Trying to replace...")
+            ec2.stop_instances(InstanceIds=[instance_id])
+            print(f'Instance {instance_id} is being interruped...')
 
             waiter = ec2.get_waiter('instance_stopped')
-            waiter.wait(InstanceIds=[self.instance_id])
-            print(f'Instance {self.instance_id} Stopped.')
+            waiter.wait(InstanceIds=[instance_id])
+            print(f'Instance {instance_id} Stopped.')
 
-            ec2.modify_instance_attribute(InstanceId=self.instance_id, Attribute='instanceType', Value=new_instance_type)
+            ec2.modify_instance_attribute(InstanceId=instance_id, Attribute='instanceType', Value=new_instance_type)
             print(f'Instance changed to {new_instance_type}.')
-            ec2.start_instances(InstanceIds=[self.instance_id])
-            print(f'Instance {self.instance_id} is being started...')
+            ec2.start_instances(InstanceIds=[instance_id])
+            print(f'Instance {instance_id} is being started...')
 
             waiter = ec2.get_waiter('instance_running')
-            waiter.wait(InstanceIds=[self.instance_id])
-            print(f'Instance {self.instance_id} is running.')
+            waiter.wait(InstanceIds=[instance_id])
+            print(f'Instance {instance_id} is running.')
 
         except Exception as e:
             print(f'Error when replacing instance: {e}')
@@ -163,7 +163,7 @@ class CloudEnviroment2:
             self.logger.info("Passou aqui...")
             self.logger.info("Trying to replacing instance...")
 
-            self.replace_instance(ec2)
+            self.replace_instance(ec2,instance_id)
 
             print("Output:", output)
             print("Error:", error)
