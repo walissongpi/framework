@@ -14,7 +14,7 @@ class CloudEnviroment2:
         self.instance_data = instance_data
         self.cloud_data = cloud_data
         self.gpu_data = gpu_data
-        self.ec2Manager = null
+        self.ec2Manager = None
 
     #def execute(self):
     def get_system_info (self):
