@@ -135,7 +135,8 @@ class Executor2:
         #stage subsequentes execution
 
         #response = self.execute(command)
-
+        self.logger("It is time to execute subsequente stages on a new and powerful instance");
+        
         return command
 
     #it was created to start the new instance
