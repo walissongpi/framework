@@ -14,6 +14,7 @@ class CloudEnviroment2:
         self.instance_data = instance_data
         self.cloud_data = cloud_data
         self.gpu_data = gpu_data
+        self.ec2Manager = null
 
     #def execute(self):
     def get_system_info (self):
@@ -60,6 +61,7 @@ class CloudEnviroment2:
     def start(self):
         self.logger.info("Listing AWS instances...")
         ec2Manager = EC2Manager(self.logger, self.instance_data, self.cloud_data, self.gpu_data)
+        self.ec2Manager = ec2Manager
         instances = ec2Manager.list_instances()
         for instance in instances:
             self.logger.info(instance)
@@ -163,7 +165,9 @@ class CloudEnviroment2:
             self.logger.info("Passou aqui...")
             self.logger.info("Trying to replacing instance...")
 
+            #neste ponto eu substituí a instância por uma nova
             self.replace_instance(ec2,instance_id)
+            self.ec2Manager.monitor_instance(instance_id)
 
             print("Output:", output)
             print("Error:", error)
