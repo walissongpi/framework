@@ -37,7 +37,7 @@ class CloudEnviroment2:
         try:
             #ec2_client = boto3.client('ec2')
             new_instance_type = self.instance_data["new_instance_type"]
-
+            self.logger.info("Trying to replacing...")
             self.ec2.stop_instances(InstanceIds=[self.instance_id])
             print(f'Instance {self.instance_id} is being interruped...')
 
@@ -160,7 +160,7 @@ class CloudEnviroment2:
             output, error = ec2_executor.run_command_on_instance(command)
 
             #interromper a instância neste ponto e reiniciar a execução
-
+            self.logger.info("Passou aqui...")
             self.logger.info("Trying to replacing instance...")
 
             self.replace_instance(ec2)
