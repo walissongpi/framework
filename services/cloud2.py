@@ -38,19 +38,19 @@ class CloudEnviroment2:
             #ec2_client = boto3.client('ec2')
             new_instance_type = self.instance_data["new_instance_type"]
             self.logger.info("Trying to replacing...")
-            self.ec2.stop_instances(InstanceIds=[self.instance_id])
+            ec2.stop_instances(InstanceIds=[self.instance_id])
             print(f'Instance {self.instance_id} is being interruped...')
 
-            waiter = self.ec2.get_waiter('instance_stopped')
+            waiter = ec2.get_waiter('instance_stopped')
             waiter.wait(InstanceIds=[self.instance_id])
             print(f'Instance {self.instance_id} Stopped.')
 
-            self.ec2.modify_instance_attribute(InstanceId=self.instance_id, Attribute='instanceType', Value=new_instance_type)
+            ec2.modify_instance_attribute(InstanceId=self.instance_id, Attribute='instanceType', Value=new_instance_type)
             print(f'Instance changed to {new_instance_type}.')
-            self.ec2.start_instances(InstanceIds=[self.instance_id])
+            ec2.start_instances(InstanceIds=[self.instance_id])
             print(f'Instance {self.instance_id} is being started...')
 
-            waiter = self.ec2.get_waiter('instance_running')
+            waiter = ec2.get_waiter('instance_running')
             waiter.wait(InstanceIds=[self.instance_id])
             print(f'Instance {self.instance_id} is running.')
 
