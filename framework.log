@@ -19339,3 +19339,119 @@
 2024-11-06 16:17:11,094 - INFO - Running executor cloud module...
 2024-11-06 16:17:58,394 - INFO - Trying to replacing instance...
 2024-11-06 16:17:58,396 - INFO - Total framework execution time: 435 seconds
+2024-11-06 16:19:48,360 - DEBUG - Starting the framework...
+2024-11-06 16:20:04,055 - DEBUG - Starting the framework...
+2024-11-06 16:20:05,753 - INFO - Starting cloud module 2...
+2024-11-06 16:20:05,754 - INFO - Listing AWS instances...
+2024-11-06 16:20:07,484 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-11-06 16:20:07,485 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-11-06 16:20:07,485 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-11-06 16:20:07,485 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-11-06 16:20:07,485 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-11-06 16:20:07,486 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-11-06 16:20:07,486 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-11-06 16:20:07,486 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-11-06 16:20:07,486 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-11-06 16:20:07,486 - INFO - {'InstanceId': 'i-0f015792db3de04d4', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-11-06 16:20:07,486 - INFO - {'InstanceId': 'i-0a77163001281f421', 'InstanceType': 'g4dn.xlarge', 'State': 'shutting-down'}
+2024-11-06 16:20:07,486 - INFO - Loading input data information...
+2024-11-06 16:20:07,486 - INFO - Sequence 0: /sequences/3-7M/NC_003997.3.fasta
+2024-11-06 16:20:07,487 - INFO - Sequence 1: /sequences/3-7M/NC_005027.1.fasta
+2024-11-06 16:20:07,487 - INFO - Time estimated for sequence aligment: 4.43 minutes
+2024-11-06 16:20:07,487 - INFO - Automatic Spot Instance selection is disabled. The execution will be carried out in an on-demand instance.
+2024-11-06 16:20:07,487 - INFO - Creating g4dn.xlarge On-demand instance...
+2024-11-06 16:20:07,487 - INFO - Unable to find out the on-demand price for g4dn.xlarge in us-east-1 region
+2024-11-06 16:20:07,487 - INFO - Creating On-demand instance...
+2024-11-06 16:20:08,643 - INFO - On-demand instance created successfully!
+2024-11-06 16:20:08,644 - INFO - On-demand instance ID:i-07165ccd72ef3ee7f
+2024-11-06 16:20:08,644 - INFO - Starting On-demand instance monitor...
+2024-11-06 16:20:14,081 - INFO - Instance running!
+2024-11-06 16:20:14,082 - INFO - Instance status: initializing
+2024-11-06 16:20:19,287 - INFO - Instance running!
+2024-11-06 16:20:19,287 - INFO - Instance status: initializing
+2024-11-06 16:20:24,766 - INFO - Instance running!
+2024-11-06 16:20:24,766 - INFO - Instance status: initializing
+2024-11-06 16:20:30,438 - INFO - Instance running!
+2024-11-06 16:20:30,439 - INFO - Instance status: initializing
+2024-11-06 16:20:35,649 - INFO - Instance running!
+2024-11-06 16:20:35,650 - INFO - Instance status: initializing
+2024-11-06 16:20:40,852 - INFO - Instance running!
+2024-11-06 16:20:40,852 - INFO - Instance status: initializing
+2024-11-06 16:20:46,467 - INFO - Instance running!
+2024-11-06 16:20:46,467 - INFO - Instance status: initializing
+2024-11-06 16:20:51,940 - INFO - Instance running!
+2024-11-06 16:20:51,941 - INFO - Instance status: initializing
+2024-11-06 16:20:57,287 - INFO - Instance running!
+2024-11-06 16:20:57,287 - INFO - Instance status: initializing
+2024-11-06 16:21:02,479 - INFO - Instance running!
+2024-11-06 16:21:02,479 - INFO - Instance status: initializing
+2024-11-06 16:21:07,686 - INFO - Instance running!
+2024-11-06 16:21:07,686 - INFO - Instance status: initializing
+2024-11-06 16:21:12,882 - INFO - Instance running!
+2024-11-06 16:21:12,882 - INFO - Instance status: initializing
+2024-11-06 16:21:18,090 - INFO - Instance running!
+2024-11-06 16:21:18,091 - INFO - Instance status: initializing
+2024-11-06 16:21:23,539 - INFO - Instance running!
+2024-11-06 16:21:23,539 - INFO - Instance status: initializing
+2024-11-06 16:21:29,225 - INFO - Instance running!
+2024-11-06 16:21:29,226 - INFO - Instance status: initializing
+2024-11-06 16:21:34,475 - INFO - Instance running!
+2024-11-06 16:21:34,476 - INFO - Instance status: initializing
+2024-11-06 16:21:39,695 - INFO - Instance running!
+2024-11-06 16:21:39,695 - INFO - Instance status: initializing
+2024-11-06 16:21:44,918 - INFO - Instance running!
+2024-11-06 16:21:44,919 - INFO - Instance status: initializing
+2024-11-06 16:21:50,126 - INFO - Instance running!
+2024-11-06 16:21:50,126 - INFO - Instance status: initializing
+2024-11-06 16:21:55,338 - INFO - Instance running!
+2024-11-06 16:21:55,338 - INFO - Instance status: initializing
+2024-11-06 16:22:00,584 - INFO - Instance running!
+2024-11-06 16:22:00,584 - INFO - Instance status: initializing
+2024-11-06 16:22:05,784 - INFO - Instance running!
+2024-11-06 16:22:05,784 - INFO - Instance status: initializing
+2024-11-06 16:22:11,362 - INFO - Instance running!
+2024-11-06 16:22:11,363 - INFO - Instance status: initializing
+2024-11-06 16:22:16,642 - INFO - Instance running!
+2024-11-06 16:22:16,642 - INFO - Instance status: initializing
+2024-11-06 16:22:21,844 - INFO - Instance running!
+2024-11-06 16:22:21,844 - INFO - Instance status: initializing
+2024-11-06 16:22:27,102 - INFO - Instance running!
+2024-11-06 16:22:27,102 - INFO - Instance status: initializing
+2024-11-06 16:22:32,426 - INFO - Instance running!
+2024-11-06 16:22:32,427 - INFO - Instance status: initializing
+2024-11-06 16:22:37,626 - INFO - Instance running!
+2024-11-06 16:22:37,626 - INFO - Instance status: initializing
+2024-11-06 16:22:43,015 - INFO - Instance running!
+2024-11-06 16:22:43,015 - INFO - Instance status: initializing
+2024-11-06 16:22:48,533 - INFO - Instance running!
+2024-11-06 16:22:48,534 - INFO - Instance status: initializing
+2024-11-06 16:22:53,753 - INFO - Instance running!
+2024-11-06 16:22:53,753 - INFO - Instance status: initializing
+2024-11-06 16:22:58,966 - INFO - Instance running!
+2024-11-06 16:22:58,967 - INFO - Instance status: initializing
+2024-11-06 16:23:04,270 - INFO - Instance running!
+2024-11-06 16:23:04,271 - INFO - Instance status: initializing
+2024-11-06 16:23:09,988 - INFO - Instance running!
+2024-11-06 16:23:09,988 - INFO - Instance status: initializing
+2024-11-06 16:23:15,226 - INFO - Instance running!
+2024-11-06 16:23:15,227 - INFO - Instance status: initializing
+2024-11-06 16:23:20,415 - INFO - Instance running!
+2024-11-06 16:23:20,416 - INFO - Instance status: ok
+2024-11-06 16:23:20,416 - INFO - Instance is ready to use!
+2024-11-06 16:23:55,932 - INFO - Instance id: i-07165ccd72ef3ee7f
+2024-11-06 16:23:55,933 - INFO - Starting Executor Handler...
+2024-11-06 16:23:55,933 - INFO - Sending setup script to the instance...
+2024-11-06 16:24:07,554 - INFO - File /home/walisson/framework/prepare.sh sent to 44.200.166.106:/home/ubuntu/ successfully!
+2024-11-06 16:24:07,554 - INFO - Setting up file permission...
+2024-11-06 16:24:17,882 - INFO - Running setup script...
+2024-11-06 16:26:00,663 - INFO - Sending configuration files to the instance...
+2024-11-06 16:26:12,282 - INFO - File /home/walisson/framework/config/cloud.json sent to 44.200.166.106:/home/ubuntu/framework/config successfully!
+2024-11-06 16:26:22,969 - INFO - File /home/walisson/framework/config/gpu.json sent to 44.200.166.106:/home/ubuntu/framework/config successfully!
+2024-11-06 16:26:25,910 - INFO - File /home/walisson/framework/config/input_data.json sent to 44.200.166.106:/home/ubuntu/framework/config successfully!
+2024-11-06 16:26:29,485 - INFO - File /home/walisson/framework/config/instance.json sent to 44.200.166.106:/home/ubuntu/framework/config successfully!
+2024-11-06 16:26:29,485 - INFO - Sending execution script file to the instance...
+2024-11-06 16:26:34,059 - INFO - File /home/walisson/framework/execute.sh sent to 44.200.166.106:/home/ubuntu/framework successfully!
+2024-11-06 16:26:34,060 - INFO - Setting up file permission...
+2024-11-06 16:26:36,636 - INFO - Running executor cloud module...
+2024-11-06 16:31:22,546 - INFO - Trying to replacing instance...
+2024-11-06 16:31:22,548 - INFO - Total framework execution time: 677 seconds
