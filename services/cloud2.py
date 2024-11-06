@@ -33,11 +33,9 @@ class CloudEnviroment2:
         minutes = (math.pow(10,result)/60000)*.9
         return minutes
 
-
     def replace_instance(self, ec2):
         try:
             #ec2_client = boto3.client('ec2')
-
             new_instance_type = self.instance_data["new_instance_type"]
 
             self.ec2.stop_instances(InstanceIds=[self.instance_id])
@@ -164,7 +162,7 @@ class CloudEnviroment2:
             #interromper a instância neste ponto e reiniciar a execução
 
             self.logger.info("Trying to replacing instance...")
-            replace_instance(ec2)
+            self.replace_instance(ec2)
 
             print("Output:", output)
             print("Error:", error)
