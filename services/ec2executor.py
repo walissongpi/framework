@@ -74,7 +74,6 @@ class EC2ApplicationExecutor:
     def replace_instance(self):
         try:
             #ec2_client = boto3.client('ec2')
-
             new_instance_type = self.instance_data["new_instance_type"]
 
             self.ec2.stop_instances(InstanceIds=[self.instance_id])

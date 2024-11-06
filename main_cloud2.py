@@ -19,9 +19,12 @@ class MainCLoud2:
         executor = Executor2(self.logger, self.data, self.gpu_data)
         executor.execute_path()
         command = executor.create_masa_command()
+
+        self.logger.info("Trying to replace the instance for a new one...")
+        executor.replace_instance()
         #response = executor.execute(command,1)
 
-    
+
     def get_system_info (self):
         #self.logger.info("Getting enviroment information...")
 
