@@ -49,5 +49,5 @@ if __name__ == "__main__":
 
     #end = time.time()
     #execution_time = end - start
-    logger.info("alignment time: "+str(round(execution_time))+" seconds")
+    #logger.info("alignment time: "+str(round(execution_time))+" seconds")
     #self.logger.info("Estimated monetary cost: "+ "US$")
