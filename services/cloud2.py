@@ -4,6 +4,7 @@ from services.ec2 import EC2Manager
 from services.ec2executor import EC2ApplicationExecutor
 import math
 import os
+import time
 from pathlib import Path
 
 class CloudEnviroment2:
@@ -159,6 +160,8 @@ class CloudEnviroment2:
             self.logger.info("Running executor cloud module...")
             command = "python3 "+destination_folder+"/main_cloud2.py"
 
+            start = time.time()
+
             output, error = ec2_executor.run_command_on_instance(command)
             print("Output:", output)
             print("Error:", error)
@@ -175,6 +178,10 @@ class CloudEnviroment2:
             command = "python3 "+destination_folder+"/main_stage_4.py"
 
             output, error = ec2_executor.run_command_on_instance(command)
+
+            end = time.time()
+            execution_time = end - start
+            logger.info("Total aligment time on the cloud: "+str(round(execution_time))+" seconds")
 
             print("Output:", output)
             print("Error:", error)
