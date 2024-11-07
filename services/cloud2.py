@@ -181,7 +181,7 @@ class CloudEnviroment2:
 
             end = time.time()
             execution_time = end - start
-            logger.info("Total aligment time on the cloud: "+str(round(execution_time))+" seconds")
+            self.logger.info("Total aligment time on the cloud: "+str(round(execution_time))+" seconds")
 
             print("Output:", output)
             print("Error:", error)
