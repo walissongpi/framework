@@ -21356,3 +21356,232 @@
 2024-11-07 17:46:18,315 - INFO - Runing 2-6 MASA-CUDALign stages
 2024-11-07 18:07:44,476 - INFO - Total aligment time on the cloud: 15827 seconds
 2024-11-07 18:07:44,509 - INFO - Total framework execution time: 16144 seconds
+2024-11-07 19:01:11,208 - DEBUG - Starting the framework...
+2024-11-07 19:01:14,289 - INFO - Starting cloud module 2...
+2024-11-07 19:01:14,290 - INFO - Listing AWS instances...
+2024-11-07 19:01:17,949 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-11-07 19:01:17,949 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-11-07 19:01:17,949 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-11-07 19:01:17,949 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-11-07 19:01:17,950 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-11-07 19:01:17,950 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-11-07 19:01:17,950 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-11-07 19:01:17,950 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-11-07 19:01:17,950 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-11-07 19:01:17,950 - INFO - {'InstanceId': 'i-0f015792db3de04d4', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-11-07 19:01:17,950 - INFO - {'InstanceId': 'i-07a59406085a3e797', 'InstanceType': 'g4dn.8xlarge', 'State': 'shutting-down'}
+2024-11-07 19:01:17,950 - INFO - {'InstanceId': 'i-0aae67be747981afc', 'InstanceType': 'g4dn.8xlarge', 'State': 'shutting-down'}
+2024-11-07 19:01:17,950 - INFO - Loading input data information...
+2024-11-07 19:01:17,950 - INFO - Sequence 0: /sequences/NC_000019.10.fasta
+2024-11-07 19:01:17,950 - INFO - Sequence 1: /sequences/NC_006486.4.fasta
+2024-11-07 19:01:17,950 - INFO - Time estimated for sequence aligment: 386.91 minutes
+2024-11-07 19:01:17,950 - INFO - Automatic Spot Instance selection is disabled. The execution will be carried out in an on-demand instance.
+2024-11-07 19:01:17,950 - INFO - Creating g4dn.xlarge On-demand instance...
+2024-11-07 19:01:17,950 - INFO - Unable to find out the on-demand price for g4dn.xlarge in us-east-1 region
+2024-11-07 19:01:17,951 - INFO - Creating On-demand instance...
+2024-11-07 19:01:44,235 - DEBUG - Starting the framework...
+2024-11-07 19:06:58,587 - INFO - Starting cloud module 2...
+2024-11-07 19:06:58,589 - INFO - Listing AWS instances...
+2024-11-07 19:07:03,018 - INFO - {'InstanceId': 'i-0ec39618f8ad6cb56', 'InstanceType': 't2.small', 'State': 'stopped'}
+2024-11-07 19:07:03,018 - INFO - {'InstanceId': 'i-0d203bbc8c748287d', 'InstanceType': 'c7g.2xlarge', 'State': 'stopped'}
+2024-11-07 19:07:03,018 - INFO - {'InstanceId': 'i-0946cd2e4f4f2c743', 'InstanceType': 'c7g.xlarge', 'State': 'stopped'}
+2024-11-07 19:07:03,018 - INFO - {'InstanceId': 'i-0910fc65fda4b4d32', 'InstanceType': 'c7g.large', 'State': 'stopped'}
+2024-11-07 19:07:03,018 - INFO - {'InstanceId': 'i-05386f79131b24500', 'InstanceType': 'c4.4xlarge', 'State': 'stopped'}
+2024-11-07 19:07:03,018 - INFO - {'InstanceId': 'i-0bcb00121f183672c', 'InstanceType': 'c7g.4xlarge', 'State': 'stopped'}
+2024-11-07 19:07:03,018 - INFO - {'InstanceId': 'i-0a0fdb792fa0f26fe', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-11-07 19:07:03,019 - INFO - {'InstanceId': 'i-0e20fa2dd158571b6', 'InstanceType': 'c7g.16xlarge', 'State': 'stopped'}
+2024-11-07 19:07:03,019 - INFO - {'InstanceId': 'i-005b1f8787d0366f6', 'InstanceType': 'c7g.8xlarge', 'State': 'stopped'}
+2024-11-07 19:07:03,019 - INFO - {'InstanceId': 'i-0f015792db3de04d4', 'InstanceType': 't2.xlarge', 'State': 'running'}
+2024-11-07 19:07:03,019 - INFO - {'InstanceId': 'i-07a59406085a3e797', 'InstanceType': 'g4dn.8xlarge', 'State': 'terminated'}
+2024-11-07 19:07:03,019 - INFO - {'InstanceId': 'i-0aae67be747981afc', 'InstanceType': 'g4dn.8xlarge', 'State': 'terminated'}
+2024-11-07 19:07:03,019 - INFO - Loading input data information...
+2024-11-07 19:07:03,019 - INFO - Sequence 0: /sequences/NC_000019.10.fasta
+2024-11-07 19:07:03,019 - INFO - Sequence 1: /sequences/NC_006486.4.fasta
+2024-11-07 19:07:03,019 - INFO - Time estimated for sequence aligment: 386.91 minutes
+2024-11-07 19:07:03,020 - INFO - Automatic Spot Instance selection is disabled. The execution will be carried out in an on-demand instance.
+2024-11-07 19:07:03,020 - INFO - Creating g4dn.xlarge On-demand instance...
+2024-11-07 19:07:03,020 - INFO - Unable to find out the on-demand price for g4dn.xlarge in us-east-1 region
+2024-11-07 19:07:03,020 - INFO - Creating On-demand instance...
+2024-11-07 19:07:05,975 - INFO - On-demand instance created successfully!
+2024-11-07 19:07:05,976 - INFO - On-demand instance ID:i-06650d741dbdd6c58
+2024-11-07 19:07:05,977 - INFO - Starting On-demand instance monitor...
+2024-11-07 19:07:12,139 - INFO - Instance running!
+2024-11-07 19:07:12,139 - INFO - Instance status: initializing
+2024-11-07 19:07:17,730 - INFO - Instance running!
+2024-11-07 19:07:17,731 - INFO - Instance status: initializing
+2024-11-07 19:07:23,502 - INFO - Instance running!
+2024-11-07 19:07:23,503 - INFO - Instance status: initializing
+2024-11-07 19:07:29,007 - INFO - Instance running!
+2024-11-07 19:07:29,008 - INFO - Instance status: initializing
+2024-11-07 19:07:34,790 - INFO - Instance running!
+2024-11-07 19:07:34,790 - INFO - Instance status: initializing
+2024-11-07 19:07:40,068 - INFO - Instance running!
+2024-11-07 19:07:40,068 - INFO - Instance status: initializing
+2024-11-07 19:07:45,351 - INFO - Instance running!
+2024-11-07 19:07:45,352 - INFO - Instance status: initializing
+2024-11-07 19:07:51,025 - INFO - Instance running!
+2024-11-07 19:07:51,025 - INFO - Instance status: initializing
+2024-11-07 19:07:56,454 - INFO - Instance running!
+2024-11-07 19:07:56,455 - INFO - Instance status: initializing
+2024-11-07 19:08:01,781 - INFO - Instance running!
+2024-11-07 19:08:01,782 - INFO - Instance status: initializing
+2024-11-07 19:08:07,101 - INFO - Instance running!
+2024-11-07 19:08:07,101 - INFO - Instance status: initializing
+2024-11-07 19:08:12,790 - INFO - Instance running!
+2024-11-07 19:08:12,790 - INFO - Instance status: initializing
+2024-11-07 19:08:18,057 - INFO - Instance running!
+2024-11-07 19:08:18,058 - INFO - Instance status: initializing
+2024-11-07 19:08:24,000 - INFO - Instance running!
+2024-11-07 19:08:24,000 - INFO - Instance status: initializing
+2024-11-07 19:08:29,729 - INFO - Instance running!
+2024-11-07 19:08:29,730 - INFO - Instance status: initializing
+2024-11-07 19:08:35,776 - INFO - Instance running!
+2024-11-07 19:08:35,776 - INFO - Instance status: initializing
+2024-11-07 19:08:42,024 - INFO - Instance running!
+2024-11-07 19:08:42,024 - INFO - Instance status: initializing
+2024-11-07 19:08:47,242 - INFO - Instance running!
+2024-11-07 19:08:47,243 - INFO - Instance status: initializing
+2024-11-07 19:08:52,443 - INFO - Instance running!
+2024-11-07 19:08:52,444 - INFO - Instance status: initializing
+2024-11-07 19:08:58,374 - INFO - Instance running!
+2024-11-07 19:08:58,374 - INFO - Instance status: initializing
+2024-11-07 19:09:04,578 - INFO - Instance running!
+2024-11-07 19:09:04,579 - INFO - Instance status: initializing
+2024-11-07 19:09:10,498 - INFO - Instance running!
+2024-11-07 19:09:10,499 - INFO - Instance status: initializing
+2024-11-07 19:09:16,218 - INFO - Instance running!
+2024-11-07 19:09:16,219 - INFO - Instance status: initializing
+2024-11-07 19:09:22,242 - INFO - Instance running!
+2024-11-07 19:09:22,243 - INFO - Instance status: initializing
+2024-11-07 19:09:28,642 - INFO - Instance running!
+2024-11-07 19:09:28,643 - INFO - Instance status: initializing
+2024-11-07 19:09:34,051 - INFO - Instance running!
+2024-11-07 19:09:34,051 - INFO - Instance status: initializing
+2024-11-07 19:09:40,067 - INFO - Instance running!
+2024-11-07 19:09:40,067 - INFO - Instance status: initializing
+2024-11-07 19:09:45,860 - INFO - Instance running!
+2024-11-07 19:09:45,861 - INFO - Instance status: initializing
+2024-11-07 19:09:51,069 - INFO - Instance running!
+2024-11-07 19:09:51,069 - INFO - Instance status: initializing
+2024-11-07 19:09:57,125 - INFO - Instance running!
+2024-11-07 19:09:57,126 - INFO - Instance status: initializing
+2024-11-07 19:10:02,333 - INFO - Instance running!
+2024-11-07 19:10:02,333 - INFO - Instance status: initializing
+2024-11-07 19:10:07,535 - INFO - Instance running!
+2024-11-07 19:10:07,535 - INFO - Instance status: initializing
+2024-11-07 19:10:13,442 - INFO - Instance running!
+2024-11-07 19:10:13,443 - INFO - Instance status: initializing
+2024-11-07 19:10:18,643 - INFO - Instance running!
+2024-11-07 19:10:18,644 - INFO - Instance status: initializing
+2024-11-07 19:10:24,484 - INFO - Instance running!
+2024-11-07 19:10:24,484 - INFO - Instance status: initializing
+2024-11-07 19:10:30,253 - INFO - Instance running!
+2024-11-07 19:10:30,254 - INFO - Instance status: initializing
+2024-11-07 19:10:36,224 - INFO - Instance running!
+2024-11-07 19:10:36,225 - INFO - Instance status: initializing
+2024-11-07 19:10:41,425 - INFO - Instance running!
+2024-11-07 19:10:41,426 - INFO - Instance status: initializing
+2024-11-07 19:10:46,635 - INFO - Instance running!
+2024-11-07 19:10:46,636 - INFO - Instance status: ok
+2024-11-07 19:10:46,636 - INFO - Instance is ready to use!
+2024-11-07 19:10:47,206 - INFO - Instance id: i-06650d741dbdd6c58
+2024-11-07 19:10:47,206 - INFO - Starting Executor Handler...
+2024-11-07 19:10:47,207 - INFO - Sending setup script to the instance...
+2024-11-07 19:10:59,025 - INFO - File /home/walisson/framework/prepare.sh sent to 54.161.101.60:/home/ubuntu/ successfully!
+2024-11-07 19:10:59,025 - INFO - Setting up file permission...
+2024-11-07 19:11:07,936 - INFO - Running setup script...
+2024-11-07 19:13:01,036 - INFO - Sending configuration files to the instance...
+2024-11-07 19:13:13,754 - INFO - File /home/walisson/framework/config/cloud.json sent to 54.161.101.60:/home/ubuntu/framework/config successfully!
+2024-11-07 19:13:37,513 - INFO - File /home/walisson/framework/config/gpu.json sent to 54.161.101.60:/home/ubuntu/framework/config successfully!
+2024-11-07 19:13:53,000 - INFO - File /home/walisson/framework/config/input_data.json sent to 54.161.101.60:/home/ubuntu/framework/config successfully!
+2024-11-07 19:14:12,617 - INFO - File /home/walisson/framework/config/instance.json sent to 54.161.101.60:/home/ubuntu/framework/config successfully!
+2024-11-07 19:14:12,617 - INFO - Sending execution script file to the instance...
+2024-11-07 19:14:15,635 - INFO - File /home/walisson/framework/execute.sh sent to 54.161.101.60:/home/ubuntu/framework successfully!
+2024-11-07 19:14:15,635 - INFO - Setting up file permission...
+2024-11-07 19:14:18,016 - INFO - Running executor cloud module...
+2024-11-07 23:18:28,723 - INFO - Trying to replacing instance...
+2024-11-07 23:18:28,723 - INFO - Trying to replace...
+2024-11-07 23:24:24,626 - INFO - Instance running!
+2024-11-07 23:24:24,626 - INFO - Instance status: initializing
+2024-11-07 23:24:29,834 - INFO - Instance running!
+2024-11-07 23:24:29,835 - INFO - Instance status: initializing
+2024-11-07 23:24:35,072 - INFO - Instance running!
+2024-11-07 23:24:35,072 - INFO - Instance status: initializing
+2024-11-07 23:24:40,274 - INFO - Instance running!
+2024-11-07 23:24:40,274 - INFO - Instance status: initializing
+2024-11-07 23:24:45,494 - INFO - Instance running!
+2024-11-07 23:24:45,495 - INFO - Instance status: initializing
+2024-11-07 23:24:50,704 - INFO - Instance running!
+2024-11-07 23:24:50,704 - INFO - Instance status: initializing
+2024-11-07 23:24:55,925 - INFO - Instance running!
+2024-11-07 23:24:55,926 - INFO - Instance status: initializing
+2024-11-07 23:25:01,205 - INFO - Instance running!
+2024-11-07 23:25:01,205 - INFO - Instance status: initializing
+2024-11-07 23:25:06,416 - INFO - Instance running!
+2024-11-07 23:25:06,416 - INFO - Instance status: initializing
+2024-11-07 23:25:11,638 - INFO - Instance running!
+2024-11-07 23:25:11,639 - INFO - Instance status: initializing
+2024-11-07 23:25:17,119 - INFO - Instance running!
+2024-11-07 23:25:17,119 - INFO - Instance status: initializing
+2024-11-07 23:25:22,343 - INFO - Instance running!
+2024-11-07 23:25:22,344 - INFO - Instance status: initializing
+2024-11-07 23:25:27,565 - INFO - Instance running!
+2024-11-07 23:25:27,566 - INFO - Instance status: initializing
+2024-11-07 23:25:32,788 - INFO - Instance running!
+2024-11-07 23:25:32,788 - INFO - Instance status: initializing
+2024-11-07 23:25:38,113 - INFO - Instance running!
+2024-11-07 23:25:38,113 - INFO - Instance status: initializing
+2024-11-07 23:25:43,335 - INFO - Instance running!
+2024-11-07 23:25:43,335 - INFO - Instance status: initializing
+2024-11-07 23:25:48,557 - INFO - Instance running!
+2024-11-07 23:25:48,557 - INFO - Instance status: initializing
+2024-11-07 23:25:53,882 - INFO - Instance running!
+2024-11-07 23:25:53,883 - INFO - Instance status: initializing
+2024-11-07 23:25:59,104 - INFO - Instance running!
+2024-11-07 23:25:59,105 - INFO - Instance status: initializing
+2024-11-07 23:26:04,326 - INFO - Instance running!
+2024-11-07 23:26:04,327 - INFO - Instance status: initializing
+2024-11-07 23:26:09,651 - INFO - Instance running!
+2024-11-07 23:26:09,651 - INFO - Instance status: initializing
+2024-11-07 23:26:14,864 - INFO - Instance running!
+2024-11-07 23:26:14,865 - INFO - Instance status: initializing
+2024-11-07 23:26:20,095 - INFO - Instance running!
+2024-11-07 23:26:20,095 - INFO - Instance status: initializing
+2024-11-07 23:26:25,421 - INFO - Instance running!
+2024-11-07 23:26:25,421 - INFO - Instance status: initializing
+2024-11-07 23:26:31,565 - INFO - Instance running!
+2024-11-07 23:26:31,565 - INFO - Instance status: initializing
+2024-11-07 23:26:36,786 - INFO - Instance running!
+2024-11-07 23:26:36,786 - INFO - Instance status: initializing
+2024-11-07 23:26:42,042 - INFO - Instance running!
+2024-11-07 23:26:42,043 - INFO - Instance status: initializing
+2024-11-07 23:26:47,257 - INFO - Instance running!
+2024-11-07 23:26:47,257 - INFO - Instance status: initializing
+2024-11-07 23:26:52,459 - INFO - Instance running!
+2024-11-07 23:26:52,459 - INFO - Instance status: initializing
+2024-11-07 23:26:57,675 - INFO - Instance running!
+2024-11-07 23:26:57,675 - INFO - Instance status: initializing
+2024-11-07 23:27:02,915 - INFO - Instance running!
+2024-11-07 23:27:02,916 - INFO - Instance status: initializing
+2024-11-07 23:27:08,123 - INFO - Instance running!
+2024-11-07 23:27:08,124 - INFO - Instance status: initializing
+2024-11-07 23:27:13,444 - INFO - Instance running!
+2024-11-07 23:27:13,444 - INFO - Instance status: initializing
+2024-11-07 23:27:18,653 - INFO - Instance running!
+2024-11-07 23:27:18,653 - INFO - Instance status: initializing
+2024-11-07 23:27:23,889 - INFO - Instance running!
+2024-11-07 23:27:23,889 - INFO - Instance status: initializing
+2024-11-07 23:27:29,111 - INFO - Instance running!
+2024-11-07 23:27:29,112 - INFO - Instance status: initializing
+2024-11-07 23:27:34,347 - INFO - Instance running!
+2024-11-07 23:27:34,348 - INFO - Instance status: initializing
+2024-11-07 23:27:39,563 - INFO - Instance running!
+2024-11-07 23:27:39,563 - INFO - Instance status: initializing
+2024-11-07 23:27:44,778 - INFO - Instance running!
+2024-11-07 23:27:44,779 - INFO - Instance status: initializing
+2024-11-07 23:27:50,104 - INFO - Instance running!
+2024-11-07 23:27:50,104 - INFO - Instance status: ok
+2024-11-07 23:27:50,105 - INFO - Instance is ready to use!
+2024-11-07 23:27:50,105 - INFO - Runing 2-6 MASA-CUDALign stages
+2024-11-07 23:45:40,462 - INFO - Total aligment time on the cloud: 16282 seconds
+2024-11-07 23:45:40,518 - INFO - Total framework execution time: 16722 seconds
