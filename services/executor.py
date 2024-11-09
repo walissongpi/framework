@@ -132,39 +132,3 @@ class Executor:
         response = self.execute(command)
 
         return command
-
-    #it was created to start the new instance
-    def create_masa_command(self, flag):
-
-        current_dir = os.getcwd()
-        self.logger.info("Current directory: "+current_dir)
-
-        home = str(Path.home())
-        #self.execute_path(dados["masa_path"])
-        self.logger.info("Home directory: "+home)
-        SRA = self.calculate_sra_size(self.data["seq1_length"])
-
-        self.logger.info("SRA size calculated: "+SRA+"G")
-        work_dir =  home+"/"+self.data["work_dir"]
-        #stage-1 execution
-        masa = home + "/MASA-CUDAlign/masa-cudalign-4.0.2.1028/"
-        command = masa + self.data["command"] + " --disk-size=" + SRA+"G" + " --stage-1" +" --work-dir=" +work_dir + " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
-        #exec = "sh framework/execute.sh "+ command
-        response = self.execute(command)
-
-        self.logger.info("Stage 1 execution complete: "+str(response))
-
-        score = self.look_for_score()
-
-        sequence_similarity = round(self.calculate_similarity(score))
-        self.logger.info("Sequence similarity: "+ str(sequence_similarity))
-
-        decision_maker = DecisionMaker(self.logger, self.data, self.gpu_data, sequence_similarity)
-        strategy = decision_maker.decide_strategy_stage4()
-        self.logger.info("Stratrgy for stage 4: "+strategy)
-        #strategy = self.define_strategy(score)
-        command = masa + self.data["command"] + " --disk-size=" + SRA+"G" +" --stage-4-strategy=" + strategy + " --work-dir=" +work_dir+ " " + home + self.data["sequence0"] + " " + home + self.data["sequence1"] # + "+dados["task_file"]
-
-        response = self.execute(command)
-
-        return command
