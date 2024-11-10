@@ -119,7 +119,7 @@ class DecisionMaker:
         rule3 = ctrl.Rule(sequence_size['medium'] & cpu_cores['some'] & cpu_freq['medium'] & ram_memory['medium'] & gpu['medium'] & (similarity['medium'] | similarity['high']), execution_device['GPU'])
         rule4 = ctrl.Rule(sequence_size['medium'] & cpu_cores['some'] & cpu_freq['medium'] & ram_memory['medium'] & gpu['medium'], execution_device['GPU'])
         rule5 = ctrl.Rule((sequence_size['large'] | sequence_size['huge']) & (gpu['high'] | gpu['medium']) & (similarity['medium'] | similarity['high']) , execution_device['GPU'])
-        rule6 = ctrl.Rule((sequence_size['large'] | sequence_size['huge']) & (gpu['low'] | gpu['medium']) & (similarity['low'] | similarity['medium']) , execution_device['CPU'])
+        rule6 = ctrl.Rule((sequence_size['large'] | sequence_size['huge']) & (gpu['low'] | gpu['medium']) & (similarity['low'] | similarity['medium']) , execution_device['GPU']) #alterar aqui
         rule7 = ctrl.Rule(sequence_size['small'] & (similarity['low']  | similarity['medium'] | similarity['high']) , execution_device['CPU'])
             # Creating the control system
         device_ctrl = ctrl.ControlSystem([rule1, rule2, rule3, rule4, rule5, rule6, rule7])
@@ -140,7 +140,8 @@ class DecisionMaker:
         print("Execution Device:", result)
         #execution_device.view(sim=execution_sys)
 
-        strategy = "ORIGINAL_MM"
+        #strategy = "ORIGINAL_MM"  #mudei aqui para testes
+        strategy = "MM_GPU"
         if result >= 5:
             strategy = "MM_GPU"
 
